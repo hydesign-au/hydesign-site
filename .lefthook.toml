@@ -1,0 +1,21 @@
+[[remotes]]
+git_url = "https://github.com/hydazz/.github"
+ref = "main"
+configs = ["lefthook.common.toml"]
+
+[pre-commit]
+parallel = true
+skip = ["merge", "rebase"]
+
+[pre-commit.commands.format-code]
+glob = ["*.ts", "*.tsx", "*.js", "*.jsx", "*.mjs", "*.cjs", "*.css"]
+exclude = ["apps/web/src/routeTree.gen.ts", "apps/web/src/content/media.gen.ts"]
+run = "oxfmt --no-error-on-unmatched-pattern {staged_files}"
+stage_fixed = true
+
+[pre-commit.commands.media-library]
+glob = ["media/*"]
+run = "node apps/media/server/staged.mjs {staged_files}"
+
+[commit-msg.commands.commitlint]
+run = "commitlint --default-config --edit {1}"

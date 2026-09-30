@@ -1,0 +1,9 @@
+# Public runtime configuration.
+TURNSTILE_SITE_KEY=
+INSTAGRAM_BUSINESS_ACCOUNT_ID=
+SHOPIFY_STOREFRONT_DOMAIN=
+SHOPIFY_STOREFRONT_PUBLIC_ACCESS_TOKEN=
+
+# Runtime secrets. Use Cloudflare's invisible Turnstile test secret locally.
+TURNSTILE_SECRET_KEY=
+FACEBOOK_PAGE_ACCESS_TOKEN=

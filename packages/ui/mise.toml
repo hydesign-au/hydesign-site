@@ -1,0 +1,8 @@
+[tasks.typecheck]
+run = "pnpm run typecheck"
+
+[tasks.lint]
+run = "pnpm run lint"
+
+[tasks.format]
+run = "pnpm run format"

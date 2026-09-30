@@ -1,0 +1,4639 @@
+{
+  "folders": {
+    "3d-signage": {
+      "label": "3D Signage"
+    },
+    "a-frame-signage": {
+      "label": "A-Frame Signage"
+    },
+    "banners": {
+      "label": "Banners"
+    },
+    "blu-spoon": {
+      "label": "Blu Spoon",
+      "parent": "projects"
+    },
+    "digital-printing": {
+      "label": "Digital Printing"
+    },
+    "etch": {
+      "label": "Etch",
+      "parent": "window-signage"
+    },
+    "factory-signage": {
+      "label": "Factory Signage"
+    },
+    "fascia-signage": {
+      "label": "Fascia Signage",
+      "parent": "shopfront-building-signage"
+    },
+    "gallery": {
+      "label": "Gallery"
+    },
+    "gold-leaf": {
+      "label": "Gold Leaf",
+      "parent": "window-signage"
+    },
+    "graphic-design": {
+      "label": "Graphic Design"
+    },
+    "hand-painted-signage": {
+      "label": "Hand-Painted Signage"
+    },
+    "hanging-sign": {
+      "label": "Hanging Sign",
+      "parent": "shopfront-building-signage"
+    },
+    "hoarding": {
+      "label": "Hoarding",
+      "parent": "digital-printing"
+    },
+    "illuminated-signage": {
+      "label": "Illuminated Signage"
+    },
+    "led-neon": {
+      "label": "LED Neon",
+      "parent": "illuminated-signage"
+    },
+    "lightboxes": {
+      "label": "Lightboxes",
+      "parent": "illuminated-signage"
+    },
+    "love-machine": {
+      "label": "Love Machine",
+      "parent": "projects"
+    },
+    "menu-board": {
+      "label": "Menu Board",
+      "parent": "shopfront-building-signage"
+    },
+    "mordialloc-florist": {
+      "label": "Mordialloc Florist",
+      "parent": "projects"
+    },
+    "neon": {
+      "label": "Neon",
+      "parent": "illuminated-signage"
+    },
+    "one-way-vision": {
+      "label": "One Way Vision",
+      "parent": "window-signage"
+    },
+    "project-alumbra": {
+      "label": "Alumbra",
+      "parent": "projects"
+    },
+    "project-anaka": {
+      "label": "Anaka",
+      "parent": "projects"
+    },
+    "project-australian-football-league": {
+      "label": "Australian Football League",
+      "parent": "projects"
+    },
+    "project-avoca-2": {
+      "label": "AVOCA 2",
+      "parent": "projects"
+    },
+    "project-bayside-shopping-centre": {
+      "label": "Bayside Shopping Centre",
+      "parent": "projects"
+    },
+    "project-bayside-skoda": {
+      "label": "Bayside ŠKODA",
+      "parent": "projects"
+    },
+    "project-beachside-volkswagen": {
+      "label": "Beachside Volkswagen",
+      "parent": "projects"
+    },
+    "project-beer-deluxe": {
+      "label": "Beer Deluxe",
+      "parent": "projects"
+    },
+    "project-black-sheep": {
+      "label": "Black Sheep",
+      "parent": "projects"
+    },
+    "project-body-lab": {
+      "label": "Body Lab",
+      "parent": "projects"
+    },
+    "project-calle-cantina": {
+      "label": "Calle Cantina",
+      "parent": "projects"
+    },
+    "project-celtic-tiger-barber": {
+      "label": "Celtic Tiger Barber",
+      "parent": "projects"
+    },
+    "project-civlec-construction": {
+      "label": "Civlec Construction",
+      "parent": "projects"
+    },
+    "project-coast-2-coast": {
+      "label": "Coast 2 Coast",
+      "parent": "projects"
+    },
+    "project-coffee-bird": {
+      "label": "Coffee Bird",
+      "parent": "projects"
+    },
+    "project-construct-homes": {
+      "label": "Construct Homes",
+      "parent": "projects"
+    },
+    "project-daniel-allison-associates": {
+      "label": "Daniel Allison & Associates",
+      "parent": "projects"
+    },
+    "project-daytek": {
+      "label": "Daytek",
+      "parent": "projects"
+    },
+    "project-dennys-kitchen": {
+      "label": "Dennys Kitchen",
+      "parent": "projects"
+    },
+    "project-dentists-of-alphington": {
+      "label": "Dentists of Alphington",
+      "parent": "projects"
+    },
+    "project-design-precinct": {
+      "label": "Design Precinct",
+      "parent": "projects"
+    },
+    "project-ds-dental-specialists": {
+      "label": "DS Dental Specialists",
+      "parent": "projects"
+    },
+    "project-ebenezer": {
+      "label": "Ebenezer",
+      "parent": "projects"
+    },
+    "project-ecco": {
+      "label": "ECCO",
+      "parent": "projects"
+    },
+    "project-edge": {
+      "label": "Edge",
+      "parent": "projects"
+    },
+    "project-fish-chippery-by-the-atlantic": {
+      "label": "Fish & Chippery By The Atlantic",
+      "parent": "projects"
+    },
+    "project-frankston-hospital": {
+      "label": "Frankston Hospital",
+      "parent": "projects"
+    },
+    "project-frankston-mazda": {
+      "label": "Frankston Mazda",
+      "parent": "projects"
+    },
+    "project-gateway-fish-chips": {
+      "label": "Gateway Fish & Chips",
+      "parent": "projects"
+    },
+    "project-geppetto-s-italian": {
+      "label": "Geppetto's Italian",
+      "parent": "projects"
+    },
+    "project-green-remedy": {
+      "label": "Green Remedy",
+      "parent": "projects"
+    },
+    "project-hanks-orthodontics": {
+      "label": "Hanks Orthodontics",
+      "parent": "projects"
+    },
+    "project-hiatus": {
+      "label": "Hiatus",
+      "parent": "projects"
+    },
+    "project-hunky-dory": {
+      "label": "Hunky Dory",
+      "parent": "projects"
+    },
+    "project-lambys-tavern": {
+      "label": "Lambys Tavern",
+      "parent": "projects"
+    },
+    "project-little-sister-bakery": {
+      "label": "Little Sister Bakery",
+      "parent": "projects"
+    },
+    "project-lux-bar": {
+      "label": "Lux Bar",
+      "parent": "projects"
+    },
+    "project-mackie": {
+      "label": "Mackie",
+      "parent": "projects"
+    },
+    "project-mama-rumaan": {
+      "label": "Mama Rumaan",
+      "parent": "projects"
+    },
+    "project-mentone-smiles": {
+      "label": "Mentone Smiles",
+      "parent": "projects"
+    },
+    "project-midori": {
+      "label": "Midori",
+      "parent": "projects"
+    },
+    "project-mocha-jo-s": {
+      "label": "Mocha Jo's",
+      "parent": "projects"
+    },
+    "project-moreland-city-council": {
+      "label": "Moreland City Council",
+      "parent": "projects"
+    },
+    "project-msm-associates": {
+      "label": "MSM Associates",
+      "parent": "projects"
+    },
+    "project-newmarket-tavern": {
+      "label": "Newmarket Tavern",
+      "parent": "projects"
+    },
+    "project-oxworks": {
+      "label": "Oxworks",
+      "parent": "projects"
+    },
+    "project-parktone-primary-school": {
+      "label": "Parktone Primary School",
+      "parent": "projects"
+    },
+    "project-pinocchio": {
+      "label": "Pinocchio",
+      "parent": "projects"
+    },
+    "project-platform-one": {
+      "label": "Platform One",
+      "parent": "projects"
+    },
+    "project-priceline": {
+      "label": "Priceline",
+      "parent": "projects"
+    },
+    "project-rak-thai": {
+      "label": "Rak Thai",
+      "parent": "projects"
+    },
+    "project-rebel-blue": {
+      "label": "Rebel Blue",
+      "parent": "projects"
+    },
+    "project-ripponlea-food-and-wine": {
+      "label": "Ripponlea Food and Wine",
+      "parent": "projects"
+    },
+    "project-rocomamas": {
+      "label": "RocoMamas",
+      "parent": "projects"
+    },
+    "project-rosella": {
+      "label": "Rosella",
+      "parent": "projects"
+    },
+    "project-ryco": {
+      "label": "RYCO",
+      "parent": "projects"
+    },
+    "project-sobo": {
+      "label": "SOBO",
+      "parent": "projects"
+    },
+    "project-soi-10-grosvenor": {
+      "label": "Soi 10 / Grosvenor",
+      "parent": "projects"
+    },
+    "project-st-catherine-s-school": {
+      "label": "St Catherine’s School",
+      "parent": "projects"
+    },
+    "project-studio-paws": {
+      "label": "Studio Paws",
+      "parent": "projects"
+    },
+    "project-tate-industries": {
+      "label": "Tate Industries",
+      "parent": "projects"
+    },
+    "project-the-glen": {
+      "label": "The Glen",
+      "parent": "projects"
+    },
+    "project-the-lakeside-mill": {
+      "label": "The Lakeside Mill",
+      "parent": "projects"
+    },
+    "project-the-sporting-globe": {
+      "label": "The Sporting Globe",
+      "parent": "projects"
+    },
+    "project-tnm-road-services": {
+      "label": "TNM Road Services",
+      "parent": "projects"
+    },
+    "project-trailworx": {
+      "label": "Trailworx",
+      "parent": "projects"
+    },
+    "project-wah-bah": {
+      "label": "Wah Bah",
+      "parent": "projects"
+    },
+    "project-woodleigh-school": {
+      "label": "Woodleigh School",
+      "parent": "projects"
+    },
+    "project-ziggy-s-eatery": {
+      "label": "Ziggy's Eatery",
+      "parent": "projects"
+    },
+    "projects": {
+      "label": "Projects"
+    },
+    "shopfront-building-signage": {
+      "label": "Shopfront & Building Signage"
+    },
+    "stickers-decals": {
+      "label": "Stickers & Decals"
+    },
+    "vehicle-signage": {
+      "label": "Vehicle Signage"
+    },
+    "wall-graphics": {
+      "label": "Wall Graphics"
+    },
+    "window-signage": {
+      "label": "Window Signage"
+    }
+  },
+  "items": {
+    "dennys-kitchen": {
+      "file": "videos/dennys-kitchen.mp4",
+      "type": "video",
+      "location": "Geelong",
+      "folders": ["digital-printing", "graphic-design", "project-dennys-kitchen"],
+      "bytes": 9198172,
+      "checksum": "6b11090346eebf0d83481612d8f2f55d40ab0fae6ab4d5ce8ce2e69436a94139",
+      "width": 1920,
+      "height": 1080,
+      "durationSeconds": 11.334,
+      "poster": "videos/dennys-kitchen.jpeg"
+    },
+    "edge": {
+      "file": "videos/edge.mp4",
+      "type": "video",
+      "location": "Geelong",
+      "folders": ["project-edge"],
+      "bytes": 14801041,
+      "checksum": "5b08f6c70ccc3d7a9073ab5e27b700d27e9b2bc96d21f6674bf232adb6fdbe78",
+      "width": 1920,
+      "height": 1080,
+      "durationSeconds": 18.967,
+      "poster": "videos/edge.jpeg"
+    },
+    "handpainted": {
+      "file": "videos/handpainted.mp4",
+      "type": "video",
+      "location": "Windsor",
+      "folders": ["hand-painted-signage", "project-rocomamas"],
+      "bytes": 17498977,
+      "checksum": "e2b3cfb52db0cf0d1327c1421651bec457bbcf3d26bee29c2d887108055a6b8c",
+      "width": 1920,
+      "height": 1080,
+      "durationSeconds": 22.467,
+      "poster": "videos/handpainted.jpeg"
+    },
+    "IMG_0077": {
+      "file": "2014/09/IMG_0077.jpeg",
+      "type": "photo",
+      "location": "Dandenong",
+      "folders": ["factory-signage", "gallery", "project-oxworks"],
+      "bytes": 1606371,
+      "checksum": "9eae529152ca61b8c944d7e1917d8b637b027cc7948af678e54d04d56d2330df",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2014-09-25T01:31:17.053Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/1199",
+        "iso": 32,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_0081": {
+      "file": "2014/09/IMG_0081.jpeg",
+      "type": "photo",
+      "location": "Dandenong",
+      "folders": ["factory-signage", "gallery", "project-oxworks"],
+      "bytes": 1901896,
+      "checksum": "c61654397e9be1645a408efdeaa5b0ff9cf4940a5120d0c04885ccd5a74db924",
+      "width": 2448,
+      "height": 3264,
+      "exif": {
+        "capturedAt": "2014-09-25T01:34:54.852Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/1099",
+        "iso": 32,
+        "dimensions": {
+          "width": 2448,
+          "height": 3264
+        },
+        "gps": null
+      }
+    },
+    "IMG_0144": {
+      "file": "2018/07/IMG_0144.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["digital-printing", "gallery", "project-bayside-shopping-centre"],
+      "bytes": 2506386,
+      "checksum": "bf16c1b365244faf9ed0679f3ad367e33d432ce12e65fe1a5f0877c55c2adf8e",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-07-04T09:58:45.647Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/20",
+        "iso": 32,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0152": {
+      "file": "2022/10/IMG_0152.jpeg",
+      "type": "photo",
+      "location": "Cremorne",
+      "folders": ["gallery", "project-rosella"],
+      "bytes": 6510345,
+      "checksum": "1ce834917e2b2e331c7c641597050fdef9b99a83afe54b43f04b408868a75a59",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2022-10-03T06:28:03.604Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 13 Pro Max",
+        "lensModel": "iPhone 13 Pro Max back triple camera 5.7mm f/1.5",
+        "focalLength": null,
+        "aperture": 1.5,
+        "shutterSpeed": "1/121",
+        "iso": 32,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0160": {
+      "file": "2014/09/IMG_0160.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["banners", "digital-printing", "gallery", "project-bayside-shopping-centre"],
+      "bytes": 1039097,
+      "checksum": "cba75be2828ec26a9daf9718a41941da3061e91219cf77dc2ac54cd34b48e98f",
+      "width": 2432,
+      "height": 1824,
+      "exif": {
+        "capturedAt": "2014-09-30T05:33:04.328Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/120",
+        "iso": 40,
+        "dimensions": {
+          "width": 2432,
+          "height": 1824
+        },
+        "gps": null
+      }
+    },
+    "IMG_0228": {
+      "file": "2016/08/IMG_0228.jpeg",
+      "type": "photo",
+      "location": "Kew",
+      "folders": ["gallery", "hand-painted-signage", "project-pinocchio"],
+      "bytes": 2065164,
+      "checksum": "85f5a1651f3e5f4a5ed3bf7faf189ee7a9e93c01731c27ae9f33f4a4b1da6142",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2016-08-11T05:17:46.210Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6s",
+        "lensModel": "iPhone 6s back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/33",
+        "iso": 80,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0231": {
+      "file": "2016/08/IMG_0231.jpeg",
+      "type": "photo",
+      "location": "Kew",
+      "folders": ["gallery", "hand-painted-signage", "project-pinocchio"],
+      "bytes": 1833678,
+      "checksum": "2445badb5564d9ece7e0cfc32869ec4402fbeb7706320e657be5a34e9ffcdf85",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2016-08-11T05:18:03.902Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6s",
+        "lensModel": "iPhone 6s back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/33",
+        "iso": 25,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0234": {
+      "file": "2021/01/IMG_0234.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "project-black-sheep", "window-signage"],
+      "bytes": 1757832,
+      "checksum": "d4c7fad3b208452e063c948577c7e9aa2a088da41fb878c2eada4fd0d26cafb1",
+      "width": 3008,
+      "height": 2256,
+      "exif": {
+        "capturedAt": "2021-01-20T08:04:20.984Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 12 Pro Max",
+        "lensModel": "iPhone 12 Pro Max back triple camera 1.54mm f/2.4",
+        "focalLength": null,
+        "aperture": 2.4,
+        "shutterSpeed": "1/50",
+        "iso": 250,
+        "dimensions": {
+          "width": 3008,
+          "height": 2256
+        },
+        "gps": null
+      }
+    },
+    "IMG_0239": {
+      "file": "2021/01/IMG_0239.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["a-frame-signage", "gallery", "project-black-sheep"],
+      "bytes": 6789444,
+      "checksum": "7918167beab421a5c030bbc0d38e30d55db42cc8aed34abfb68cd5f1dfa5bf4d",
+      "width": 3024,
+      "height": 4032,
+      "exif": {
+        "capturedAt": "2021-01-20T08:11:57.554Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 12 Pro Max",
+        "lensModel": "iPhone 12 Pro Max back triple camera 5.1mm f/1.6",
+        "focalLength": null,
+        "aperture": 1.6,
+        "shutterSpeed": "1/25",
+        "iso": 640,
+        "dimensions": {
+          "width": 3024,
+          "height": 4032
+        },
+        "gps": null
+      }
+    },
+    "IMG_0241": {
+      "file": "2021/01/IMG_0241.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["a-frame-signage", "gallery", "project-black-sheep"],
+      "bytes": 4534442,
+      "checksum": "0ffad5b0e90dcc9bda515e689c32aeec6c61975e1aed6fcee5ad5333e33640fd",
+      "width": 2400,
+      "height": 3200,
+      "exif": {
+        "capturedAt": "2021-01-20T08:12:57.617Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 12 Pro Max",
+        "lensModel": "iPhone 12 Pro Max back triple camera 5.1mm f/1.6",
+        "focalLength": null,
+        "aperture": 1.6,
+        "shutterSpeed": "1/50",
+        "iso": 500,
+        "dimensions": {
+          "width": 2400,
+          "height": 3200
+        },
+        "gps": null
+      }
+    },
+    "IMG_0245": {
+      "file": "2021/01/IMG_0245.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["3d-signage", "gallery", "illuminated-signage", "project-edge"],
+      "bytes": 6735769,
+      "checksum": "4266e4dcf84e11287f055ffed49eac8ed541894ed103b7e47e3e485ec6601a80",
+      "width": 3024,
+      "height": 4032,
+      "exif": {
+        "capturedAt": "2021-01-20T08:58:55.720Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 12 Pro Max",
+        "lensModel": "iPhone 12 Pro Max back triple camera 7.5mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/100",
+        "iso": 64,
+        "dimensions": {
+          "width": 3024,
+          "height": 4032
+        },
+        "gps": null
+      }
+    },
+    "IMG_0309": {
+      "file": "2014/10/IMG_0309.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "hand-painted-signage", "project-dennys-kitchen"],
+      "bytes": 964935,
+      "checksum": "0f5400bfbb51446b8d688a61abe5140adf4907f277c4dd0ccc2c69ff012a811f",
+      "width": 2432,
+      "height": 1824,
+      "exif": {
+        "capturedAt": "2014-10-12T02:05:12.821Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/30",
+        "iso": 250,
+        "dimensions": {
+          "width": 2432,
+          "height": 1824
+        },
+        "gps": null
+      }
+    },
+    "IMG_0322": {
+      "file": "2025/08/IMG_0322.jpeg",
+      "type": "photo",
+      "location": "Port Melbourne",
+      "folders": ["blu-spoon", "gallery", "lightboxes"],
+      "bytes": 8752416,
+      "checksum": "a9a7c11d0934c8a55e65f11c79fa94e4ccb541ab4dae536ab4fd62e9fb1456d4",
+      "width": 5712,
+      "height": 4284,
+      "exif": {
+        "capturedAt": "2025-08-14T09:41:48.758Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 16 Pro",
+        "lensModel": "iPhone 16 Pro back triple camera 6.765mm f/1.78",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 400,
+        "dimensions": {
+          "width": 5712,
+          "height": 4284
+        },
+        "gps": null
+      }
+    },
+    "IMG_0331": {
+      "file": "2018/07/IMG_0331.jpeg",
+      "type": "photo",
+      "location": "Templestowe",
+      "folders": ["gallery", "hand-painted-signage", "project-hunky-dory"],
+      "bytes": 2205698,
+      "checksum": "0277a9f545976f2d2bd73bec234d9278e8c57c6086993d1ad07c5fa2b54c20fb",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-07-09T00:07:08.703Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/100",
+        "iso": 32,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0429": {
+      "file": "2018/07/IMG_0429.jpeg",
+      "type": "photo",
+      "location": "Kew",
+      "folders": ["3d-signage", "gallery", "project-hiatus"],
+      "bytes": 1680682,
+      "checksum": "c21372ab493a7c4b9330d2c418c646da1a85a8c83e557990d753d39746848829",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-07-13T03:42:31.055Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/248",
+        "iso": 20,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0533": {
+      "file": "2018/07/IMG_0533.jpeg",
+      "type": "photo",
+      "location": "Windsor",
+      "folders": ["hanging-sign", "gallery", "project-rocomamas"],
+      "bytes": 2900532,
+      "checksum": "cab1bb560b2eb3e7d880b7a6bcd7c16c388e40b9fa0ad7cabc3377f965b23dae",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-07-19T03:34:56.361Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/17",
+        "iso": 64,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0535": {
+      "file": "2018/07/IMG_0535.jpeg",
+      "type": "photo",
+      "location": "Windsor",
+      "folders": ["gallery", "hand-painted-signage", "neon", "project-rocomamas"],
+      "bytes": 2089535,
+      "checksum": "e521e6df462b25667650a91fc220641b435183b7f7f60799d0b0c3842ce9e50c",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-07-19T03:35:06.628Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/33",
+        "iso": 25,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0554": {
+      "file": "2019/03/IMG_0554.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["gallery", "project-bayside-shopping-centre", "vehicle-signage"],
+      "bytes": 3643776,
+      "checksum": "d55748f36045e172f70b6692fdd076b3785f90ecb8ae373572f567aa9900732d",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2019-03-08T07:59:07.611Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/25",
+        "iso": 400,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0683": {
+      "file": "dump/IMG_0683.jpeg",
+      "type": "photo",
+      "location": "Cheltenham",
+      "folders": ["gallery", "project-bayside-skoda", "vehicle-signage"],
+      "bytes": 225426,
+      "checksum": "01dc177ff88b0c897e0c2e4602cab6422f32078957c6c2c8636f433d96519089",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_0694": {
+      "file": "2018/08/IMG_0694.jpeg",
+      "type": "photo",
+      "location": "Cheltenham",
+      "folders": ["banners", "gallery", "project-bayside-skoda"],
+      "bytes": 4163389,
+      "checksum": "e86ad8228da36cef36f96048a5d33339fc908d17803beef32d920bcf92443afb",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-08-02T03:19:31.190Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/1996",
+        "iso": 20,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0735": {
+      "file": "2016/09/IMG_0735.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "project-edge"],
+      "bytes": 2877274,
+      "checksum": "bff461c28c771f4cad5ff559f619010615414803a90f69baca8215d0d25a5917",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2016-09-18T04:06:00.936Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6s",
+        "lensModel": "iPhone 6s back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/25",
+        "iso": 200,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0756": {
+      "file": "2018/08/IMG_0756.jpeg",
+      "type": "photo",
+      "location": "Cranbourne",
+      "folders": ["gallery", "project-tnm-road-services", "vehicle-signage"],
+      "bytes": 2605441,
+      "checksum": "d4446e45aa8c9995eb6b5551dd74ea757460bf7d62abe48cb43cbbd310b356a2",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-08-09T04:32:40.780Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/33",
+        "iso": 32,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0810": {
+      "file": "2018/08/IMG_0810.jpeg",
+      "type": "photo",
+      "location": "Windsor",
+      "folders": ["3d-signage", "fascia-signage", "gallery", "neon", "project-rebel-blue"],
+      "bytes": 1870503,
+      "checksum": "e5f10a9d53979979e0c2950a7eab7736167f1755652ab6e89442e029bdfcd8dc",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-08-16T04:02:31.813Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/257",
+        "iso": 20,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0850": {
+      "file": "2014/10/IMG_0850.jpeg",
+      "type": "photo",
+      "location": "Mount Eliza",
+      "folders": ["etch", "gallery", "project-hanks-orthodontics"],
+      "bytes": 1528859,
+      "checksum": "c077d0f149ee14d33c219d75c2e94a6ef5ea3cb7b2ceaea90ba2c3bb256c23aa",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2014-10-23T03:21:53.511Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/33",
+        "iso": 32,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_0893": {
+      "file": "2014/10/IMG_0893.jpeg",
+      "type": "photo",
+      "location": "Gardenvale",
+      "folders": ["gold-leaf", "gallery", "project-coffee-bird"],
+      "bytes": 1124512,
+      "checksum": "0674d999d7933595157d24ce52b062aafaf3f82c44ed5d4ab169e501e35fa3cc",
+      "width": 2432,
+      "height": 1824,
+      "exif": {
+        "capturedAt": "2014-10-26T08:08:50.767Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/30",
+        "iso": 50,
+        "dimensions": {
+          "width": 2432,
+          "height": 1824
+        },
+        "gps": null
+      }
+    },
+    "IMG_0923": {
+      "file": "dump/IMG_0923.jpeg",
+      "type": "photo",
+      "location": "Langwarrin",
+      "folders": ["led-neon", "gallery", "project-woodleigh-school"],
+      "bytes": 213968,
+      "checksum": "f3e94937ac2e3a032020cbe4e98d23a4da43b8227b61155ebdefe57260b81d8b",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_0938": {
+      "file": "2016/11/IMG_0938.jpeg",
+      "type": "photo",
+      "location": "Melbourne",
+      "folders": ["gallery", "hand-painted-signage", "project-fish-chippery-by-the-atlantic"],
+      "bytes": 2943782,
+      "checksum": "b46c3ba8648f69d90ce64b8f56c086f88ba068b0b694df7121963a9ea03a8f04",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2016-11-20T23:29:59.644Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6s",
+        "lensModel": "iPhone 6s back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/50",
+        "iso": 25,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0939": {
+      "file": "2019/04/IMG_0939.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["gallery", "graphic-design", "project-msm-associates", "vehicle-signage"],
+      "bytes": 3004697,
+      "checksum": "772d662cec714307561778a873f4737bbd91f17233780a12aebf76fb79527d53",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2019-04-03T04:08:06.714Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/1021",
+        "iso": 25,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0947": {
+      "file": "2018/08/IMG_0947.jpeg",
+      "type": "photo",
+      "location": "Elsternwick",
+      "folders": ["digital-printing", "gallery", "project-green-remedy"],
+      "bytes": 2662742,
+      "checksum": "a4a63b60c2e77e306fa2d50246ea1d67e5acde83739bf7090e92cb765b1dbff4",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-08-31T03:42:30.955Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/17",
+        "iso": 50,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_0949": {
+      "file": "2018/08/IMG_0949.jpeg",
+      "type": "photo",
+      "location": "Elsternwick",
+      "folders": ["gallery", "neon", "project-green-remedy"],
+      "bytes": 2003633,
+      "checksum": "5e80a2db14d69960ee0deed33524ab3dc127478a2cf206e3122ba34eba8ba97a",
+      "width": 3008,
+      "height": 2256,
+      "exif": {
+        "capturedAt": "2018-08-31T03:42:42.615Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/33",
+        "iso": 25,
+        "dimensions": {
+          "width": 3008,
+          "height": 2256
+        },
+        "gps": null
+      }
+    },
+    "IMG_1044": {
+      "file": "dump/IMG_1044.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["hoarding", "gallery", "project-bayside-shopping-centre", "wall-graphics"],
+      "bytes": 189803,
+      "checksum": "68b5b8ea7380546bdee5b236c1a51b54714205f7eb85c8dfd0f602095f97db83",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_1116": {
+      "file": "2019/04/IMG_1116.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["hoarding", "gallery", "project-bayside-shopping-centre"],
+      "bytes": 2988996,
+      "checksum": "9589c7a21b249c7d8faaa3062984269d6d3f14b0e14d7248659af790702df006",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2019-04-16T22:03:39.710Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 200,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_1174": {
+      "file": "2021/01/IMG_1174.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["3d-signage", "gallery", "project-black-sheep"],
+      "bytes": 2444744,
+      "checksum": "eaa185a57a24bfa7366386989a2c8582c1679f4b8f7ccb59234b025c817a7065",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2021-01-20T06:11:08.397Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 11 Pro Max",
+        "lensModel": "iPhone 11 Pro Max back triple camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/25",
+        "iso": 640,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_1193": {
+      "file": "2019/04/IMG_1193.jpeg",
+      "type": "photo",
+      "location": "",
+      "folders": ["gallery", "graphic-design"],
+      "bytes": 3187967,
+      "checksum": "16d9f2590ae1b195a8511e83db09e0c5f2bf9d61f0d9500d2b49e43b7952c68b",
+      "width": 3024,
+      "height": 4032,
+      "exif": {
+        "capturedAt": "2019-04-22T13:07:24.296Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/60",
+        "iso": 200,
+        "dimensions": {
+          "width": 3024,
+          "height": 4032
+        },
+        "gps": null
+      }
+    },
+    "IMG_1194": {
+      "file": "2019/04/IMG_1194.jpeg",
+      "type": "photo",
+      "location": "",
+      "folders": ["gallery", "graphic-design"],
+      "bytes": 3222933,
+      "checksum": "4ddaf18d545b4f270261475c46d92e3c08ed018d7417ceac3a18ad29d3562552",
+      "width": 3024,
+      "height": 4032,
+      "exif": {
+        "capturedAt": "2019-04-22T13:10:09.709Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/60",
+        "iso": 200,
+        "dimensions": {
+          "width": 3024,
+          "height": 4032
+        },
+        "gps": null
+      }
+    },
+    "IMG_1195": {
+      "file": "2018/09/IMG_1195.jpeg",
+      "type": "photo",
+      "location": "Windsor",
+      "folders": ["fascia-signage", "gallery", "illuminated-signage", "project-rocomamas"],
+      "bytes": 2095721,
+      "checksum": "cc7da3cecd40d138676b06ca2b0c5224913d6ecf2ab82e8af4c9c71458a1d47b",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-09-16T00:48:05.082Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/855",
+        "iso": 20,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_1226": {
+      "file": "2014/11/IMG_1226.jpeg",
+      "type": "photo",
+      "location": "Black Rock",
+      "folders": ["gallery", "hand-painted-signage", "project-ebenezer"],
+      "bytes": 2659468,
+      "checksum": "70954a98a065a4beed768841593ff26d8101c546e1dfe49b9d4edf6cd5583391",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2014-11-25T02:38:21.985Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/373",
+        "iso": 32,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_1277": {
+      "file": "2018/09/IMG_1277.jpeg",
+      "type": "photo",
+      "location": "Watergardens",
+      "folders": ["digital-printing", "gallery", "project-hunky-dory", "wall-graphics"],
+      "bytes": 2532328,
+      "checksum": "ba6ec4b8b081d3e04f285e34e3e7437107a691abfb17dbea494a1f3f836efc97",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-09-18T06:21:48.182Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/17",
+        "iso": 80,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_1427": {
+      "file": "dump/IMG_1427.jpeg",
+      "type": "photo",
+      "location": "South Melbourne",
+      "folders": ["gallery", "hand-painted-signage", "project-daniel-allison-associates"],
+      "bytes": 239733,
+      "checksum": "01f9ce515817f27fab5aaf993720156ff7fd15d3db4857636c48e6429b9c21ef",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_1564": {
+      "file": "2018/10/IMG_1564.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["gallery", "project-beachside-volkswagen", "vehicle-signage"],
+      "bytes": 2080678,
+      "checksum": "fc7f55b9099d6df8ce74e3dcc3d60e28be616e55140ef58fa197bbb91142e997",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-10-11T03:01:12.797Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/153",
+        "iso": 20,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_1737": {
+      "file": "dump/IMG_1737.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": [
+        "digital-printing",
+        "gallery",
+        "project-bayside-shopping-centre",
+        "wall-graphics"
+      ],
+      "bytes": 123346,
+      "checksum": "d913c95e8d84d90c384024486f0466d58c92bccd33aa85ae48bb1e864a53538e",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_1779": {
+      "file": "2015/01/IMG_1779.jpeg",
+      "type": "photo",
+      "location": "Albury",
+      "folders": ["gallery", "graphic-design", "hand-painted-signage", "project-beer-deluxe"],
+      "bytes": 2025764,
+      "checksum": "45e76d5951324a5d797a66e3224f4ad7d63dcbfdfd2a5ff8d02d7db3ae44cecd",
+      "width": 2432,
+      "height": 1824,
+      "exif": {
+        "capturedAt": "2015-01-01T07:32:45.606Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/33",
+        "iso": 125,
+        "dimensions": {
+          "width": 2432,
+          "height": 1824
+        },
+        "gps": null
+      }
+    },
+    "IMG_1811": {
+      "file": "2015/01/IMG_1811.jpeg",
+      "type": "photo",
+      "location": "Albury",
+      "folders": ["gallery", "hand-painted-signage", "project-beer-deluxe"],
+      "bytes": 932133,
+      "checksum": "1980843a97710d59109be0f8cd0c79a486d2d2ca67331ce210255d8b0cd9bda5",
+      "width": 2432,
+      "height": 1824,
+      "exif": {
+        "capturedAt": "2015-01-01T07:46:19.938Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/15",
+        "iso": 400,
+        "dimensions": {
+          "width": 2432,
+          "height": 1824
+        },
+        "gps": null
+      }
+    },
+    "IMG_1853": {
+      "file": "2019/06/IMG_1853.jpeg",
+      "type": "photo",
+      "location": "Cheltenham",
+      "folders": ["a-frame-signage", "gallery", "project-bayside-skoda"],
+      "bytes": 3584871,
+      "checksum": "e14fe8f2246f699d8d0463e67509c3b05a3f765cd2cf24701faff4c27c75a630",
+      "width": 3024,
+      "height": 4032,
+      "exif": {
+        "capturedAt": "2019-06-08T01:04:40.309Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/1054",
+        "iso": 25,
+        "dimensions": {
+          "width": 3024,
+          "height": 4032
+        },
+        "gps": null
+      }
+    },
+    "IMG_1856": {
+      "file": "dump/IMG_1856.jpeg",
+      "type": "photo",
+      "location": "Glen Waverley",
+      "folders": ["digital-printing", "gallery", "project-the-glen", "wall-graphics"],
+      "bytes": 159019,
+      "checksum": "da9f3207863db8e4148552b66376fa97e4ee7580a4f690227722585f0d950648",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_1867": {
+      "file": "dump/IMG_1867.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["digital-printing", "gallery", "project-priceline", "wall-graphics"],
+      "bytes": 153848,
+      "checksum": "d519b107f42ce4fb5e23a0fe233255539d13077134ea069af2499a9b913da357",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_1868": {
+      "file": "2018/10/IMG_1868.jpeg",
+      "type": "photo",
+      "location": "Windsor",
+      "folders": ["gallery", "illuminated-signage", "project-rocomamas"],
+      "bytes": 1778411,
+      "checksum": "e89387c4782d7516a6da5b4e7fd1312da60346622f4c7cd2b690fd29d42c5f42",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-10-24T22:11:06.206Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/33",
+        "iso": 25,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_1986": {
+      "file": "2018/10/IMG_1986.jpeg",
+      "type": "photo",
+      "location": "South Melbourne",
+      "folders": ["gallery", "neon", "project-daniel-allison-associates"],
+      "bytes": 1859783,
+      "checksum": "23221098ac150aa3cd7dc9feddb5e815a402a51f0e2ed32facd7cf9b06650cba",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-10-29T01:34:19.898Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 8",
+        "lensModel": "iPhone 8 back camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/17",
+        "iso": 50,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_1990": {
+      "file": "2015/01/IMG_1990.jpeg",
+      "type": "photo",
+      "location": "Balaclava",
+      "folders": [
+        "3d-signage",
+        "fascia-signage",
+        "gallery",
+        "illuminated-signage",
+        "project-ziggy-s-eatery"
+      ],
+      "bytes": 2589795,
+      "checksum": "d7b7074f508955efc766f71f5034139d1980862c240701195609b2c623747959",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2015-01-11T00:33:20.903Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/581",
+        "iso": 32,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_2027": {
+      "file": "dump/IMG_2027.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["gallery", "project-bayside-shopping-centre", "window-signage"],
+      "bytes": 336394,
+      "checksum": "c0af3288e13d6e0d136909dff28acd0ff81600fbafbc52c1f42faf428ab80195",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_2160": {
+      "file": "2019/08/IMG_2160.jpeg",
+      "type": "photo",
+      "location": "Prahran",
+      "folders": ["etch", "gallery", "love-machine"],
+      "bytes": 6333271,
+      "checksum": "d5c48595c169c7a66149cca67926ccb9ec933cf61f21fdabd73a29d724dea4a0",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2019-08-08T04:46:28.819Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XS Max",
+        "lensModel": "iPhone XS Max back dual camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/33",
+        "iso": 320,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2161": {
+      "file": "2018/11/IMG_2161.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["a-frame-signage", "gallery", "project-rak-thai"],
+      "bytes": 2137882,
+      "checksum": "964e082a9526fc756babbabfebbfc15dfdce0c757dfd23f6a7239fc91040e450",
+      "width": 3024,
+      "height": 4032,
+      "exif": {
+        "capturedAt": "2018-11-06T04:28:20.452Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/5650",
+        "iso": 25,
+        "dimensions": {
+          "width": 3024,
+          "height": 4032
+        },
+        "gps": null
+      }
+    },
+    "IMG_2194": {
+      "file": "dump/IMG_2194.jpeg",
+      "type": "photo",
+      "location": "",
+      "folders": ["gallery", "hand-painted-signage", "project-moreland-city-council"],
+      "bytes": 205505,
+      "checksum": "8035c4ddfc39b3ad1f3da411fd3e8f8064b2de11ad6dc2a93fc573b30d67486b",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_2203": {
+      "file": "dump/IMG_2203.jpeg",
+      "type": "photo",
+      "location": "Glen Waverley",
+      "folders": ["digital-printing", "gallery", "project-the-glen", "wall-graphics"],
+      "bytes": 209279,
+      "checksum": "aed6c8b12a470e0104993b86b3cc51e2a7172473a26dc471bb7dda7ecd1467eb",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_2207": {
+      "file": "dump/IMG_2207.jpeg",
+      "type": "photo",
+      "location": "Toorak",
+      "folders": [
+        "digital-printing",
+        "gallery",
+        "project-st-catherine-s-school",
+        "stickers-decals"
+      ],
+      "bytes": 325297,
+      "checksum": "c55e33635d54a55f56ddf8eacd45c938986622cfc07b5312eb4b7aee89f59b84",
+      "width": 1440,
+      "height": 1920,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1440,
+          "height": 1920
+        },
+        "gps": null
+      }
+    },
+    "IMG_2274": {
+      "file": "2019/08/IMG_2274.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["led-neon", "gallery", "project-lambys-tavern"],
+      "bytes": 2752904,
+      "checksum": "0913cf3af8901160d99f4ef401187ed207bc319f29a413a351f8720302fc3cdf",
+      "width": 2880,
+      "height": 2160,
+      "exif": {
+        "capturedAt": "2019-08-17T09:13:21.896Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone",
+        "lensModel": "iPhone XS Max back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/30",
+        "iso": 125,
+        "dimensions": {
+          "width": 2880,
+          "height": 2160
+        },
+        "gps": null
+      }
+    },
+    "IMG_2277": {
+      "file": "2017/01/IMG_2277.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "project-edge"],
+      "bytes": 3503720,
+      "checksum": "c92a2ba45751095bc70a5f6bc43305f7faae4552ea994f50bee31d90de2f6859",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2017-01-03T05:40:56.764Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6s",
+        "lensModel": "iPhone 6s back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/33",
+        "iso": 80,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2285": {
+      "file": "2019/08/IMG_2285.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "illuminated-signage", "project-wah-bah"],
+      "bytes": 6348843,
+      "checksum": "30d6201b3bbae0aa84b90d190e8a3e398eec371bc5094dd77a20e42bbe82e545",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2019-08-17T10:48:08.497Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XS Max",
+        "lensModel": "iPhone XS Max back dual camera 6mm f/2.4",
+        "focalLength": null,
+        "aperture": 2.4,
+        "shutterSpeed": "1/50",
+        "iso": 200,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2291": {
+      "file": "dump/IMG_2291.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": [
+        "digital-printing",
+        "gallery",
+        "project-bayside-shopping-centre",
+        "wall-graphics"
+      ],
+      "bytes": 122633,
+      "checksum": "c1ee08d485f370e88eeb0ccecf466f1ba9fd3191641cee2cee7039a2c034f690",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_2354": {
+      "file": "2015/02/IMG_2354.jpeg",
+      "type": "photo",
+      "location": "Malvern",
+      "folders": ["fascia-signage", "gallery", "project-anaka"],
+      "bytes": 2123550,
+      "checksum": "341b5f8d5f5732a849571e994bd19bb8d9ba90107f9ac46b4a5880d76783db85",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2015-02-12T03:10:46.078Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/1199",
+        "iso": 32,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_2358": {
+      "file": "2018/11/IMG_2358.jpeg",
+      "type": "photo",
+      "location": "Essendon",
+      "folders": ["3d-signage", "gallery", "project-ecco"],
+      "bytes": 2760895,
+      "checksum": "40ece5bda2bbd9d65670006257cdce2a4e247954ca401016c78f537dbd9aae34",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-11-20T20:58:56.458Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/33",
+        "iso": 25,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2367": {
+      "file": "2012/04/IMG_2367.jpeg",
+      "type": "photo",
+      "location": "Derrimut",
+      "folders": ["banners", "gallery", "project-ryco"],
+      "bytes": 1455557,
+      "checksum": "dd982125479590d3c133326e7c7805a34e0e52767a93a37e4274610b08285793",
+      "width": 2560,
+      "height": 1920,
+      "exif": {
+        "capturedAt": "2012-04-01T04:30:35.000Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 4",
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": 2.8,
+        "shutterSpeed": "1/6033",
+        "iso": 80,
+        "dimensions": {
+          "width": 2560,
+          "height": 1920
+        },
+        "gps": null
+      }
+    },
+    "IMG_2395": {
+      "file": "2018/11/IMG_2395.jpeg",
+      "type": "photo",
+      "location": "Cranbourne",
+      "folders": ["gallery", "project-tnm-road-services", "vehicle-signage"],
+      "bytes": 2742045,
+      "checksum": "23b792a5e5a6cd0427573c6eb5fb635a0bbc705e3eaa380d87efc58bd107af0e",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-11-27T04:23:43.629Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/33",
+        "iso": 25,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2434": {
+      "file": "2018/12/IMG_2434.jpeg",
+      "type": "photo",
+      "location": "Pakenham",
+      "folders": ["gallery", "project-civlec-construction", "vehicle-signage"],
+      "bytes": 2319352,
+      "checksum": "b9e6a13927721e2c42848cf09ed159d363d0d65f3a86ac3a426fd64a50d9cff3",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-12-01T00:38:24.768Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/2227",
+        "iso": 20,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2472": {
+      "file": "2021/04/IMG_2472.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["banners", "digital-printing", "gallery", "project-bayside-shopping-centre"],
+      "bytes": 2574467,
+      "checksum": "2ceaceda0bc0e98c04781095da8e9348d9d2fc90de7b48a840c4bde62c682521",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2021-04-27T01:07:25.143Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 11 Pro Max",
+        "lensModel": "iPhone 11 Pro Max back triple camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/3205",
+        "iso": 32,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2513": {
+      "file": "2018/12/IMG_2513.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["gallery", "project-mackie", "vehicle-signage"],
+      "bytes": 2633415,
+      "checksum": "616dad0132ab5fc417d5c0143bf48b52534fabad220e6d7d48b34a6e5c6a63f0",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-12-08T05:51:19.917Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 25,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2594": {
+      "file": "2023/01/IMG_2594.jpeg",
+      "type": "photo",
+      "location": "Cremorne",
+      "folders": ["gallery", "hand-painted-signage", "project-rosella"],
+      "bytes": 1750261,
+      "checksum": "3c477c38e88b17663c1abb591ebe4a724cdfbb7db7abfc450a2b1481b09b7d53",
+      "width": 3200,
+      "height": 2400,
+      "exif": {
+        "capturedAt": "2023-01-23T23:56:13.822Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 13 Pro Max",
+        "lensModel": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/1074",
+        "iso": 32,
+        "dimensions": {
+          "width": 3200,
+          "height": 2400
+        },
+        "gps": null
+      }
+    },
+    "IMG_2610": {
+      "file": "2018/12/IMG_2610.jpeg",
+      "type": "photo",
+      "location": "South Melbourne",
+      "folders": ["3d-signage", "gallery", "project-daniel-allison-associates"],
+      "bytes": 1375429,
+      "checksum": "d7d7e92ad1d7c139d377f7f10edac4161efed733ce219a1bd72f3cbc360459e4",
+      "width": 3008,
+      "height": 2256,
+      "exif": {
+        "capturedAt": "2018-12-12T06:45:07.731Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/736",
+        "iso": 20,
+        "dimensions": {
+          "width": 3008,
+          "height": 2256
+        },
+        "gps": null
+      }
+    },
+    "IMG_2672": {
+      "file": "2019/08/IMG_2672.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "illuminated-signage", "project-edge"],
+      "bytes": 4156399,
+      "checksum": "d757b97e9e14e63dd8efecdb3826a651f577b44a49a78ff6bc64a77f0c6c64a8",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2019-08-17T09:52:59.155Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/25",
+        "iso": 640,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2675": {
+      "file": "2019/08/IMG_2675.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["3d-signage", "gallery", "illuminated-signage", "project-edge"],
+      "bytes": 1450916,
+      "checksum": "ed21f6ebc05ec119676de197fa783f23fe2172e290734bb166fb5169d49a630b",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2019-08-17T09:53:44.454Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/100",
+        "iso": 80,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2689": {
+      "file": "2019/08/IMG_2689.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "illuminated-signage", "project-edge"],
+      "bytes": 3266921,
+      "checksum": "9ea24731c496c103a3149ddc63b7719d8caaba8d9c1d292aca20de12e341381e",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2019-08-17T09:56:26.719Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/25",
+        "iso": 400,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2701": {
+      "file": "2019/08/IMG_2701.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["digital-printing", "gallery", "project-edge"],
+      "bytes": 4009576,
+      "checksum": "ebc0f14468212d0cb813cc03bd7a3b3b41f1c5eed778f5a66af811b4f8530ed2",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2019-08-17T09:58:17.529Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/25",
+        "iso": 400,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2710": {
+      "file": "2018/12/IMG_2710.jpeg",
+      "type": "photo",
+      "location": "South Melbourne",
+      "folders": ["3d-signage", "gallery", "project-daniel-allison-associates"],
+      "bytes": 2008423,
+      "checksum": "d567ceda7063f4bb3e764a9b8bb012528d5591a6a04d4e4730ed399776414e49",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-12-16T03:21:03.066Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 6.6mm f/2.8",
+        "focalLength": null,
+        "aperture": 2.8,
+        "shutterSpeed": "1/772",
+        "iso": 20,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_2790": {
+      "file": "2015/03/IMG_2790.jpeg",
+      "type": "photo",
+      "location": "Rowville",
+      "folders": ["one-way-vision", "gallery", "project-tate-industries", "vehicle-signage"],
+      "bytes": 3063939,
+      "checksum": "2575d1ba038bdcb54624cb13c988efb37eac5adb3327def9645163a3f9b6cb02",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2015-03-25T06:58:57.581Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/120",
+        "iso": 32,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_2804": {
+      "file": "2013/07/IMG_2804.jpeg",
+      "type": "photo",
+      "location": "Camberwell",
+      "folders": ["fascia-signage", "gallery", "project-ecco"],
+      "bytes": 2072681,
+      "checksum": "713dfc86a484013bdf800065a6f06e9f0bb3be2ea63c92e161b762468af25c1b",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2013-07-10T02:19:40.000Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 5",
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": 2.4,
+        "shutterSpeed": "1/241",
+        "iso": 50,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_2952": {
+      "file": "2012/01/IMG_2952.jpeg",
+      "type": "photo",
+      "location": "Seaford",
+      "folders": ["one-way-vision", "gallery", "project-frankston-mazda"],
+      "bytes": 1527378,
+      "checksum": "a1a9fe580fb62b1a1fd2aadceca0b69cb0a3b00d302152966a9e5361ab7bbdd5",
+      "width": 2560,
+      "height": 1920,
+      "exif": {
+        "capturedAt": "2012-01-10T08:47:32.000Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 4",
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": 2.8,
+        "shutterSpeed": "1/20",
+        "iso": 80,
+        "dimensions": {
+          "width": 2560,
+          "height": 1920
+        },
+        "gps": null
+      }
+    },
+    "IMG_2982": {
+      "file": "2012/01/IMG_2982.jpeg",
+      "type": "photo",
+      "location": "Derrimut",
+      "folders": ["gallery", "project-ryco", "vehicle-signage"],
+      "bytes": 3893214,
+      "checksum": "a6b772377b39448c5c8e19db5f34c9f04d120c5f224610971741764e9ccdcd25",
+      "width": 4608,
+      "height": 3456,
+      "exif": {
+        "capturedAt": "2012-01-21T01:30:44.000Z",
+        "cameraMake": "Canon",
+        "cameraModel": "Canon EOS 60D",
+        "lensModel": "17-70mm",
+        "focalLength": null,
+        "aperture": 4,
+        "shutterSpeed": "1/60",
+        "iso": 400,
+        "dimensions": {
+          "width": 4608,
+          "height": 3456
+        },
+        "gps": null
+      }
+    },
+    "IMG_3399": {
+      "file": "2019/01/IMG_3399.jpeg",
+      "type": "photo",
+      "location": "Elsternwick",
+      "folders": ["gallery", "illuminated-signage", "project-celtic-tiger-barber"],
+      "bytes": 2454221,
+      "checksum": "5c731d69444b21cf308c60459fa835969b729300d3cf420d19888daa2e9b448e",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2019-01-11T03:41:50.230Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/100",
+        "iso": 40,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_3540": {
+      "file": "2022/08/IMG_3540.jpeg",
+      "type": "photo",
+      "location": "Cremorne",
+      "folders": ["gallery", "project-rosella"],
+      "bytes": 4078001,
+      "checksum": "034dfca8c9f1d5ef70da8974ecd42b7f7a4de883727e23d6504e5eafdbfd789e",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2022-08-27T05:45:36.195Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 12 Pro Max",
+        "lensModel": "iPhone 12 Pro Max back triple camera 5.1mm f/1.6",
+        "focalLength": null,
+        "aperture": 1.6,
+        "shutterSpeed": "1/121",
+        "iso": 80,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_3989": {
+      "file": "2015/07/IMG_3989.jpeg",
+      "type": "photo",
+      "location": "Docklands",
+      "folders": ["gallery", "project-australian-football-league", "wall-graphics"],
+      "bytes": 2098079,
+      "checksum": "7b4722dc723a4940be11efc5b043b01187fd8c79ffa7376ebf0de836204731c8",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2015-07-02T06:21:25.471Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/30",
+        "iso": 64,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_4039": {
+      "file": "2022/09/IMG_4039.jpeg",
+      "type": "photo",
+      "location": "Cremorne",
+      "folders": ["gallery", "project-rosella"],
+      "bytes": 3435104,
+      "checksum": "2ff2791d7b80ac545413fc1cdbb10af3111ce9406d8939a8eb4c8e3be3ae8ac6",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2022-09-22T08:00:26.812Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 12 Pro Max",
+        "lensModel": "iPhone 12 Pro Max back triple camera 5.1mm f/1.6",
+        "focalLength": null,
+        "aperture": 1.6,
+        "shutterSpeed": "1/60",
+        "iso": 250,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_4051": {
+      "file": "2017/07/IMG_4051.jpeg",
+      "type": "photo",
+      "location": "South Yarra",
+      "folders": ["menu-board", "gallery", "hand-painted-signage", "project-hunky-dory"],
+      "bytes": 2002835,
+      "checksum": "711d3e765a3d86e1668962d957c427602e1ae00b49072a67a4c1c4c123654416",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2017-07-12T11:47:06.066Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6s",
+        "lensModel": "iPhone 6s back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/20",
+        "iso": 200,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_4109": {
+      "file": "2023/05/IMG_4109.jpeg",
+      "type": "photo",
+      "location": "Balwyn North",
+      "folders": ["gallery", "project-midori", "window-signage"],
+      "bytes": 2724438,
+      "checksum": "bc4a3ddffa0c52b8a08adb4298cbd27167af3eb2c09717eb17b9582261ec983e",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2023-05-13T07:32:46.457Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 13 Pro Max",
+        "lensModel": "iPhone 13 Pro Max back triple camera 1.57mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 500,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_4125": {
+      "file": "2023/05/IMG_4125.jpeg",
+      "type": "photo",
+      "location": "Balwyn North",
+      "folders": [
+        "fascia-signage",
+        "gallery",
+        "hand-painted-signage",
+        "illuminated-signage",
+        "project-midori"
+      ],
+      "bytes": 2762674,
+      "checksum": "f01da307426272e6d9fdff7743310143bfdd8858884fc3427ae6633a84b6a58c",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2023-05-13T07:46:24.754Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 13 Pro Max",
+        "lensModel": "iPhone 13 Pro Max back triple camera 5.7mm f/1.5",
+        "focalLength": null,
+        "aperture": 1.5,
+        "shutterSpeed": "1/50",
+        "iso": 160,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_4144": {
+      "file": "2015/07/IMG_4144.jpeg",
+      "type": "photo",
+      "location": "Flemington",
+      "folders": ["etch", "gallery", "project-newmarket-tavern"],
+      "bytes": 1404600,
+      "checksum": "8c8a0bde7e491e0a6ec1ccc39cc5cde82b5cf8deb1c19602f6bd4931d8abc188",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2015-07-16T12:24:43.950Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/17",
+        "iso": 320,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_4220": {
+      "file": "2015/07/IMG_4220.jpeg",
+      "type": "photo",
+      "location": "Glen Waverley",
+      "folders": ["gallery", "illuminated-signage", "project-mocha-jo-s"],
+      "bytes": 2382915,
+      "checksum": "831154ca836276ba303522014c32f129c87bf22324c0555a461cf466c02c0c72",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2015-07-23T23:34:15.504Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/120",
+        "iso": 50,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_4316": {
+      "file": "2023/05/IMG_4316.jpeg",
+      "type": "photo",
+      "location": "South Melbourne",
+      "folders": ["3d-signage", "gallery", "illuminated-signage", "project-alumbra"],
+      "bytes": 1752460,
+      "checksum": "682f1019f31bc964be054ca68905484410c70e7483dd27879143b2112b53b4b6",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2023-05-20T09:12:58.393Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 13 Pro Max",
+        "lensModel": "iPhone 13 Pro Max back triple camera 5.7mm f/1.5",
+        "focalLength": null,
+        "aperture": 1.5,
+        "shutterSpeed": "1/9",
+        "iso": 1250,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_4444": {
+      "file": "2021/09/IMG_4444.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["digital-printing", "gallery", "project-bayside-shopping-centre"],
+      "bytes": 2818834,
+      "checksum": "16ecca2f99668e8a1a0e3b163df12639d4c55b658f98436c956cbe5ff431b600",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2021-09-09T13:45:07.110Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 11 Pro Max",
+        "lensModel": "iPhone 11 Pro Max back triple camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 200,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_5314": {
+      "file": "2015/01/IMG_5314.jpeg",
+      "type": "photo",
+      "location": "Black Rock",
+      "folders": ["gold-leaf", "gallery", "project-ebenezer"],
+      "bytes": 1888641,
+      "checksum": "de47931eadad814ea2ae52df9197958a898a524a147fe29a19f9b9fbb53b490f",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2015-01-07T22:11:05.679Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 5s",
+        "lensModel": "iPhone 5s back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/120",
+        "iso": 50,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_5322": {
+      "file": "2017/10/IMG_5322.jpeg",
+      "type": "photo",
+      "location": "Richmond",
+      "folders": ["banners", "digital-printing", "gallery", "project-design-precinct"],
+      "bytes": 2361445,
+      "checksum": "b28737fd7df968862048927ef5944fb6b20df6b8ba85ab53100fa4fa0d6972cf",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2017-10-12T05:59:40.293Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/1473",
+        "iso": 20,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_5334": {
+      "file": "2020/01/IMG_5334.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": [
+        "digital-printing",
+        "gallery",
+        "project-bayside-shopping-centre",
+        "stickers-decals"
+      ],
+      "bytes": 4190563,
+      "checksum": "6c4ff09bcabb2b338e1d59883dd0d925445b33d32af2c192badc7c6aa4c24194",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2020-01-14T06:17:12.947Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 100,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_5432": {
+      "file": "2015/10/IMG_5432.jpeg",
+      "type": "photo",
+      "location": "Gardenvale",
+      "folders": ["gallery", "illuminated-signage", "project-coffee-bird"],
+      "bytes": 1138098,
+      "checksum": "735bece21e3e466de6081d54e2a55667f98a6057ea219c3954e9b65418367d5f",
+      "width": 2432,
+      "height": 1824,
+      "exif": {
+        "capturedAt": "2015-10-27T05:46:35.645Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/648",
+        "iso": 32,
+        "dimensions": {
+          "width": 2432,
+          "height": 1824
+        },
+        "gps": null
+      }
+    },
+    "IMG_5535": {
+      "file": "2020/01/IMG_5535.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["banners", "digital-printing", "gallery", "project-bayside-shopping-centre"],
+      "bytes": 2000711,
+      "checksum": "da77d99e3a6b15ee7296cb2e6d910fe26142e26a31556a687515e0312ff979aa",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2020-01-30T23:17:02.527Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/631",
+        "iso": 25,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_5567": {
+      "file": "2015/03/IMG_5567.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "hand-painted-signage", "project-the-sporting-globe"],
+      "bytes": 1787776,
+      "checksum": "e739d57e9b63b55ef1c288778160d45913b815b333e4b2e548e0d0c80653371b",
+      "width": 2688,
+      "height": 2016,
+      "exif": {
+        "capturedAt": "2015-03-07T03:54:13.055Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 5s",
+        "lensModel": "iPhone 5s back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/120",
+        "iso": 50,
+        "dimensions": {
+          "width": 2688,
+          "height": 2016
+        },
+        "gps": null
+      }
+    },
+    "IMG_5767": {
+      "file": "2017/11/IMG_5767.jpeg",
+      "type": "photo",
+      "location": "Flemington",
+      "folders": ["etch", "gallery", "project-newmarket-tavern"],
+      "bytes": 2015027,
+      "checksum": "9af514922594aa855bc4df18e51ff2fa537f421254c364a152b2ab92fd513f92",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2017-11-02T07:29:26.983Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 25,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_5960": {
+      "file": "2017/11/IMG_5960.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "project-edge"],
+      "bytes": 3490122,
+      "checksum": "0c351cc7817a1501709be6d9c49360ff590f4103e5068d62485d6183a8ccafcc",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2017-11-04T07:41:24.936Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/8",
+        "iso": 100,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_5963": {
+      "file": "2017/11/IMG_5963.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "project-edge"],
+      "bytes": 2656544,
+      "checksum": "37acb24cce4978b08eb06f90e1c6b336703e0f662b5125e02b18c01b5dbfa23b",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2017-11-04T07:41:39.139Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/6",
+        "iso": 100,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_6094": {
+      "file": "2015/12/IMG_6094.jpeg",
+      "type": "photo",
+      "location": "Mordialloc",
+      "folders": ["gallery", "hand-painted-signage", "project-calle-cantina"],
+      "bytes": 1851612,
+      "checksum": "281f6d7eb2f52076f4b633620f380fca457b7cea466bc6430ca6ef1e27f67fd4",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2015-12-06T07:40:32.255Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/116",
+        "iso": 32,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_6152": {
+      "file": "2017/11/IMG_6152.jpeg",
+      "type": "photo",
+      "location": "Ripponlea",
+      "folders": [
+        "gold-leaf",
+        "gallery",
+        "hand-painted-signage",
+        "project-ripponlea-food-and-wine"
+      ],
+      "bytes": 2061311,
+      "checksum": "222437408ef4d6c674ae36728eb03a8f18c4c5b1054385b8891270fb4e668d88",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2017-11-22T02:26:54.262Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/17",
+        "iso": 50,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_6169": {
+      "file": "2017/11/IMG_6169.jpeg",
+      "type": "photo",
+      "location": "Ripponlea",
+      "folders": ["gallery", "hand-painted-signage", "project-ripponlea-food-and-wine"],
+      "bytes": 1681961,
+      "checksum": "84b233ce8e5e3744631f8f4ab27309793cc575811aeb4219728d18f3ac7ee4e1",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2017-11-22T02:39:50.125Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/33",
+        "iso": 40,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_6182": {
+      "file": "2017/11/IMG_6182.jpeg",
+      "type": "photo",
+      "location": "Ripponlea",
+      "folders": ["gallery", "hand-painted-signage", "project-ripponlea-food-and-wine"],
+      "bytes": 1944282,
+      "checksum": "8ff5855baf91fe2f934c6fc2eba752a41488632461151b452ac3f491e3f1360b",
+      "width": 3024,
+      "height": 4032,
+      "exif": {
+        "capturedAt": "2017-11-22T02:51:12.214Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 25,
+        "dimensions": {
+          "width": 3024,
+          "height": 4032
+        },
+        "gps": null
+      }
+    },
+    "IMG_6593": {
+      "file": "2017/12/IMG_6593.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "project-edge"],
+      "bytes": 2555316,
+      "checksum": "60296804cfc91f41a3ff43347bdfcab6ed0050bca410324f6765a84d9152590d",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2017-12-06T10:03:09.948Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/4",
+        "iso": 100,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_6658": {
+      "file": "2017/12/IMG_6658.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["gallery", "project-mackie", "vehicle-signage"],
+      "bytes": 2583967,
+      "checksum": "7c8d450bedd632df3c99fad3a9345bd5748610070da399ebe38c867342b06cb9",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2017-12-12T03:20:31.336Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/33",
+        "iso": 40,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_6780": {
+      "file": "2020/04/IMG_6780.jpeg",
+      "type": "photo",
+      "location": "",
+      "folders": ["gallery"],
+      "bytes": 1033688,
+      "checksum": "37005e9b9376e17316980e43b2b750202cc456d3a22d4f05ba472c5a2f905caf",
+      "width": 3008,
+      "height": 2256,
+      "exif": {
+        "capturedAt": "2020-04-19T12:10:32.350Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 250,
+        "dimensions": {
+          "width": 3008,
+          "height": 2256
+        },
+        "gps": null
+      }
+    },
+    "IMG_6831": {
+      "file": "2015/12/IMG_6831.jpeg",
+      "type": "photo",
+      "location": "Wagga Wagga",
+      "folders": ["gallery", "illuminated-signage", "project-lux-bar"],
+      "bytes": 791385,
+      "checksum": "a0dab4b7b5c71b7bb26ffe1cf9aff08262e38ea73eaf494bf2658267ca160c94",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2015-12-10T14:41:13.313Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6s",
+        "lensModel": "iPhone 6s back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/50",
+        "iso": 25,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_6847": {
+      "file": "2016/02/IMG_6847.jpeg",
+      "type": "photo",
+      "location": "Pakenham",
+      "folders": ["gallery", "hand-painted-signage", "project-the-lakeside-mill"],
+      "bytes": 2404719,
+      "checksum": "ffdf9973c008dd83ceea697e28a5104ccdee00b5cf679362b2578a8bfb0b6a7d",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2016-02-05T05:44:10.046Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/33",
+        "iso": 40,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_6903": {
+      "file": "2020/04/IMG_6903.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": [
+        "digital-printing",
+        "gallery",
+        "project-bayside-shopping-centre",
+        "stickers-decals"
+      ],
+      "bytes": 1782913,
+      "checksum": "b248ae7d0733adbace2949f3b75a4e558d80cbbe9f3bdb1b3a4b9bf890f1e4be",
+      "width": 3024,
+      "height": 4032,
+      "exif": {
+        "capturedAt": "2020-04-26T11:35:19.341Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 200,
+        "dimensions": {
+          "width": 3024,
+          "height": 4032
+        },
+        "gps": null
+      }
+    },
+    "IMG_6947": {
+      "file": "2018/01/IMG_6947.jpeg",
+      "type": "photo",
+      "location": "South Yarra",
+      "folders": ["gallery", "project-avoca-2", "window-signage"],
+      "bytes": 2818572,
+      "checksum": "967d67cee34a440e9e65877de6cc2d2f8104b594a63cb9a30509951260ec91bf",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-01-13T04:19:21.068Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/100",
+        "iso": 40,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_6954": {
+      "file": "2016/02/IMG_6954.jpeg",
+      "type": "photo",
+      "location": "Pakenham",
+      "folders": ["digital-printing", "gallery", "project-the-lakeside-mill", "wall-graphics"],
+      "bytes": 1543299,
+      "checksum": "6221681efa7d70bff2d61dc322c4efc98e24b0a03da81b5f689dd980bd53e952",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2016-02-09T22:05:25.056Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/33",
+        "iso": 250,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_6983": {
+      "file": "2016/02/IMG_6983.jpeg",
+      "type": "photo",
+      "location": "Pakenham",
+      "folders": ["3d-signage", "gallery", "illuminated-signage", "project-the-lakeside-mill"],
+      "bytes": 841733,
+      "checksum": "fdbe89fd313fb21a0f185f26cc91d67e1db67355267991c16db364244e6d1cc7",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2016-02-09T22:42:38.254Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/449",
+        "iso": 32,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_7019": {
+      "file": "2016/02/IMG_7019.jpeg",
+      "type": "photo",
+      "location": "Armadale",
+      "folders": ["gallery", "illuminated-signage", "project-body-lab"],
+      "bytes": 888659,
+      "checksum": "27ed7137f02ebad8641d3deaff66f95e788e22650735b4e1199acb675f40cbb3",
+      "width": 2432,
+      "height": 1824,
+      "exif": {
+        "capturedAt": "2016-02-11T03:03:43.212Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/706",
+        "iso": 32,
+        "dimensions": {
+          "width": 2432,
+          "height": 1824
+        },
+        "gps": null
+      }
+    },
+    "IMG_7034": {
+      "file": "dump/IMG_7034.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["gallery", "project-mackie", "window-signage"],
+      "bytes": 338212,
+      "checksum": "8d68daebf764369c83dfa9ec6a1be29f60286a73d65b6663d87065d3f27e610c",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_7088": {
+      "file": "2020/05/IMG_7088.jpeg",
+      "type": "photo",
+      "location": "St Kilda",
+      "folders": ["digital-printing", "gallery", "project-soi-10-grosvenor", "wall-graphics"],
+      "bytes": 3009372,
+      "checksum": "d70f4b9300e45f9fb538d0d608faccf5388710449e90413372a9b59aaf187578",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2020-05-15T06:51:59.086Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 320,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_7109": {
+      "file": "dump/IMG_7109.jpeg",
+      "type": "photo",
+      "location": "Parkdale",
+      "folders": ["digital-printing", "gallery", "project-parktone-primary-school"],
+      "bytes": 179698,
+      "checksum": "7a135ef2e6476b5836d8ff7c39d087f6a87e9faa5383c409a001a356ade7158d",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_7219": {
+      "file": "2018/02/IMG_7219.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "hand-painted-signage", "project-edge"],
+      "bytes": 2172683,
+      "checksum": "6ef6899affa343185629015079194cc8460e15ee8dea3efec4c41201d05f2543",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-02-04T12:26:05.004Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/4",
+        "iso": 100,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_7253": {
+      "file": "2016/02/IMG_7253.jpeg",
+      "type": "photo",
+      "location": "Docklands",
+      "folders": ["gallery", "project-mama-rumaan"],
+      "bytes": 1565091,
+      "checksum": "a5f03c773ac80aaa75abae7cb9aa27aedc89a1cae82bb1b9e4b873dc600484f5",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2016-02-27T05:30:32.650Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/33",
+        "iso": 64,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_7324": {
+      "file": "2020/06/IMG_7324.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": [
+        "digital-printing",
+        "gallery",
+        "project-bayside-shopping-centre",
+        "stickers-decals"
+      ],
+      "bytes": 3583231,
+      "checksum": "9ef8a768271c6af626f5e5001b8699df8c8e6e43157b43c73a7c33135b01f9e3",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2020-06-05T07:43:35.130Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 200,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_7450": {
+      "file": "2018/02/IMG_7450.jpeg",
+      "type": "photo",
+      "location": "South Yarra",
+      "folders": ["gallery", "project-avoca-2", "window-signage"],
+      "bytes": 2679558,
+      "checksum": "4780386dc398d131a267f8540cab20b9859fdee1f9ed6173a34b2198e25490b9",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-02-16T02:43:35.860Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/197",
+        "iso": 20,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_7519": {
+      "file": "2018/02/IMG_7519.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["gallery", "illuminated-signage", "project-bayside-shopping-centre"],
+      "bytes": 2197423,
+      "checksum": "757d7510941356ef7d07aa92893a784047298472409388d1c7a43cc05cd29064",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-02-19T06:53:36.458Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 6.6mm f/2.8",
+        "focalLength": null,
+        "aperture": 2.8,
+        "shutterSpeed": "1/50",
+        "iso": 80,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_7565": {
+      "file": "2020/06/IMG_7565.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "hand-painted-signage", "project-dennys-kitchen"],
+      "bytes": 4609232,
+      "checksum": "aaf7e8be845a684df9793f2e45156e8417aaf98afcb7bd0cf65d792aa978fd74",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2020-06-27T03:25:55.990Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 200,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_7579": {
+      "file": "2016/03/IMG_7579.jpeg",
+      "type": "photo",
+      "location": "Pakenham",
+      "folders": ["gallery", "hand-painted-signage", "project-the-lakeside-mill"],
+      "bytes": 2692064,
+      "checksum": "1e1a4ef0a66d7490adad88121b6a311b6e4fc4b30f5aebe52f75208c9d3f51e9",
+      "width": 2448,
+      "height": 3264,
+      "exif": {
+        "capturedAt": "2016-03-26T06:23:30.533Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/33",
+        "iso": 320,
+        "dimensions": {
+          "width": 2448,
+          "height": 3264
+        },
+        "gps": null
+      }
+    },
+    "IMG_7687": {
+      "file": "2020/06/IMG_7687.jpeg",
+      "type": "photo",
+      "location": "Mordialloc",
+      "folders": ["3d-signage", "gallery", "mordialloc-florist"],
+      "bytes": 3554609,
+      "checksum": "4ed0a89c627284484b9c139faf9d64fcbfc53d24218e0109c46f427ad6c4f0c7",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2020-06-30T05:22:55.253Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/60",
+        "iso": 160,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_7719": {
+      "file": "dump/IMG_7719.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": [
+        "digital-printing",
+        "gallery",
+        "project-bayside-shopping-centre",
+        "stickers-decals"
+      ],
+      "bytes": 329163,
+      "checksum": "b1c3ca6b62dd71c109db37545e1a4d998b39fa683b6c562450b2d6b125776e31",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_7769": {
+      "file": "2018/03/IMG_7769.jpeg",
+      "type": "photo",
+      "location": "South Melbourne",
+      "folders": ["one-way-vision", "gallery", "project-ziggy-s-eatery"],
+      "bytes": 2001713,
+      "checksum": "b943fce91ef210a288fa17a7b55a10119160616fb2e753660074d521543bdee1",
+      "width": 3008,
+      "height": 2256,
+      "exif": {
+        "capturedAt": "2018-03-08T07:34:04.563Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/100",
+        "iso": 25,
+        "dimensions": {
+          "width": 3008,
+          "height": 2256
+        },
+        "gps": null
+      }
+    },
+    "IMG_7771": {
+      "file": "2018/03/IMG_7771.jpeg",
+      "type": "photo",
+      "location": "South Melbourne",
+      "folders": ["one-way-vision", "gallery", "project-ziggy-s-eatery"],
+      "bytes": 1210572,
+      "checksum": "a88af52b866f762f51bb6e6f4c22e4bf3cb02d1f71c5b545ff7176a43b2d8fa1",
+      "width": 3008,
+      "height": 2256,
+      "exif": {
+        "capturedAt": "2018-03-08T07:34:22.488Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/107",
+        "iso": 20,
+        "dimensions": {
+          "width": 3008,
+          "height": 2256
+        },
+        "gps": null
+      }
+    },
+    "IMG_7834": {
+      "file": "2016/05/IMG_7834.jpeg",
+      "type": "photo",
+      "location": "Melbourne",
+      "folders": [
+        "menu-board",
+        "gallery",
+        "hand-painted-signage",
+        "project-fish-chippery-by-the-atlantic"
+      ],
+      "bytes": 2290472,
+      "checksum": "18d0c11cc041cced4b2c7191b120d55bc235c255fe578c259ef4cbf5bf8e6374",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2016-05-09T01:12:25.454Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6s",
+        "lensModel": "iPhone 6s back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/33",
+        "iso": 64,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_7857": {
+      "file": "2018/03/IMG_7857.jpeg",
+      "type": "photo",
+      "location": "Frankston",
+      "folders": ["gallery", "graphic-design", "project-frankston-hospital", "stickers-decals"],
+      "bytes": 2650795,
+      "checksum": "b5b0bfc3c3e35a448c5c90a06773e278e947205fc80582dcb4bd7da90356b48c",
+      "width": 3024,
+      "height": 4032,
+      "exif": {
+        "capturedAt": "2018-03-13T01:26:13.235Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/20",
+        "iso": 40,
+        "dimensions": {
+          "width": 3024,
+          "height": 4032
+        },
+        "gps": null
+      }
+    },
+    "IMG_7864": {
+      "file": "2018/03/IMG_7864.jpeg",
+      "type": "photo",
+      "location": "",
+      "folders": [
+        "digital-printing",
+        "gallery",
+        "graphic-design",
+        "project-frankston-hospital",
+        "stickers-decals"
+      ],
+      "bytes": 330617,
+      "checksum": "faa44ffe201f72b5e0ee12f7f97dbd48d55ce7298d77c9c871d677b4dc5fcefd",
+      "width": 1024,
+      "height": 768,
+      "exif": {
+        "capturedAt": "2018-03-13T01:26:42.170Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/25",
+        "iso": 32,
+        "dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "gps": null
+      }
+    },
+    "IMG_8058": {
+      "file": "2016/05/IMG_8058.jpeg",
+      "type": "photo",
+      "location": "Langwarrin",
+      "folders": ["fascia-signage", "gallery", "illuminated-signage", "project-gateway-fish-chips"],
+      "bytes": 1542453,
+      "checksum": "876f36d8cbbfb9c3e45571b4c865c2d71868ae3b5608cec459d8f92db667e0bb",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2016-05-03T21:59:43.414Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/33",
+        "iso": 125,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_8060": {
+      "file": "2018/03/IMG_8060.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["led-neon", "gallery", "project-lambys-tavern"],
+      "bytes": 2319047,
+      "checksum": "2ada9ecedc7c754c0fe5e04b54e5d4d0796d0f8f47c3ccce8b560071b4e5a020",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-03-27T02:05:47.166Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/20",
+        "iso": 32,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_8144": {
+      "file": "2014/07/IMG_8144.jpeg",
+      "type": "photo",
+      "location": "South Yarra",
+      "folders": ["a-frame-signage", "gallery", "project-avoca-2"],
+      "bytes": 2370780,
+      "checksum": "2522193615b63ba29ba649ce17b2a8a1a86374269737a78f4b0313ee6c7e72cd",
+      "width": 2448,
+      "height": 3264,
+      "exif": {
+        "capturedAt": "2014-07-30T00:17:27.152Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 5",
+        "lensModel": "iPhone 5 back camera 4.12mm f/2.4",
+        "focalLength": null,
+        "aperture": 2.4,
+        "shutterSpeed": "1/20",
+        "iso": 320,
+        "dimensions": {
+          "width": 2448,
+          "height": 3264
+        },
+        "gps": null
+      }
+    },
+    "IMG_8164": {
+      "file": "2020/08/IMG_8164.jpeg",
+      "type": "photo",
+      "location": "Elsternwick",
+      "folders": ["gallery", "illuminated-signage", "project-little-sister-bakery"],
+      "bytes": 2555480,
+      "checksum": "3fbbcc0722089dfdaa818d3eb58e1d7b8a18800616d7316d3c3ee99a620650d5",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2020-08-05T06:10:56.700Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/136",
+        "iso": 25,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_8254": {
+      "file": "2018/04/IMG_8254.jpeg",
+      "type": "photo",
+      "location": "Cranbourne",
+      "folders": ["gallery", "project-coast-2-coast", "vehicle-signage"],
+      "bytes": 3047345,
+      "checksum": "0bb6948f0fa4a290d42e2c5b5eef5804fffeaa1aeb3f4317650afea98f81ce7a",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-04-02T06:03:58.262Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/456",
+        "iso": 20,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_8267": {
+      "file": "2014/08/IMG_8267.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["digital-printing", "gallery", "hand-painted-signage", "project-dennys-kitchen"],
+      "bytes": 2188545,
+      "checksum": "8f94f56f1d61cab419b43e028c48efdae76cef1701d2b1579daca9e7a45131c4",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2014-08-05T17:12:15.523Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 5",
+        "lensModel": "iPhone 5 back camera 4.12mm f/2.4",
+        "focalLength": null,
+        "aperture": 2.4,
+        "shutterSpeed": "1/15",
+        "iso": 400,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_8362": {
+      "file": "2018/04/IMG_8362.jpeg",
+      "type": "photo",
+      "location": "Richmond",
+      "folders": ["gallery", "project-design-precinct", "vehicle-signage"],
+      "bytes": 2446869,
+      "checksum": "d8be1f54832f983b5ca916a462a7dc3d896be152d63178ee690dfd5fae4e85f3",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-04-11T06:42:58.489Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/100",
+        "iso": 32,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_8498": {
+      "file": "2016/05/IMG_8498.jpeg",
+      "type": "photo",
+      "location": "Preston",
+      "folders": ["factory-signage", "gallery", "hand-painted-signage", "project-daytek"],
+      "bytes": 1982838,
+      "checksum": "dde5b460b93f7f212d9ef3e318b068d09cbe0f503aa0d412377638fada9e2acb",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2016-05-25T02:33:38.524Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/1883",
+        "iso": 32,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_8565": {
+      "file": "2014/08/IMG_8565.jpeg",
+      "type": "photo",
+      "location": "Kew",
+      "folders": ["gallery", "hand-painted-signage", "project-geppetto-s-italian"],
+      "bytes": 2800034,
+      "checksum": "896839d64145c9ddb3eaefac1696c766cae09f9a36e3668e7d1da59aadc23ccc",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2014-08-30T06:54:06.640Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 5",
+        "lensModel": "iPhone 5 back camera 4.12mm f/2.4",
+        "focalLength": null,
+        "aperture": 2.4,
+        "shutterSpeed": "1/20",
+        "iso": 320,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_8583": {
+      "file": "2020/08/IMG_8583.jpeg",
+      "type": "photo",
+      "location": "Bundoora",
+      "folders": ["3d-signage", "gallery", "project-ds-dental-specialists"],
+      "bytes": 3229726,
+      "checksum": "cc59a164cdef8f7f8e84800f6e74d99f1d604ddcca15c52237822939e92bc8be",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2020-08-31T04:57:12.700Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone XR",
+        "lensModel": "iPhone XR back camera 4.25mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/50",
+        "iso": 80,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_8629": {
+      "file": "2014/08/IMG_8629.jpeg",
+      "type": "photo",
+      "location": "Kew",
+      "folders": ["gallery", "hand-painted-signage", "project-geppetto-s-italian"],
+      "bytes": 1059071,
+      "checksum": "55d66ee2e52d5a493d2ae9a4d5d233409eb4ebb512c12a6f4628f330adaec577",
+      "width": 2432,
+      "height": 1824,
+      "exif": {
+        "capturedAt": "2014-08-30T06:58:59.182Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 5",
+        "lensModel": "iPhone 5 back camera 4.12mm f/2.4",
+        "focalLength": null,
+        "aperture": 2.4,
+        "shutterSpeed": "1/20",
+        "iso": 125,
+        "dimensions": {
+          "width": 2432,
+          "height": 1824
+        },
+        "gps": null
+      }
+    },
+    "IMG_8902": {
+      "file": "2016/07/IMG_8902.jpeg",
+      "type": "photo",
+      "location": "",
+      "folders": ["etch", "gallery", "project-mentone-smiles"],
+      "bytes": 1848177,
+      "checksum": "ed502287fbd590951422b6bd953296f727bcf94e4873ff097db0a743e1577ec3",
+      "width": 3264,
+      "height": 2448,
+      "exif": {
+        "capturedAt": "2016-07-18T04:27:28.726Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 6",
+        "lensModel": "iPhone 6 back camera 4.15mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/2639",
+        "iso": 32,
+        "dimensions": {
+          "width": 3264,
+          "height": 2448
+        },
+        "gps": null
+      }
+    },
+    "IMG_8956": {
+      "file": "2018/05/IMG_8956.jpeg",
+      "type": "photo",
+      "location": "Windsor",
+      "folders": ["gallery", "illuminated-signage", "project-rebel-blue"],
+      "bytes": 1122460,
+      "checksum": "357b6ad1e5e439b2abdc6af6745cc8279068c12fd9935c4c9f4c0d3c261092d0",
+      "width": 3008,
+      "height": 2256,
+      "exif": {
+        "capturedAt": "2018-05-08T02:38:21.446Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/17",
+        "iso": 50,
+        "dimensions": {
+          "width": 3008,
+          "height": 2256
+        },
+        "gps": null
+      }
+    },
+    "IMG_8986": {
+      "file": "dump/IMG_8986.jpeg",
+      "type": "photo",
+      "location": "Pakenham",
+      "folders": ["fascia-signage", "gallery", "project-studio-paws"],
+      "bytes": 148441,
+      "checksum": "10e6849bf789c8790f7a317c61dfe3066619a44d6ec3e6f05c2cedaf73b116fb",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_9033": {
+      "file": "2018/05/IMG_9033.jpeg",
+      "type": "photo",
+      "location": "Flemington",
+      "folders": ["3d-signage", "gallery", "project-newmarket-tavern"],
+      "bytes": 2642320,
+      "checksum": "91e26c42245696ee8a30a262b9d9cb279413e4f1298fc214c66ac82af328fdf2",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-05-09T01:23:30.229Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/5",
+        "iso": 80,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_9052": {
+      "file": "2018/05/IMG_9052.jpeg",
+      "type": "photo",
+      "location": "Windsor",
+      "folders": ["gallery", "neon", "project-rebel-blue"],
+      "bytes": 876533,
+      "checksum": "646f405cfd8eb781d352189a5f023087f6d24c9732e4f79a14f16271993cb587",
+      "width": 3008,
+      "height": 2256,
+      "exif": {
+        "capturedAt": "2018-05-09T03:33:09.927Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/100",
+        "iso": 32,
+        "dimensions": {
+          "width": 3008,
+          "height": 2256
+        },
+        "gps": null
+      }
+    },
+    "IMG_9071": {
+      "file": "2018/05/IMG_9071.jpeg",
+      "type": "photo",
+      "location": "Gardenvale",
+      "folders": ["gold-leaf", "gallery", "project-coffee-bird"],
+      "bytes": 1638508,
+      "checksum": "deae565121ef6089752c8600181c3d3df0748409f20a8b731b0396d464d252a9",
+      "width": 3008,
+      "height": 2256,
+      "exif": {
+        "capturedAt": "2018-05-09T04:26:30.859Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/33",
+        "iso": 32,
+        "dimensions": {
+          "width": 3008,
+          "height": 2256
+        },
+        "gps": null
+      }
+    },
+    "IMG_9075": {
+      "file": "2018/05/IMG_9075.jpeg",
+      "type": "photo",
+      "location": "Gardenvale",
+      "folders": ["gold-leaf", "gallery", "project-coffee-bird"],
+      "bytes": 1216364,
+      "checksum": "a9ff232b38af8e86980af9a586cf0f1ba515ea0a4c3ba34bec29ad2fb80763df",
+      "width": 3008,
+      "height": 2256,
+      "exif": {
+        "capturedAt": "2018-05-09T04:27:10.045Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/33",
+        "iso": 40,
+        "dimensions": {
+          "width": 3008,
+          "height": 2256
+        },
+        "gps": null
+      }
+    },
+    "IMG_9167": {
+      "file": "2018/05/IMG_9167.jpeg",
+      "type": "photo",
+      "location": "",
+      "folders": ["etch", "gallery", "project-dentists-of-alphington"],
+      "bytes": 2030063,
+      "checksum": "b18de528061f9f2eaf2630ede13ff1d2940619c51c5d11cef3b219ee2ce41e00",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-05-16T07:18:48.487Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/33",
+        "iso": 40,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_9296": {
+      "file": "2018/05/IMG_9296.jpeg",
+      "type": "photo",
+      "location": "Mordialloc",
+      "folders": ["a-frame-signage", "gallery", "project-sobo"],
+      "bytes": 2317458,
+      "checksum": "26e714c8b83c6b6152b1a59a9ec7825203973889a1276d9d664897795b76415a",
+      "width": 3024,
+      "height": 4032,
+      "exif": {
+        "capturedAt": "2018-05-25T10:50:10.355Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/7",
+        "iso": 100,
+        "dimensions": {
+          "width": 3024,
+          "height": 4032
+        },
+        "gps": null
+      }
+    },
+    "IMG_9370": {
+      "file": "dump/IMG_9370.jpeg",
+      "type": "photo",
+      "location": "Melbourne",
+      "folders": ["gallery", "neon", "project-platform-one"],
+      "bytes": 243135,
+      "checksum": "03d7378c067495d934dc2f715d2ba1ddac9dfc58e322df273c538e13c65b6307",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_9371": {
+      "file": "dump/IMG_9371.jpeg",
+      "type": "photo",
+      "location": "Melbourne",
+      "folders": ["gallery", "neon", "project-platform-one"],
+      "bytes": 274914,
+      "checksum": "e7619aee1c136866b3ad03677e94cb8b75a7999060e9712e9a25037e8e806e5e",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_9372": {
+      "file": "dump/IMG_9372.jpeg",
+      "type": "photo",
+      "location": "Melbourne",
+      "folders": ["gallery", "project-platform-one", "wall-graphics"],
+      "bytes": 202111,
+      "checksum": "5d69d57c9a8ddbfda7711af1d184ea43314f670df5f701d029fa9fa300d06b87",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_9374": {
+      "file": "dump/IMG_9374.jpeg",
+      "type": "photo",
+      "location": "Melbourne",
+      "folders": ["gallery", "neon", "project-platform-one"],
+      "bytes": 200150,
+      "checksum": "86936e346da1cdbc85d31db023e27361c11e2bb776a99eb5dd210679602dfbc1",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_9375": {
+      "file": "dump/IMG_9375.jpeg",
+      "type": "photo",
+      "location": "Melbourne",
+      "folders": ["gallery", "neon", "project-platform-one"],
+      "bytes": 272826,
+      "checksum": "c89ceecd7759af0243bd9308641d661f633f297248db41af8e2179a601ad70f8",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_9376": {
+      "file": "dump/IMG_9376.jpeg",
+      "type": "photo",
+      "location": "Melbourne",
+      "folders": ["gallery", "neon", "project-platform-one"],
+      "bytes": 138266,
+      "checksum": "0de8eb5e4141da162d17e1d11ca272cd51e4cb9c90df22732a20918c2d6c19ea",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_9377": {
+      "file": "dump/IMG_9377.jpeg",
+      "type": "photo",
+      "location": "Melbourne",
+      "folders": ["gallery", "neon", "project-platform-one"],
+      "bytes": 301818,
+      "checksum": "f668a9ca15ee952845b4d5a46e3ea3d03bbec57cdd567dd0e8cb9d063c2ab3b2",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_9378": {
+      "file": "dump/IMG_9378.jpeg",
+      "type": "photo",
+      "location": "Melbourne",
+      "folders": ["gallery", "neon", "project-platform-one"],
+      "bytes": 159827,
+      "checksum": "a9bf627f2a5596beec4082524fae0d0f42af5f2127bd96d68e1ef69948133e29",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_9381": {
+      "file": "dump/IMG_9381.jpeg",
+      "type": "photo",
+      "location": "Melbourne",
+      "folders": ["gallery", "neon", "project-platform-one"],
+      "bytes": 230843,
+      "checksum": "a996dedb98f1d0c9ac584e4d46384187429eff1a961dd6e7adbf3299aa8179f6",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_9458": {
+      "file": "dump/IMG_9458.jpeg",
+      "type": "photo",
+      "location": "Windsor",
+      "folders": ["gallery", "hand-painted-signage", "project-rocomamas"],
+      "bytes": 228067,
+      "checksum": "cc0d64481c1c8738812debc7d183a65749219900a2c354c4d48fa4a23d55ef19",
+      "width": 1920,
+      "height": 1440,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 1920,
+          "height": 1440
+        },
+        "gps": null
+      }
+    },
+    "IMG_9613": {
+      "file": "2018/06/IMG_9613.jpeg",
+      "type": "photo",
+      "location": "Windsor",
+      "folders": ["gallery", "hand-painted-signage", "project-rocomamas"],
+      "bytes": 1915446,
+      "checksum": "e7518c700c5cf86f98227a71f2ec5411a89bc7e08c81e798a940d6a7c8544033",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-06-06T06:53:47.633Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/17",
+        "iso": 80,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_9619": {
+      "file": "2018/06/IMG_9619.jpeg",
+      "type": "photo",
+      "location": "Windsor",
+      "folders": ["gallery", "neon", "project-rocomamas"],
+      "bytes": 2464965,
+      "checksum": "e31ae0fb276d8baf46cf4247fba95266110140928f542438f9c98304ebb7c995",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-06-06T06:56:10.546Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/100",
+        "iso": 32,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_9666": {
+      "file": "2018/06/IMG_9666.jpeg",
+      "type": "photo",
+      "location": "Windsor",
+      "folders": ["gallery", "hand-painted-signage", "project-rocomamas"],
+      "bytes": 1895162,
+      "checksum": "6910740e78c5d75626ced058b1b40d57f992d07bfa192a0d20cc9ab7687cd77b",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-06-07T15:31:12.894Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/11",
+        "iso": 100,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_9903": {
+      "file": "2018/06/IMG_9903.jpeg",
+      "type": "photo",
+      "location": "Cranbourne West",
+      "folders": ["gallery", "project-construct-homes", "vehicle-signage"],
+      "bytes": 1966107,
+      "checksum": "51025d74f4d5136b36b67b3d2f2abaff4373e5b75d8cd2110189236b5d6ff9c1",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-06-20T04:58:03.668Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/538",
+        "iso": 20,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "IMG_9917": {
+      "file": "2026/02/IMG_9917.jpeg",
+      "type": "photo",
+      "location": "Bannockburn",
+      "folders": ["gallery", "hand-painted-signage", "project-trailworx"],
+      "bytes": 3133524,
+      "checksum": "a95f4e5661191adeb7161efaf62b8a4a2092fe8abd85f1355b592a1f1237caa6",
+      "width": 2496,
+      "height": 1872,
+      "exif": {
+        "capturedAt": "2026-02-23T06:19:49.611Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 15 Pro Max",
+        "lensModel": "iPhone 15 Pro Max back triple camera 2.22mm f/2.2",
+        "focalLength": null,
+        "aperture": 2.2,
+        "shutterSpeed": "1/4926",
+        "iso": 50,
+        "dimensions": {
+          "width": 2496,
+          "height": 1872
+        },
+        "gps": null
+      }
+    },
+    "IMG_9958": {
+      "file": "2018/06/IMG_9958.jpeg",
+      "type": "photo",
+      "location": "Alphington",
+      "folders": ["3d-signage", "gallery", "project-dentists-of-alphington"],
+      "bytes": 1815731,
+      "checksum": "6add78b65bc6f6577dde43782f23d28c2924bb34a03df4b09612292bebd1dc8d",
+      "width": 4032,
+      "height": 3024,
+      "exif": {
+        "capturedAt": "2018-06-26T05:09:37.210Z",
+        "cameraMake": "Apple",
+        "cameraModel": "iPhone 7 Plus",
+        "lensModel": "iPhone 7 Plus back dual camera 3.99mm f/1.8",
+        "focalLength": null,
+        "aperture": 1.8,
+        "shutterSpeed": "1/172",
+        "iso": 20,
+        "dimensions": {
+          "width": 4032,
+          "height": 3024
+        },
+        "gps": null
+      }
+    },
+    "lambys-male-wall-template": {
+      "file": "dump/lambys-male-wall-template.jpeg",
+      "type": "photo",
+      "location": "Geelong",
+      "folders": ["gallery", "graphic-design", "project-lambys-tavern"],
+      "bytes": 1071363,
+      "checksum": "c3972ec390808d7c99cf0fcf47c8f5b2c5a265abf4c70261b6b05efff766d5bc",
+      "width": 2368,
+      "height": 1776,
+      "exif": {
+        "capturedAt": null,
+        "cameraMake": null,
+        "cameraModel": null,
+        "lensModel": null,
+        "focalLength": null,
+        "aperture": null,
+        "shutterSpeed": null,
+        "iso": null,
+        "dimensions": {
+          "width": 2368,
+          "height": 1776
+        },
+        "gps": null
+      }
+    },
+    "mazda-banner": {
+      "file": "videos/mazda-banner.mp4",
+      "type": "video",
+      "location": "",
+      "folders": ["banners"],
+      "bytes": 2270357,
+      "checksum": "527582c04ca85eddbaa203b844aac66b721f0feb8eb6e3a5c4acae8f63990a03",
+      "width": 1280,
+      "height": 720,
+      "durationSeconds": 16.2,
+      "poster": "videos/mazda-banner.jpeg"
+    },
+    "rebelblue": {
+      "file": "videos/rebelblue.mp4",
+      "type": "video",
+      "location": "Windsor",
+      "folders": ["3d-signage", "project-rebel-blue", "shopfront-building-signage"],
+      "bytes": 1929622,
+      "checksum": "3fb4f10f878c73244b9f518b754b5801ceb7849aaf6e3b3b5fbc95650201be66",
+      "width": 1280,
+      "height": 720,
+      "durationSeconds": 17.567,
+      "poster": "videos/rebelblue.jpeg"
+    },
+    "rocomamas": {
+      "file": "videos/rocomamas.mp4",
+      "type": "video",
+      "location": "Windsor",
+      "folders": ["project-rocomamas"],
+      "bytes": 4566106,
+      "checksum": "d6b1e3ef521a8e3339181c8c85866e181305787756aeffe8e6124c3b3194ea95",
+      "width": 1280,
+      "height": 720,
+      "durationSeconds": 24.767,
+      "poster": "videos/rocomamas.jpeg"
+    }
+  }
+}

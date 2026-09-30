@@ -1,0 +1,28 @@
+[tasks.dev]
+description = "dev server on :3000"
+run = "pnpm run dev"
+
+[tasks.build]
+description = "production Cloudflare Worker build"
+run = "pnpm run build"
+
+[tasks.preview]
+description = "run the production build in the local Workers runtime"
+run = "pnpm run preview"
+
+[tasks.deploy]
+description = "build and deploy the Worker"
+run = "pnpm run deploy"
+
+[tasks.cf-typegen]
+description = "regenerate Cloudflare runtime and binding types"
+run = "pnpm run cf-typegen"
+
+[tasks.lint]
+run = "pnpm run lint"
+
+[tasks.format]
+run = "pnpm run format"
+
+[tasks.typecheck]
+run = "pnpm run typecheck"

@@ -1,0 +1,138 @@
+---
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Renovate
+
+on:
+  schedule:
+    - cron: "40 */6 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - .renovaterc.json5
+      - .renovate/**.json5
+  workflow_dispatch:
+    inputs:
+      dryRun:
+        description: Dry Run
+        default: false
+        required: false
+        type: boolean
+      logLevel:
+        description: Log Level
+        type: choice
+        default: debug
+        options:
+          - debug
+          - info
+      repoCache:
+        description: Repository cache
+        type: choice
+        default: enabled
+        options:
+          - enabled
+          - disabled
+          - reset
+  issues:
+    types:
+      - edited
+  pull_request:
+    types:
+      - closed
+      - edited
+
+permissions: {}
+
+concurrency:
+  group: renovate
+  cancel-in-progress: false
+
+jobs:
+  renovate:
+    name: Renovate
+    if: >-
+      github.event_name == 'schedule' ||
+      github.event_name == 'push' ||
+      github.event_name == 'workflow_dispatch' ||
+      (
+        github.actor != 'not-hydaz[bot]' &&
+        (
+          (
+            github.event_name == 'issues' &&
+            contains(github.event.issue.title, 'Renovate Dashboard') &&
+            (
+              contains(github.event.issue.body, '- [x]') ||
+              contains(github.event.issue.body, 'approve-all-pending-prs') ||
+              contains(github.event.issue.body, 'create-all-rate-limited-prs') ||
+              contains(github.event.issue.body, 'rebase-all-open-prs')
+            )
+          ) ||
+          (
+            github.event_name == 'pull_request' &&
+            github.event.pull_request.user.login == 'not-hydaz[bot]' &&
+            (
+              github.event.action == 'closed' ||
+              contains(github.event.pull_request.body, '- [x]')
+            )
+          )
+        )
+      )
+    runs-on: ubuntu-26.04
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - name: Generate Token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        id: app-token
+        with:
+          client-id: ${{ secrets.BOT_CLIENT_ID }}
+          private-key: ${{ secrets.BOT_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ github.event.repository.name }}
+          permission-checks: write
+          permission-contents: write
+          permission-issues: write
+          permission-members: read
+          permission-pull-requests: write
+          permission-statuses: write
+          permission-vulnerability-alerts: read
+          permission-workflows: write
+
+      - name: Restore Renovate repository cache
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: /tmp/renovate/cache/renovate/repository
+          key: renovate-repository-cache-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: renovate-repository-cache-
+
+      - name: Align cache ownership for the Renovate container
+        run: |
+          sudo mkdir -p /tmp/renovate/cache/renovate/repository
+          # Renovate runs in its container as uid 12021; give it ownership so it
+          # can read and rewrite the restored cache.
+          sudo chown -R 12021:0 /tmp/renovate
+
+      - name: Renovate
+        uses: renovatebot/github-action@f3a31a786096ba6b40d0f0ffe11a494ef73bfa7c # v46.3.4
+        env:
+          LOG_LEVEL: ${{ inputs.logLevel || 'debug' }}
+          RENOVATE_DRY_RUN: ${{ inputs.dryRun == true }}
+          RENOVATE_AUTODISCOVER: true
+          RENOVATE_AUTODISCOVER_FILTER: ${{ github.repository }}
+          RENOVATE_INTERNAL_CHECKS_FILTER: strict
+          RENOVATE_PLATFORM: github
+          RENOVATE_PLATFORM_COMMIT: true
+          RENOVATE_CUSTOM_ENV_VARIABLES: '{"MISE_TRUSTED_CONFIG_PATHS":"/tmp/renovate/repos"}'
+          RENOVATE_ALLOWED_UNSAFE_EXECUTIONS: '["goGenerate", "mise"]'
+          RENOVATE_REPOSITORY_CACHE: ${{ inputs.repoCache || 'enabled' }}
+          RENOVATE_PRESET_CACHE_PERSISTENCE: "true"
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Save Renovate repository cache
+        if: always()
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: /tmp/renovate/cache/renovate/repository
+          key: renovate-repository-cache-${{ github.run_id }}-${{ github.run_attempt }}

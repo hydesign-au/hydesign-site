@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "base-nova",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/styles/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "lucide",
+  "rtl": false,
+  "menuColor": "default",
+  "menuAccent": "subtle",
+  "aliases": {
+    "components": "@hydesign/ui/components",
+    "utils": "@hydesign/ui/lib/utils",
+    "ui": "@hydesign/ui/components",
+    "lib": "@hydesign/ui/lib",
+    "hooks": "@hydesign/ui/hooks"
+  },
+  "registries": {
+    "@diceui": "https://diceui.com/r/{style}/{name}.json",
+    "@magicui": "https://magicui.design/r/{name}"
+  }
+}

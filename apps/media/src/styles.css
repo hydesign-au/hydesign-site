@@ -1,0 +1,3 @@
+@import "@hydesign/ui/globals.css";
+
+@source "./**/*.{ts,tsx}";

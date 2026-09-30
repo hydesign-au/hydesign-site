@@ -1,0 +1,10 @@
+{
+  "name": "hydesign-site",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "26.6.3",
+    "vite-plus": "0.3.3"
+  },
+  "packageManager": "pnpm@12.8.1"
+}

@@ -1,0 +1,26 @@
+[tasks.dev]
+description = "media manager on :4000 (library API + UI)"
+run = "pnpm run dev"
+
+[tasks.build]
+run = "pnpm run build"
+
+[tasks.serve]
+description = "serve the built app on :4000 (build first)"
+run = "pnpm run serve"
+
+[tasks.generate]
+description = "regenerate apps/web/src/content/media.gen.ts from media/library.json"
+run = "pnpm run generate"
+
+[tasks.test]
+run = "pnpm run test"
+
+[tasks.lint]
+run = "pnpm run lint"
+
+[tasks.format]
+run = "pnpm run format"
+
+[tasks.typecheck]
+run = "pnpm run typecheck"

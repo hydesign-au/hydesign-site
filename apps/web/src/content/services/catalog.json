@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "hand-painted-signage",
+    "title": "Hand-Painted Signage",
+    "navLabel": "Hand-Painted Signage"
+  },
+  {
+    "slug": "3d-signage",
+    "title": "3D Signage",
+    "navLabel": "3D Signage"
+  },
+  {
+    "slug": "illuminated-signage",
+    "title": "Illuminated Signage",
+    "navLabel": "Illuminated Signage"
+  },
+  {
+    "slug": "digital-printing",
+    "title": "Digital Printing",
+    "navLabel": "Digital Printing"
+  },
+  {
+    "slug": "stickers-decals",
+    "title": "Stickers & Decals",
+    "navLabel": "Stickers & Decals"
+  },
+  {
+    "slug": "window-signage",
+    "title": "Window Signage",
+    "navLabel": "Window Signage"
+  },
+  {
+    "slug": "wall-graphics",
+    "title": "Wall Graphics",
+    "navLabel": "Wall Graphics"
+  },
+  {
+    "slug": "vehicle-signage",
+    "title": "Vehicle Signage",
+    "navLabel": "Vehicle Signage"
+  },
+  {
+    "slug": "banners",
+    "title": "Banners",
+    "navLabel": "Banners"
+  },
+  {
+    "slug": "a-frame-signage",
+    "title": "A-Frame Signage",
+    "navLabel": "A-Frame Signage"
+  },
+  {
+    "slug": "shopfront-building-signage",
+    "title": "Shopfront & Building Signage",
+    "navLabel": "Shopfront & Building Signage"
+  },
+  {
+    "slug": "graphic-design",
+    "title": "Graphic Design",
+    "navLabel": "Graphic Design"
+  },
+  {
+    "slug": "factory-signage",
+    "title": "Factory & Industrial Signage",
+    "navLabel": "Factory & Industrial Signage"
+  }
+]
