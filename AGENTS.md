@@ -19,7 +19,7 @@ The site is a TanStack Start SSR application with code-owned business, service a
 - `apps/media` - local media manager on `:4000`. It edits `media/library.json` and regenerates web media data. It is not deployed. Its `src/layout` owns app chrome and `src/components` owns reusable tool UI; a single-screen tool does not need website-style pages or templates.
 - `packages/ui` - shared shadcn/Base UI source, support hooks and the neutral Tailwind theme foundation used by every app.
 - `media/` - canonical website photo and video sources plus `library.json`.
-- `apps/web/wrangler.jsonc` - Worker runtime, binding, cache and custom-domain configuration.
+- `apps/web/wrangler.toml` - Worker runtime, binding, cache and custom-domain configuration.
 
 ## Application boundaries
 
@@ -27,7 +27,7 @@ The deployed website is TanStack Start running in a Cloudflare Worker. Vite and 
 
 - TanStack Start owns page routing, loaders, server functions, raw HTTP routes, SSR and client hydration. Cloudflare owns the Worker runtime, static asset delivery and edge response cache. Extend their documented surfaces instead of adding a parallel server entry.
 - `vite.app.config.ts` composes development and build plugins, aliases and bundler settings.
-- `wrangler.jsonc` owns Cloudflare compatibility, bindings, response-cache enablement and the custom domain. Do not add account IDs or secrets to it.
+- `wrangler.toml` owns Cloudflare compatibility, bindings, response-cache enablement and the custom domain. Do not add account IDs or secrets to it.
 - Runtime integrations read bindings through `src/server/env.ts` inside `*.server.ts` modules. Use `VITE_*` or `import.meta.env` only for values intentionally embedded in browser bundles, never for secrets or deployed feature availability.
 - `*.server.ts` owns credentials, runtime configuration, validation and external service calls. `*.functions.ts` is the typed same-origin TanStack server-function boundary. TanStack server routes call the same server integration modules instead of reimplementing them.
 - Derive each optional capability once from its complete runtime configuration. Absent or incomplete configuration disables it plainly. Routes, navigation, sitemaps and UI consume the same resolved capability rather than reading environment variables independently.
@@ -77,7 +77,7 @@ Cloudflare Workers Builds owns preview builds and deployment from `main`. GitHub
 - Non-production deploy command: `npx wrangler preview`, which creates a Worker Preview per branch.
 - Production branch: `main`. Merging publishes through Workers Builds; do not run a manual production deploy as part of ordinary editing.
 - Use the branch/PR preview for deployed review. Verify the build and actual preview URL before presenting it as ready; configuration alone is not proof of a successful preview.
-- `apps/web/wrangler.jsonc` owns the `staging.hydesign.com.au` custom domain and the preview-only `previews.hydesign.com.au` domain, so Wrangler creates their DNS records and certificates during deployment. Branch previews are served at `<branch>.previews.hydesign.com.au`.
+- `apps/web/wrangler.toml` owns the `staging.hydesign.com.au` custom domain and the preview-only `previews.hydesign.com.au` domain, so Wrangler creates their DNS records and certificates during deployment. Branch previews are served at `<branch>.previews.hydesign.com.au`.
 - Build-time variables and secrets are normally empty. Runtime variables and secrets are configured on the Worker, not in Workers Builds.
 - Previews do not inherit production settings. Top-level settings are production; the `previews` block holds preview values, including Turnstile test keys and the mock.shop storefront. Preview secrets go in the Worker's Previews Base settings.
 
