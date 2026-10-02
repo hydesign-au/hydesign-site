@@ -1,4 +1,3 @@
-import { SidebarProvider } from "@hydesign/ui/components/sidebar";
 import { isNotFound, useRouterState } from "@tanstack/react-router";
 import { type ReactNode, useEffect } from "react";
 
@@ -34,21 +33,19 @@ function PublicLayout({ children, shopEnabled }: PublicLayoutProps) {
   }, []);
 
   return (
-    <SidebarProvider defaultOpen={false}>
-      <div className="min-h-screen min-w-0 flex-1 overflow-x-clip bg-canvas text-foreground">
-        <a
-          href="#content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-card focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:shadow-sm"
-        >
-          Skip to content
-        </a>
-        <SiteHeader shopEnabled={shopEnabled} />
-        <main id="content">{children}</main>
-        {showSiteOutro ? <SiteOutro /> : null}
-        <SiteFooter separated={!showSiteOutro} shopEnabled={shopEnabled} />
-        {shopEnabled ? <FloatingCart /> : null}
-      </div>
-    </SidebarProvider>
+    <div className="min-h-screen min-w-0 flex-1 overflow-x-clip bg-canvas text-foreground">
+      <a
+        href="#content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-card focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:shadow-sm"
+      >
+        Skip to content
+      </a>
+      <SiteHeader shopEnabled={shopEnabled} />
+      <main id="content">{children}</main>
+      {showSiteOutro ? <SiteOutro /> : null}
+      <SiteFooter separated={!showSiteOutro} shopEnabled={shopEnabled} />
+      {shopEnabled ? <FloatingCart /> : null}
+    </div>
   );
 }
 

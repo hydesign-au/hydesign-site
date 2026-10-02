@@ -67,7 +67,7 @@ function InstagramPostLink({ post, username }: { post: InstagramPost; username: 
 
   return (
     <a
-      className="group relative aspect-[4/5] overflow-hidden rounded-xl bg-muted shadow-surface ring-1 ring-glass-border inset-shadow-glass focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+      className="group relative aspect-[4/5] overflow-hidden rounded-panel bg-muted shadow-surface ring-1 ring-glass-border inset-shadow-glass focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
       href={post.permalink}
       rel="noreferrer"
       target="_blank"

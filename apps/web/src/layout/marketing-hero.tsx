@@ -11,6 +11,8 @@ import { siteSettings, type ImageKey } from "@/content";
 import type { SiteVideo } from "@/content/media.gen";
 import { useMediaParallax } from "@/hooks/use-media-parallax";
 
+import styles from "./marketing-hero.module.css";
+
 type HeroActionBase = {
   label: string;
   kind?: "primary" | "secondary";
@@ -95,42 +97,50 @@ function PhotoHeroFrame({
 
   return (
     <section
+      data-photo-hero
       className={cn(
         // Photos keep the dark theme in both modes.
-        "dark relative isolate overflow-hidden bg-photo-scrim text-white",
+        "dark relative isolate text-white",
+        isHomeHero && styles.home,
         !isHomeHero && "min-h-[min(38rem,100svh)] md:min-h-[min(42rem,100svh)]",
         fullScreen && "min-h-svh md:min-h-svh",
       )}
     >
-      <AnimatePresence mode="popLayout">
-        {media ? (
-          <motion.div
-            key={mediaKey ?? "hero-media"}
-            initial={reduceMotion ? false : { opacity: 0, scale: 1.005, x: 12 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            exit={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 1.005, x: -12 }}
-            transition={{ duration: reduceMotion ? 0 : 0.36, ease: "easeOut" }}
-            className="absolute inset-0 overflow-hidden"
-          >
-            <div
-              ref={parallaxRef}
-              className="absolute inset-x-0 -top-[15%] h-[140%] opacity-80 will-change-transform"
+      {/* Phones and tablets keep the photo full width. On desktop it is a panel set in from the
+          page edge, so it ends in a rounded edge rather than a hard line. Only the panel is inset:
+          the copy keeps the page's content column. */}
+      <div className="absolute inset-0 overflow-hidden bg-photo-scrim lg:inset-3 lg:rounded-panel">
+        <AnimatePresence mode="popLayout">
+          {media ? (
+            <motion.div
+              key={mediaKey ?? "hero-media"}
+              initial={reduceMotion ? false : { opacity: 0, scale: 1.005, x: 12 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              exit={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 1.005, x: -12 }}
+              transition={{ duration: reduceMotion ? 0 : 0.36, ease: "easeOut" }}
+              className="absolute inset-0 overflow-hidden"
             >
-              {media}
-            </div>
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
-      {/* The copy sits left and low, so the scrim darkens that corner and leaves the rest of the
-          photo clear. On phones the copy spans the full width, so the right side keeps some scrim. */}
-      <div className="absolute inset-0">
+              <div
+                ref={parallaxRef}
+                className="absolute inset-x-0 -top-[15%] h-[140%] opacity-80 will-change-transform"
+              >
+                {media}
+              </div>
+            </motion.div>
+          ) : null}
+        </AnimatePresence>
+        {/* The copy sits left and low, so the scrim darkens that corner and leaves the rest of the
+            photo clear. On phones the copy spans the full width, so the right side keeps some
+            scrim. The top band keeps the header readable before it picks up its glass. */}
         <div className="absolute inset-0 bg-gradient-to-r from-photo-scrim/80 via-photo-scrim/55 via-42% to-photo-scrim/30 to-80% md:to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-photo-scrim/55 to-transparent to-50%" />
+        <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-photo-scrim/60 to-transparent" />
       </div>
 
       <div
         className={cn(
-          "relative z-10 mx-auto max-w-7xl px-4 md:px-8",
+          "relative z-10 site-container",
+          styles.content,
           isHomeHero
             ? "grid min-h-svh pb-24 pt-28 lg:items-end lg:pb-20"
             : "flex min-h-[min(38rem,100svh)] flex-col justify-center pb-12 pt-24 md:min-h-[min(42rem,100svh)] md:pt-28",
@@ -146,6 +156,7 @@ function PhotoHeroFrame({
           <h1
             className={cn(
               "text-shadow-photo font-black leading-none",
+              styles.title,
               isHomeHero ? "text-5xl md:text-7xl lg:text-8xl" : "text-4xl md:text-6xl lg:text-7xl",
             )}
           >
@@ -155,6 +166,7 @@ function PhotoHeroFrame({
             <div
               className={cn(
                 "text-shadow-photo text-white/80",
+                styles.description,
                 "mt-6 grid max-w-3xl gap-4 text-lg leading-8 md:text-xl md:leading-9",
               )}
             >
@@ -173,7 +185,7 @@ function PhotoHeroFrame({
           onClick={() => scrollToTarget(scrollTargetId)}
           className={cn(
             "border-white/25 bg-black/30 text-white hover:bg-black/45 hover:text-white",
-            "absolute bottom-5 left-1/2 z-10 flex size-11 -translate-x-1/2 items-center justify-center rounded-full border shadow-glass inset-shadow-glass backdrop-blur-glass transition-colors",
+            "absolute bottom-5 left-1/2 z-10 flex size-11 lg:bottom-8 -translate-x-1/2 items-center justify-center rounded-full border shadow-glass inset-shadow-glass backdrop-blur-glass transition-colors",
           )}
         >
           <ArrowDownIcon className="size-5" />
@@ -215,7 +227,7 @@ function HeroActions({ actions, size }: { actions?: HeroAction[]; size: "default
   if (!actions?.length) return null;
 
   return (
-    <div className="mt-8 flex flex-wrap gap-3">
+    <div className={cn("mt-8 flex flex-wrap gap-3", styles.actions)}>
       {actions.map((action) => {
         const variant = action.kind === "secondary" ? "outline" : "default";
         const content = (
