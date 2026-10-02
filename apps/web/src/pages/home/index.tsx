@@ -112,7 +112,7 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
             <Picture
               image="IMG_6780"
               alt="An old photo of a signwriter working above a row of shopfronts."
-              className="w-full rounded-lg shadow-surface ring-1 ring-glass-border inset-shadow-glass"
+              className="w-full rounded-panel shadow-surface ring-1 ring-glass-border inset-shadow-glass"
             />
           </div>
         </MotionReveal>

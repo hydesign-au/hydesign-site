@@ -32,7 +32,7 @@ function PhotoMosaic({ photos, className }: PhotoMosaicProps) {
         <div
           key={photo}
           className={cn(
-            "overflow-hidden rounded-xl bg-muted shadow-surface ring-1 ring-glass-border inset-shadow-glass",
+            "overflow-hidden rounded-panel bg-muted shadow-surface ring-1 ring-glass-border inset-shadow-glass",
             layout.tiles[index],
           )}
         >

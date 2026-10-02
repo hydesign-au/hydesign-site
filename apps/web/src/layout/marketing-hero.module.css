@@ -1,0 +1,22 @@
+/* A short viewport reduces typography and spacing, never the navigation hit targets.
+   The hero can still grow beyond the viewport when the content needs more room. */
+@media (max-height: 44rem) {
+  .home .content {
+    padding-top: 6rem;
+    padding-bottom: 5.5rem;
+  }
+
+  .home .title {
+    font-size: clamp(2.25rem, 7svh, 3rem);
+  }
+
+  .home .description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.625;
+  }
+
+  .home .actions {
+    margin-top: 1.25rem;
+  }
+}

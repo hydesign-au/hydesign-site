@@ -8,14 +8,16 @@ import {
   NavigationMenuTrigger,
 } from "@hydesign/ui/components/navigation-menu";
 import { cn } from "@hydesign/ui/lib/utils";
-import { Link, useRouterState } from "@tanstack/react-router";
+import { Link, useRouter, useRouterState } from "@tanstack/react-router";
 import { PhoneIcon } from "lucide-react";
+import { useLayoutEffect, useRef } from "react";
 
 import { Logo } from "@/components/logo";
 import { getNavItems, serviceNavItems, siteSettings } from "@/content";
-import { MobileSidebarNav } from "@/layout/mobile-nav";
-import { MobileNavTrigger } from "@/layout/mobile-nav-trigger";
+import { MobileNav } from "@/layout/mobile-nav";
 import { isActivePath } from "@/lib/active-path";
+
+import styles from "./site-header.module.css";
 
 type PathnameRouterState = {
   location: {
@@ -23,26 +25,34 @@ type PathnameRouterState = {
   };
 };
 
-const standardNavClassName =
-  "text-muted-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground data-[active]:bg-accent data-[active]:text-accent-foreground data-popup-open:bg-accent data-popup-open:text-accent-foreground";
+const standardNavClassName = styles.navItem;
 
 function SiteHeader({ shopEnabled }: { shopEnabled: boolean }) {
   const pathname = useRouterState({
     select: (state: PathnameRouterState) => state.location.pathname,
   });
   const navItems = getNavItems(shopEnabled);
+  const headerRef = useHeaderSurface();
+
   return (
-    <header className="fixed inset-x-3 top-3 z-40 mx-auto max-w-[90rem] rounded-xl border border-glass-border bg-glass text-glass-foreground shadow-glass inset-shadow-glass backdrop-blur-xl backdrop-saturate-150">
-      <div className="flex h-15 items-center justify-between gap-4 px-5 min-[42rem]:grid min-[42rem]:grid-cols-[1fr_auto_1fr]">
-        <Link to="/" className="flex items-center" aria-label="HyDesign home">
+    <header id="site-header" ref={headerRef} className={cn("fixed z-40", styles.header)}>
+      <span
+        aria-hidden="true"
+        className={cn(
+          "pointer-events-none absolute inset-0 rounded-[inherit] border border-glass-border bg-glass shadow-glass inset-shadow-glass backdrop-blur-xl backdrop-saturate-150 lg:bg-glass/85 lg:shadow-sm lg:backdrop-blur-lg",
+          styles.surface,
+        )}
+      />
+      <div
+        data-header-content
+        className="relative flex h-15 items-center p-[var(--header-padding)] lg:pr-3 justify-between gap-4 text-glass-foreground lg:grid lg:grid-cols-[1fr_auto_1fr]"
+      >
+        <Link to="/" className="flex h-11 w-fit items-center px-2" aria-label="HyDesign home">
           <Logo className="h-7 w-auto shrink-0 translate-y-[0.45px]" />
         </Link>
 
-        <NavigationMenu
-          align="center"
-          className="hidden min-[42rem]:flex min-[42rem]:justify-self-center"
-        >
-          <NavigationMenuList>
+        <NavigationMenu align="center" className="hidden lg:flex lg:justify-self-center">
+          <NavigationMenuList className="gap-1">
             {navItems.map((item) => {
               const Icon = item.icon;
 
@@ -52,11 +62,19 @@ function SiteHeader({ shopEnabled }: { shopEnabled: boolean }) {
                     <>
                       <NavigationMenuTrigger
                         data-active={isActivePath(pathname, item.href) || undefined}
-                        className={cn("bg-transparent font-semibold", standardNavClassName)}
+                        className={cn(
+                          "h-9 bg-transparent px-3 font-semibold",
+                          standardNavClassName,
+                        )}
                       >
                         {item.label}
                       </NavigationMenuTrigger>
-                      <NavigationMenuContent className="w-[min(calc(100vw-2rem),40rem)] overflow-hidden rounded-lg bg-popover p-0 text-popover-foreground">
+                      <NavigationMenuContent
+                        className={cn(
+                          styles.servicesMenu,
+                          "w-[min(calc(100vw-2rem),40rem)] overflow-hidden rounded-lg p-0 text-glass-foreground",
+                        )}
+                      >
                         <ul className="grid gap-1 p-4 md:grid-cols-2">
                           <DesktopServiceNavItem
                             active={pathname === item.href}
@@ -84,7 +102,10 @@ function SiteHeader({ shopEnabled }: { shopEnabled: boolean }) {
                         )
                       }
                       active={isActivePath(pathname, item.href)}
-                      className={cn("px-3 py-2 font-semibold", standardNavClassName)}
+                      className={cn(
+                        "h-9 justify-center px-3 py-2 font-semibold",
+                        standardNavClassName,
+                      )}
                     >
                       {Icon ? <Icon data-icon="inline-start" /> : null}
                       {item.label}
@@ -103,20 +124,56 @@ function SiteHeader({ shopEnabled }: { shopEnabled: boolean }) {
             aria-label={`Call ${siteSettings.phone}`}
             className={cn(
               buttonVariants({ variant: "outline", size: "lg" }),
-              "size-9 px-0 lg:w-auto lg:px-2.5",
+              styles.call,
+              "size-11 px-0 lg:h-9 lg:w-auto lg:px-3",
             )}
           >
             <PhoneIcon />
             <span className="hidden lg:inline">{siteSettings.phone}</span>
           </a>
-          <div className="flex items-center min-[42rem]:hidden">
-            <MobileNavTrigger />
-            <MobileSidebarNav items={navItems} pathname={pathname} />
+          <div className="flex items-center lg:hidden">
+            <MobileNav items={navItems} pathname={pathname} />
           </div>
         </div>
       </div>
     </header>
   );
+}
+
+function useHeaderSurface() {
+  const router = useRouter();
+  const ref = useRef<HTMLElement>(null);
+
+  useLayoutEffect(() => {
+    const header = ref.current;
+    if (!header) return undefined;
+    let frame = 0;
+    const update = () => header.toggleAttribute("data-scrolled", window.scrollY > 80);
+    const pauseMotion = () => {
+      cancelAnimationFrame(frame);
+      header.removeAttribute("data-motion-ready");
+    };
+    const settle = () => {
+      pauseMotion();
+      update();
+      // Paint the restored route at its final geometry before allowing scroll motion again.
+      frame = requestAnimationFrame(() => {
+        frame = requestAnimationFrame(() => header.setAttribute("data-motion-ready", ""));
+      });
+    };
+    settle();
+    window.addEventListener("scroll", update, { passive: true });
+    const unsubscribeStart = router.subscribe("onBeforeNavigate", pauseMotion);
+    const unsubscribeRendered = router.subscribe("onRendered", settle);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", update);
+      unsubscribeStart();
+      unsubscribeRendered();
+    };
+  }, [router]);
+
+  return ref;
 }
 
 function DesktopServiceNavItem({
@@ -133,7 +190,7 @@ function DesktopServiceNavItem({
       <NavigationMenuLink
         render={<Link to={href} />}
         active={active}
-        className="w-fit px-2 py-1 text-sm font-medium leading-6 text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground data-active:bg-accent data-active:text-accent-foreground"
+        className="w-fit px-2 py-1 text-sm font-medium leading-6 text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground data-active:bg-primary/20 data-active:text-primary-ink"
       >
         {title}
       </NavigationMenuLink>
