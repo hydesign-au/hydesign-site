@@ -67,15 +67,13 @@ function SiteFooter({ separated = false, shopEnabled }: SiteFooterProps) {
           </div>
         </div>
 
-        <FooterLinks title="Pages" links={pageLinks}>
-          {shopEnabled ? (
-            <Link className="hover:text-primary-ink" to="/shop">
-              Shop
-            </Link>
-          ) : null}
-        </FooterLinks>
+        <FooterLinks
+          title="Pages"
+          links={shopEnabled ? [...pageLinks, { href: "/shop", label: "Shop" }] : pageLinks}
+          singleColumnOnDesktop
+        />
 
-        <FooterLinks title="Services" links={serviceNavItems} splitOnDesktop />
+        <FooterLinks title="Services" links={serviceNavItems} />
 
         <div>
           <h2 className="text-sm font-bold">Get in touch</h2>
@@ -105,35 +103,33 @@ function SiteFooter({ separated = false, shopEnabled }: SiteFooterProps) {
 }
 
 type FooterLinksProps = {
-  children?: React.ReactNode;
   links: { href: string; label: string }[];
-  splitOnDesktop?: boolean;
+  singleColumnOnDesktop?: boolean;
   title: string;
 };
 
-function FooterLinks({ children, links, splitOnDesktop = false, title }: FooterLinksProps) {
+function FooterLinks({ links, singleColumnOnDesktop = false, title }: FooterLinksProps) {
+  const midpoint = Math.ceil(links.length / 2);
+  const columns = [links.slice(0, midpoint), links.slice(midpoint)];
+
   return (
     <div>
       <h2 className="text-sm font-bold">{title}</h2>
       <div
         className={cn(
-          "mt-4 grid gap-2 text-sm text-muted-foreground",
-          splitOnDesktop && "md:block md:columns-2 md:gap-x-2 lg:gap-x-4",
+          "mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-muted-foreground",
+          singleColumnOnDesktop && "md:grid-cols-1",
         )}
       >
-        {links.map((item) => (
-          <Link
-            key={item.href}
-            className={cn(
-              "hover:text-primary-ink",
-              splitOnDesktop && "md:mb-1.5 md:block md:break-inside-avoid md:last:mb-0 lg:mb-2",
-            )}
-            to={item.href}
-          >
-            {item.label}
-          </Link>
+        {columns.map((column, index) => (
+          <div key={index} className="grid content-start gap-2">
+            {column.map((item) => (
+              <Link key={item.href} className="hover:text-primary-ink" to={item.href}>
+                {item.label}
+              </Link>
+            ))}
+          </div>
         ))}
-        {children}
       </div>
     </div>
   );
