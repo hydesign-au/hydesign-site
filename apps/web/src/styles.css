@@ -84,6 +84,7 @@
 }
 
 @theme inline {
+  --radius-panel: var(--site-panel-radius);
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Newsreader", Georgia, serif;
   --font-cursive: "Caveat", cursive;
@@ -106,6 +107,8 @@
 }
 
 :root {
+  /* Shared outer corners for site panels and photography. */
+  --site-panel-radius: 1rem;
   /* The page is cream paper. Controls such as outline buttons fill with the lighter background so they stand off it. */
   --canvas: oklch(0.972 0.016 80);
   --background: oklch(0.99 0.008 82);
@@ -272,4 +275,23 @@
   .group:is(:hover, :focus-within) .motion-arrow {
     transform: none;
   }
+}
+
+/* Shared content edges: photography frames the column, navigation wraps around it. */
+:root {
+  --site-gutter: 1.5rem;
+}
+@media (min-width: 48rem) {
+  :root {
+    --site-gutter: 2rem;
+  }
+}
+@media (min-width: 64rem) {
+  :root {
+    --site-gutter: 3rem;
+  }
+}
+@utility site-container {
+  width: min(calc(100% - var(--site-gutter) * 2), 80rem);
+  margin-inline: auto;
 }

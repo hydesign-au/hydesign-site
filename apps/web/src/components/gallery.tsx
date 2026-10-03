@@ -81,7 +81,7 @@ function Gallery({ images: keys, orientation, pageSize = 8, className }: Gallery
               type="button"
               onClick={() => openPhoto(start + index)}
               className={cn(
-                "group block w-full cursor-pointer overflow-hidden rounded-lg bg-muted shadow-surface ring-1 ring-glass-border inset-shadow-glass focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
+                "group block w-full cursor-pointer overflow-hidden rounded-panel bg-muted shadow-surface ring-1 ring-glass-border inset-shadow-glass focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
                 orientationClasses[orientation],
               )}
             >

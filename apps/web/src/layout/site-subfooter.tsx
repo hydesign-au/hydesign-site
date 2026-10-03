@@ -8,7 +8,7 @@ function SiteSubfooter({ reserveCartCorner = false }: { reserveCartCorner?: bool
   return (
     <div id="site-subfooter">
       <Separator />
-      <div className="mx-auto grid max-w-7xl gap-3 px-5 py-5 text-center text-sm text-muted-foreground md:grid-cols-3 md:items-center md:px-8 md:text-left">
+      <div className="site-container grid gap-3 py-5 text-center text-sm text-muted-foreground md:grid-cols-3 md:items-center md:text-left">
         <span>© 2026 {siteSettings.legalName}</span>
         <span className="md:text-center">ABN {siteSettings.abn}</span>
         <Link

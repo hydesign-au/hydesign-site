@@ -28,7 +28,7 @@ function ProductCard({ product }: ProductCardProps) {
   }
 
   return (
-    <Card className="group relative aspect-4/3 gap-0 overflow-hidden py-0 ring-white/15">
+    <Card className="rounded-(--site-panel-radius) group relative aspect-4/3 gap-0 overflow-hidden py-0 ring-white/15">
       <Link
         to="/shop/$handle"
         params={{ handle: product.handle }}

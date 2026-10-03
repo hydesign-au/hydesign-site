@@ -16,13 +16,12 @@ function PageSection({ children, className, compact, id, tone = "plain" }: PageS
     <section
       id={id}
       className={cn(
-        "px-4 md:px-8",
         compact ? "py-10 md:py-12" : "py-12 md:py-16",
         tone === "muted" && "bg-muted",
         className,
       )}
     >
-      <div className="mx-auto max-w-7xl">{children}</div>
+      <div className="site-container">{children}</div>
     </section>
   );
 }

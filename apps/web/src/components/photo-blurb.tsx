@@ -27,7 +27,7 @@ function PhotoBlurb({
 }: PhotoBlurbProps) {
   const Heading = headingLevel;
   return (
-    <Card className="group aspect-[4/3] gap-0 overflow-hidden bg-photo-scrim py-0 ring-white/15">
+    <Card className="rounded-(--site-panel-radius) group aspect-[4/3] gap-0 overflow-hidden bg-photo-scrim py-0 ring-white/15">
       <Link to={href} className="relative block size-full">
         <div className="size-full overflow-hidden">
           <Picture
