@@ -14,16 +14,11 @@ type PublicLayoutProps = {
 function PublicLayout({ children, shopEnabled }: PublicLayoutProps) {
   const showSiteOutro = useRouterState({
     select: (state) => {
-      const leafMatch = state.matches.at(-1);
       const hasNotFoundMatch = state.matches.some(
         (match) => match.status === "notFound" || isNotFound(match.error),
       );
 
-      return (
-        !hasNotFoundMatch &&
-        leafMatch?.pathname === state.location.pathname &&
-        shouldShowSiteOutro(state.location.pathname)
-      );
+      return !hasNotFoundMatch && shouldShowSiteOutro(state.location.pathname);
     },
   });
 

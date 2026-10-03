@@ -20,13 +20,7 @@ function shouldShowSiteOutro(pathname: string) {
 
 function SiteOutro() {
   return (
-    // The photo panel straddles the end of the page and the start of the footer, so the two
-    // creams meet behind it instead of along a separate line.
-    <section
-      id="site-outro"
-      aria-labelledby="site-outro-title"
-      className="bg-gradient-to-b from-background from-50% to-muted to-50%"
-    >
+    <section id="site-outro" aria-labelledby="site-outro-title" className="bg-muted lg:pt-16">
       <div className="dark relative text-photo-foreground">
         {/* Like the hero, the photo runs full width on phones and tablets and is an inset panel on
            desktop. Only the photo layers are clipped to it, so the phone can hang below. */}
