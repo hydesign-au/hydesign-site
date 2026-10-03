@@ -3,31 +3,13 @@ import { NoiseTexture } from "@hydesign/ui/components/noise-texture";
 import { cn } from "@hydesign/ui/lib/utils";
 import { Link } from "@tanstack/react-router";
 import { ArrowRightIcon, PhoneIcon } from "lucide-react";
-import type { CSSProperties } from "react";
 
 import { MotionReveal } from "@/components/motion-reveal";
-import { Neon } from "@/components/neon";
+import { NeonPhone } from "@/components/neon/neon-phone";
 import { Picture } from "@/components/picture";
-import { VintagePhone } from "@/components/vintage-phone";
 import { siteSettings } from "@/content";
 
 const routesWithoutSiteOutro = new Set(["/cart", "/contact", "/shop", "/terms-of-trade"]);
-
-const phoneNeonStyle: CSSProperties & {
-  "--neon-medium-blur": string;
-  "--neon-wide-blur": string;
-  "--neon-ambient-blur": string;
-  "--neon-ambient-inset": string;
-  "--neon-ambient-opacity": string;
-  "--neon-brightness": string;
-} = {
-  "--neon-medium-blur": "12px",
-  "--neon-wide-blur": "36px",
-  "--neon-ambient-blur": "64px",
-  "--neon-ambient-inset": "-4.5rem",
-  "--neon-ambient-opacity": "0.56",
-  "--neon-brightness": "1.6",
-};
 
 function shouldShowSiteOutro(pathname: string) {
   const normalisedPathname = pathname.length > 1 ? pathname.replace(/\/$/, "") : pathname;
@@ -65,8 +47,10 @@ function SiteOutro() {
           />
         </div>
 
-        <div className="relative z-30 mx-auto grid min-h-[22rem] max-w-7xl items-center gap-8 px-5 py-14 md:grid-cols-[minmax(0,1fr)_18rem] md:px-8 lg:grid-cols-[minmax(0,1fr)_24rem] lg:py-16 xl:grid-cols-[minmax(0,1fr)_28rem]">
-          <MotionReveal className="relative z-10 max-w-4xl">
+        {/* On phones the copy leaves room below for the phone. From tablets up the copy keeps to the
+            left and the phone takes the right. */}
+        <div className="relative z-30 site-container flex flex-col justify-center pt-14 pb-40 md:min-h-[clamp(22rem,34vw,26.25rem)] md:py-16">
+          <MotionReveal className="relative z-10 max-w-4xl md:max-w-[min(34rem,44%)]">
             <p className="font-cursive text-2xl text-primary text-shadow-photo md:text-3xl">
               Anything to do with signage?
             </p>
@@ -97,25 +81,13 @@ function SiteOutro() {
               </Link>
             </div>
           </MotionReveal>
-
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -right-4 -bottom-10 w-56 sm:-right-2 sm:w-64 md:relative md:right-auto md:bottom-auto md:w-auto md:self-end"
-          >
-            <Neon
-              color="oklch(0.72 0.29 342)"
-              intensity="strong"
-              spread="wide"
-              once={false}
-              amount={0.6}
-              delay={140}
-              style={phoneNeonStyle}
-              className="block rotate-[9deg] md:-mb-24 lg:-mb-28"
-            >
-              <VintagePhone className="h-auto w-full" />
-            </Neon>
-          </div>
         </div>
+
+        {/* The phone tilts across the right of the panel and runs just past its top and bottom. It
+            stops growing at about half the page width when the copy wraps onto more lines, and on
+            wide screens it stays near the copy instead of the page edge. On phones it sits under
+            the buttons and hangs off the bottom. */}
+        <NeonPhone className="pointer-events-none absolute -right-[6%] -bottom-10 z-30 w-[min(62vw,18.75rem)] -rotate-9 md:top-1/2 md:right-[max(-3%,calc(50%-48rem))] md:bottom-auto md:h-[min(126%,calc(55vw/1.5))] md:w-auto md:-translate-y-1/2 md:-rotate-11" />
       </div>
     </section>
   );

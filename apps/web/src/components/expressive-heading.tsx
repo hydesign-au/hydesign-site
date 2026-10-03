@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "motion/react";
 
-import { Neon } from "@/components/neon";
+import { NeonText } from "@/components/neon/neon-text";
 import type { TitleTreatment } from "@/content/services/types";
 
 type ExpressiveHeadingProps = {
@@ -107,11 +107,7 @@ function BrushAccent({ children }: { children: string }) {
 }
 
 function NeonAccent({ children }: { children: string }) {
-  return (
-    <Neon color="var(--primary)" trigger="mount">
-      {children}
-    </Neon>
-  );
+  return <NeonText color="var(--primary)">{children}</NeonText>;
 }
 
 export { ExpressiveHeading };

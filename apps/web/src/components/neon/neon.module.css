@@ -1,0 +1,178 @@
+/* The phone is a steady sign with an occasional handset flicker. Text has its own startup.
+   Reduced motion keeps both treatments lit and still. */
+
+.phone,
+.text {
+  --neon-core: color-mix(in oklab, var(--neon-color) 30%, white);
+  --neon-glass: color-mix(
+    in oklab,
+    color-mix(in oklab, var(--neon-color) 20%, var(--photo-foreground)) 34%,
+    transparent
+  );
+}
+
+.phone {
+  --neon-color: oklch(0.72 0.29 342);
+
+  aspect-ratio: 3 / 2;
+}
+
+.phone svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.glass {
+  stroke: var(--neon-glass);
+}
+
+/* Blurring the thin tubes alone spreads their light too thin to see, so the glow comes from a
+   thick copy under them. */
+.bloom {
+  filter: blur(18px);
+  opacity: 0.45;
+}
+
+.lit {
+  filter: drop-shadow(0 0 3px var(--neon-color)) drop-shadow(0 0 12px var(--neon-color));
+}
+
+.tube {
+  stroke: var(--neon-color);
+}
+
+.core {
+  stroke: var(--neon-core);
+}
+
+/* Light from the tubes falling on the wall behind. */
+.spill {
+  position: absolute;
+  inset: 0 4%;
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in oklab, var(--neon-color) 25%, transparent),
+    transparent
+  );
+  filter: blur(40px);
+}
+
+/* The title. Each word is a tube, and the weak letter is a short tube of its own. The tightest
+   shadows give the letters their coloured edge; a text stroke would also trace the overlapping
+   outlines inside each letter. */
+
+.text {
+  --neon-glow:
+    0 0 0.01em var(--neon-color), 0 0 0.04em var(--neon-color), 0 0 0.1em var(--neon-color),
+    0 0 0.2em var(--neon-color), 0 0 0.35em var(--neon-color), 0 0 0.55em var(--neon-color),
+    0 0 0.9em color-mix(in oklab, var(--neon-color) 80%, transparent),
+    0 0 1.4em color-mix(in oklab, var(--neon-color) 60%, transparent),
+    0 0 2.2em color-mix(in oklab, var(--neon-color) 40%, transparent);
+}
+
+.word {
+  color: var(--neon-core);
+  text-shadow: var(--neon-glow);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .phone [data-weak] {
+    animation: falter 9s steps(1, end) 3s infinite;
+  }
+
+  .word {
+    animation: text-stutter 0.6s steps(1, end) var(--neon-delay, 0ms) both;
+  }
+
+  .word[data-ignite="catch"] {
+    animation-name: text-catch;
+    animation-duration: 0.55s;
+  }
+
+  .word[data-weak] {
+    animation:
+      text-fault 1.5s steps(1, end) var(--neon-delay, 0ms) both,
+      text-falter 8s steps(1, end) calc(var(--neon-delay, 0ms) + 4s) infinite;
+  }
+}
+
+@keyframes falter {
+  0%,
+  90.8%,
+  93%,
+  100% {
+    opacity: 1;
+  }
+
+  90%,
+  91.8% {
+    opacity: 0.15;
+  }
+}
+
+@keyframes text-stutter {
+  0%,
+  20% {
+    color: var(--neon-glass);
+    text-shadow: none;
+  }
+
+  8%,
+  45%,
+  100% {
+    color: var(--neon-core);
+    text-shadow: var(--neon-glow);
+  }
+}
+
+@keyframes text-catch {
+  0%,
+  30% {
+    color: var(--neon-glass);
+    text-shadow: none;
+  }
+
+  15%,
+  62%,
+  100% {
+    color: var(--neon-core);
+    text-shadow: var(--neon-glow);
+  }
+}
+
+@keyframes text-fault {
+  0%,
+  16%,
+  44% {
+    color: var(--neon-glass);
+    text-shadow: none;
+  }
+
+  10%,
+  34%,
+  70%,
+  100% {
+    color: var(--neon-core);
+    text-shadow: var(--neon-glow);
+  }
+}
+
+@keyframes text-falter {
+  0%,
+  88.8%,
+  91%,
+  100% {
+    color: var(--neon-core);
+    text-shadow: var(--neon-glow);
+  }
+
+  88%,
+  90% {
+    color: var(--neon-glass);
+    text-shadow: none;
+  }
+}
