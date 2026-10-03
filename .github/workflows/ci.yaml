@@ -82,6 +82,9 @@ jobs:
       - name: Run tests
         run: mise run test
 
+      - name: Build
+        run: mise run build
+
   build-success:
     if: ${{ !cancelled() }}
     name: Build Success
