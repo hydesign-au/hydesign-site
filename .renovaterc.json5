@@ -2,4 +2,11 @@
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: ["local>home-operations/renovate-config"],
   postUpdateOptions: ["pnpmDedupe"],
+  packageRules: [
+    {
+      description: "The Vite plugin requires the wrangler from its own release",
+      matchSourceUrls: ["https://github.com/cloudflare/workers-sdk"],
+      groupName: "workers-sdk monorepo",
+    },
+  ],
 }
