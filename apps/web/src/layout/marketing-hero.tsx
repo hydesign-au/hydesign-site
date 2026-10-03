@@ -109,8 +109,8 @@ function PhotoHeroFrame({
       {/* Phones and tablets keep the photo full width. On desktop it is a panel set in from the
           page edge, so it ends in a rounded edge rather than a hard line. Only the panel is inset:
           the copy keeps the page's content column. */}
-      <div className="absolute inset-0 overflow-hidden bg-photo-scrim lg:inset-3 lg:rounded-panel">
-        <AnimatePresence mode="popLayout">
+      <div className="absolute inset-0 overflow-hidden bg-photo-scrim lg:inset-3 lg:rounded-2xl">
+        <AnimatePresence initial={false} mode="popLayout">
           {media ? (
             <motion.div
               key={mediaKey ?? "hero-media"}
@@ -184,7 +184,7 @@ function PhotoHeroFrame({
           aria-label={scrollLabel}
           onClick={() => scrollToTarget(scrollTargetId)}
           className={cn(
-            "border-white/25 bg-black/30 text-white hover:bg-black/45 hover:text-white",
+            "border-glass-border bg-glass text-glass-foreground hover:bg-popover",
             "absolute bottom-5 left-1/2 z-10 flex size-11 lg:bottom-8 -translate-x-1/2 items-center justify-center rounded-full border shadow-glass inset-shadow-glass backdrop-blur-glass transition-colors",
           )}
         >
@@ -235,7 +235,10 @@ function HeroActions({ actions, size }: { actions?: HeroAction[]; size: "default
             {action.label}
             {action.icon ??
               (action.kind === "secondary" ? (
-                <ArrowRightIcon data-icon="inline-end" className="motion-arrow" />
+                <ArrowRightIcon
+                  data-icon="inline-end"
+                  className="motion-safe:transition-transform motion-safe:group-hover/button:translate-x-1 motion-safe:group-focus-within/button:translate-x-1"
+                />
               ) : (
                 <MailIcon data-icon="inline-end" />
               ))}

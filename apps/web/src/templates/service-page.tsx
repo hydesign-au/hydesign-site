@@ -73,7 +73,10 @@ function ServicePageTemplate({ service }: { service: Service }) {
                   )}
                 >
                   {project.title}
-                  <ArrowRightIcon data-icon="inline-end" className="motion-arrow" />
+                  <ArrowRightIcon
+                    data-icon="inline-end"
+                    className="motion-safe:transition-transform motion-safe:group-hover/button:translate-x-1 motion-safe:group-focus-within/button:translate-x-1"
+                  />
                 </Link>
               ))}
             </nav>

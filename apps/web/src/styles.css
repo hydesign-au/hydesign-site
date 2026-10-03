@@ -2,7 +2,13 @@
 
 @source "./**/*.{ts,tsx}";
 
-/* Self-hosted fonts. Files in public/fonts/<family>/, with each family's OFL.txt alongside. */
+/*
+ * Typography
+ *
+ * Site fonts live here because they belong to HyDesign, not the shared
+ * shadcn component package.
+ */
+
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
@@ -83,154 +89,177 @@
   src: url("/fonts/caveat/Caveat-Bold.woff2") format("woff2");
 }
 
+/*
+ * Tailwind-facing site tokens.
+ *
+ * Keep this small. Standard shadcn tokens are already mapped by
+ * @hydesign/ui/globals.css. These are only the extra concepts that genuinely
+ * exist in the HyDesign visual language.
+ */
+
 @theme inline {
-  --radius-panel: var(--site-panel-radius);
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Newsreader", Georgia, serif;
   --font-cursive: "Caveat", cursive;
 
+  /* Bright primary works as a fill; this is its readable light-surface ink. */
   --color-primary-ink: var(--primary-ink);
-  --color-neon-pink: var(--neon-pink);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-footer-surface: var(--footer-surface);
-  --color-footer: var(--footer);
-  --color-footer-foreground: var(--footer-foreground);
-  --color-footer-muted: var(--footer-muted);
-  --color-facebook: var(--facebook);
-  --color-canvas: var(--canvas);
+
+  /* Intentional translucent surfaces, not the default treatment for every card. */
+  --color-glass: var(--glass);
+  --color-glass-foreground: var(--glass-foreground);
+  --color-glass-border: var(--glass-border);
+  --shadow-glass: var(--glass-shadow);
+  --inset-shadow-glass: inset 0 1px 0 var(--glass-highlight);
+  --blur-glass: 18px;
+
+  /* Photography. */
   --color-photo-scrim: var(--photo-scrim);
-  --shadow-xs: 0 1px 2px 0 rgb(52 41 26 / 0.05);
-  --shadow-sm: 0 1px 2px 0 rgb(52 41 26 / 0.08), 0 1px 1px -1px rgb(52 41 26 / 0.08);
-  --shadow-md: 0 4px 8px -2px rgb(52 41 26 / 0.1), 0 2px 4px -2px rgb(52 41 26 / 0.08);
-  --shadow-lg: 0 10px 20px -5px rgb(52 41 26 / 0.14), 0 4px 8px -4px rgb(52 41 26 / 0.1);
-  --shadow-xl: 0 20px 32px -12px rgb(52 41 26 / 0.18);
+  --color-photo-foreground: var(--photo-foreground);
+  --text-shadow-photo: var(--photo-text-shadow);
 }
+
+/*
+ * Light theme
+ *
+ * The hierarchy is deliberately visible:
+ *
+ * background -> muted/secondary -> card/popover
+ *
+ * Glass is separate again. Avoid making neighbouring tokens so similar that
+ * every surface becomes indistinguishable cream.
+ */
 
 :root {
-  /* Shared outer corners for site panels and photography. */
-  --site-panel-radius: 1rem;
-  /* The page is cream paper. Controls such as outline buttons fill with the lighter background so they stand off it. */
-  --canvas: oklch(0.972 0.016 80);
-  --background: oklch(0.99 0.008 82);
+  color-scheme: light;
+
+  --radius: 0.75rem;
+
+  --background: oklch(0.985 0.01 82);
   --foreground: oklch(0.22 0.02 64);
-  --card: oklch(0.995 0.006 82 / 86%);
+
+  --card: oklch(0.995 0.006 82);
   --card-foreground: oklch(0.22 0.02 64);
-  --popover: oklch(0.995 0.006 82 / 92%);
+
+  --popover: oklch(0.998 0.004 82);
   --popover-foreground: oklch(0.22 0.02 64);
-  --primary: oklch(0.81 0.15 72.8);
-  --primary-foreground: oklch(0.15 0.008 80);
-  --primary-ink: oklch(0.46 0.12 60);
-  --neon-pink: oklch(0.72 0.29 342);
-  --facebook: #1877f2;
-  --instagram-blue: #3051f1;
-  --instagram-purple: #c92bb7;
-  --instagram-red: #f73344;
-  --instagram-orange: #fa8e37;
-  --instagram-yellow: #fcdf8f;
-  --instagram-yellow-to: #fbd377;
-  --secondary: oklch(0.92 0.034 79);
-  --secondary-foreground: oklch(0.27 0.03 70);
-  --muted: oklch(0.945 0.022 80);
-  --muted-foreground: oklch(0.46 0.035 72);
-  --accent: oklch(0.92 0.045 82);
-  --accent-foreground: oklch(0.29 0.03 74);
+
+  --primary: oklch(0.8 0.15 73);
+  --primary-foreground: oklch(0.18 0.012 70);
+  --primary-ink: oklch(0.47 0.12 61);
+
+  --secondary: oklch(0.925 0.028 80);
+  --secondary-foreground: oklch(0.29 0.03 72);
+
+  --muted: oklch(0.955 0.014 82);
+  --muted-foreground: oklch(0.46 0.03 72);
+
+  --accent: oklch(0.905 0.045 82);
+  --accent-foreground: oklch(0.28 0.03 72);
+
   --destructive: oklch(0.577 0.215 27.33);
-  --destructive-foreground: oklch(0.985 0.005 95);
-  --border: oklch(0.86 0.03 79 / 80%);
-  --input: oklch(0.86 0.03 79);
+
+  --border: oklch(0.865 0.024 79);
+  --input: oklch(0.885 0.024 79);
   --ring: oklch(0.59 0.12 65);
-  --chart-1: oklch(0.81 0.15 72.8);
-  --chart-2: oklch(0.55 0.065 77.5);
-  --chart-3: oklch(0.614 0.14 55.59);
-  --chart-4: oklch(0.709 0.142 64.86);
-  --chart-5: oklch(0.4 0.055 69.23);
-  --sidebar: oklch(0.972 0.016 80 / 94%);
+
+  --chart-1: oklch(0.8 0.15 73);
+  --chart-2: oklch(0.62 0.1 55);
+  --chart-3: oklch(0.56 0.07 105);
+  --chart-4: oklch(0.66 0.09 35);
+  --chart-5: oklch(0.48 0.055 70);
+
+  --sidebar: oklch(0.975 0.012 80);
   --sidebar-foreground: oklch(0.25 0.027 73);
-  --sidebar-primary: oklch(0.81 0.15 72.8);
-  --sidebar-primary-foreground: oklch(0.15 0.008 80);
-  --sidebar-accent: oklch(0.92 0.045 82);
-  --sidebar-accent-foreground: oklch(0.29 0.03 74);
-  --sidebar-border: oklch(0.86 0.03 79 / 80%);
-  --sidebar-ring: oklch(0.59 0.12 65);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
 
-  --glass: oklch(0.985 0.012 82 / 74%);
+  /*
+   * Glass should clearly be a separate material from card/popover.
+   * Use it where translucency has a reason: floating navigation, controls over
+   * media, and similar layered surfaces.
+   */
+  --glass: oklch(0.995 0.008 82 / 74%);
   --glass-foreground: oklch(0.22 0.02 64);
-  --glass-border: oklch(0.4 0.04 65 / 12%);
-  --glass-highlight: oklch(1 0 0 / 60%);
-  --surface-shadow: 0 1px 2px oklch(0.23 0.025 65 / 6%), 0 16px 40px oklch(0.23 0.025 65 / 9%);
-  --glass-shadow: 0 1px 2px oklch(0.23 0.025 65 / 5%), 0 8px 30px oklch(0.23 0.025 65 / 9%);
-  --footer-surface: oklch(0.93 0.018 78);
-  --shell-background: var(--footer-surface);
-  --footer: oklch(0.16 0.015 65);
-  --footer-foreground: oklch(0.9 0.02 82);
-  --footer-muted: oklch(0.72 0.025 82);
-  /* Photo tokens are not redefined for dark mode: photos keep the same dark treatment in both themes. */
-  --photo-surface: oklch(0.17 0.011 80.42);
-  --photo-scrim: oklch(0.12 0.008 70);
-  --photo-foreground: oklch(0.938 0.028 84);
-  --photo-muted: oklch(0.82 0.025 84 / 0.84);
-  --photo-border: oklch(0.938 0.028 84 / 0.22);
-  --photo-panel: oklch(0.213 0.021 63 / 0.72);
-  --photo-panel-hover: oklch(0.255 0.027 73.4 / 0.82);
-  --photo-text-shadow: 0 2px 16px oklch(0 0 0 / 88%), 0 1px 3px oklch(0 0 0 / 72%);
+  --glass-border: oklch(0.22 0.02 64 / 12%);
+  --glass-highlight: oklch(1 0 0 / 68%);
+  --glass-shadow: 0 2px 8px oklch(0.22 0.02 64 / 6%), 0 16px 48px oklch(0.22 0.02 64 / 10%);
 
-  --motion-fast: 160ms;
-  --motion-base: 240ms;
-  --motion-slow: 400ms;
-  --ease-out-sign: cubic-bezier(0.22, 1, 0.36, 1);
+  /*
+   * Photo treatment is intentionally theme-independent. Photos should not
+   * suddenly become brown or pale because the document theme changes.
+   */
+  --photo-scrim: oklch(0.13 0.01 70);
+  --photo-foreground: oklch(0.97 0.012 84);
+  --photo-text-shadow: 0 2px 20px oklch(0 0 0 / 70%), 0 1px 3px oklch(0 0 0 / 55%);
+
+  --site-gutter: 1.5rem;
 }
 
+/*
+ * Dark theme
+ */
+
 .dark {
-  --canvas: oklch(0.165 0.011 80);
-  --background: oklch(0.165 0.011 80);
-  --foreground: oklch(0.94 0.025 84);
-  --card: oklch(0.22 0.02 68 / 84%);
-  --card-foreground: oklch(0.94 0.025 84);
-  --popover: oklch(0.22 0.02 68 / 92%);
-  --popover-foreground: oklch(0.94 0.025 84);
-  --primary: oklch(0.81 0.15 72.8);
-  --primary-foreground: oklch(0.15 0.008 80);
-  --primary-ink: oklch(0.81 0.15 72.8);
-  --secondary: oklch(0.29 0.03 74);
-  --secondary-foreground: oklch(0.94 0.025 84);
-  --muted: oklch(0.24 0.02 72);
-  --muted-foreground: oklch(0.74 0.035 82);
-  --accent: oklch(0.29 0.03 74);
+  color-scheme: dark;
+
+  --background: oklch(0.17 0.012 75);
+  --foreground: oklch(0.94 0.022 84);
+
+  --card: oklch(0.21 0.016 72);
+  --card-foreground: oklch(0.94 0.022 84);
+
+  --popover: oklch(0.225 0.018 72);
+  --popover-foreground: oklch(0.94 0.022 84);
+
+  --primary: oklch(0.8 0.15 73);
+  --primary-foreground: oklch(0.18 0.012 70);
+  --primary-ink: oklch(0.82 0.14 73);
+
+  --secondary: oklch(0.29 0.026 74);
+  --secondary-foreground: oklch(0.94 0.022 84);
+
+  --muted: oklch(0.24 0.018 73);
+  --muted-foreground: oklch(0.72 0.025 82);
+
+  --accent: oklch(0.3 0.035 76);
   --accent-foreground: oklch(0.96 0.02 82);
+
   --destructive: oklch(0.704 0.191 22.22);
-  --destructive-foreground: oklch(0.985 0.005 95);
+
   --border: oklch(1 0 0 / 12%);
-  --input: oklch(1 0 0 / 15%);
+  --input: oklch(1 0 0 / 16%);
   --ring: oklch(0.78 0.14 73);
-  --chart-1: oklch(0.81 0.15 72.8);
-  --chart-2: oklch(0.709 0.142 64.86);
-  --chart-3: oklch(0.742 0.08 92);
-  --chart-4: oklch(0.551 0.065 77.54);
-  --chart-5: oklch(0.883 0.07 86);
-  --sidebar: oklch(0.19 0.015 69 / 94%);
-  --sidebar-foreground: oklch(0.94 0.025 84);
-  --sidebar-primary: oklch(0.81 0.15 72.8);
-  --sidebar-primary-foreground: oklch(0.15 0.008 80);
-  --sidebar-accent: oklch(0.29 0.03 74);
-  --sidebar-accent-foreground: oklch(0.96 0.02 82);
-  --sidebar-border: oklch(1 0 0 / 12%);
-  --sidebar-ring: oklch(0.78 0.14 73);
-  --glass: oklch(0.19 0.015 69 / 82%);
-  --glass-foreground: oklch(0.94 0.025 84);
-  --glass-border: oklch(1 0 0 / 16%);
-  --glass-highlight: oklch(1 0 0 / 12%);
-  --surface-shadow: 0 1px 2px oklch(0 0 0 / 20%), 0 18px 44px oklch(0 0 0 / 24%);
-  --glass-shadow: 0 20px 56px oklch(0 0 0 / 32%);
-  --footer-surface: oklch(0.175 0.014 72);
-  --footer: oklch(0.115 0.009 70);
-  --footer-foreground: oklch(0.92 0.02 82);
-  --footer-muted: oklch(0.7 0.025 82);
+
+  --chart-1: oklch(0.8 0.15 73);
+  --chart-2: oklch(0.7 0.1 55);
+  --chart-3: oklch(0.72 0.07 105);
+  --chart-4: oklch(0.72 0.09 35);
+  --chart-5: oklch(0.64 0.055 70);
+
+  --sidebar: oklch(0.19 0.015 72);
+  --sidebar-foreground: oklch(0.94 0.022 84);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+
+  --glass: oklch(0.21 0.016 72 / 78%);
+  --glass-foreground: oklch(0.94 0.022 84);
+  --glass-border: oklch(1 0 0 / 14%);
+  --glass-highlight: oklch(1 0 0 / 10%);
+  --glass-shadow: 0 2px 8px oklch(0 0 0 / 18%), 0 20px 56px oklch(0 0 0 / 32%);
 }
 
 @layer base {
   body {
     @apply font-sans antialiased;
-    background-color: var(--shell-background);
   }
 
   h1,
@@ -240,57 +269,23 @@
   }
 }
 
-@layer components {
-  .text-shadow-photo {
-    text-shadow: var(--photo-text-shadow);
-  }
+/*
+ * One site-level layout primitive is worthwhile. Header, hero, footer and
+ * page sections all genuinely share the same content edge.
+ */
 
-  .motion-arrow {
-    transition: transform var(--motion-fast) var(--ease-out-sign);
-  }
-
-  :is(a, button):is(:hover, :focus-visible) .motion-arrow,
-  .group:is(:hover, :focus-within) .motion-arrow {
-    transform: translate3d(0.22rem, 0, 0);
-  }
-
-  .motion-media {
-    transition: transform var(--motion-base) var(--ease-out-sign);
-  }
-
-  .group:is(:hover, :focus-within) .motion-media {
-    transform: scale(1.035) translate3d(0, -0.15rem, 0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .motion-arrow,
-  .motion-media {
-    transition-duration: 0.01ms !important;
-    transition-delay: 0ms !important;
-  }
-
-  .group:is(:hover, :focus-within) .motion-media,
-  :is(a, button):is(:hover, :focus-visible) .motion-arrow,
-  .group:is(:hover, :focus-within) .motion-arrow {
-    transform: none;
-  }
-}
-
-/* Shared content edges: photography frames the column, navigation wraps around it. */
-:root {
-  --site-gutter: 1.5rem;
-}
 @media (min-width: 48rem) {
   :root {
     --site-gutter: 2rem;
   }
 }
+
 @media (min-width: 64rem) {
   :root {
     --site-gutter: 3rem;
   }
 }
+
 @utility site-container {
   width: min(calc(100% - var(--site-gutter) * 2), 80rem);
   margin-inline: auto;

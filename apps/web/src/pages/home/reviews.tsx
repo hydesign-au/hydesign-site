@@ -26,7 +26,10 @@ function ReviewsSection() {
               className={cn(buttonVariants({ variant: "outline", className: "group" }))}
             >
               Google Reviews
-              <ArrowRightIcon data-icon="inline-end" className="motion-arrow" />
+              <ArrowRightIcon
+                data-icon="inline-end"
+                className="motion-safe:transition-transform motion-safe:group-hover/button:translate-x-1 motion-safe:group-focus-within/button:translate-x-1"
+              />
             </a>
           }
         />

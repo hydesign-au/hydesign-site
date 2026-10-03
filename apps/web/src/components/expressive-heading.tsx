@@ -1,6 +1,6 @@
-import { Neon } from "@hydesign/ui/components/neon";
 import { motion, useReducedMotion } from "motion/react";
 
+import { Neon } from "@/components/neon";
 import type { TitleTreatment } from "@/content/services/types";
 
 type ExpressiveHeadingProps = {
@@ -9,16 +9,16 @@ type ExpressiveHeadingProps = {
 };
 
 const threeDShadow = [
-  "-0.012em 0.012em 0 color-mix(in oklab, var(--photo-foreground) 88%, var(--photo-surface))",
-  "-0.024em 0.024em 0 color-mix(in oklab, var(--photo-foreground) 80%, var(--photo-surface))",
-  "-0.036em 0.036em 0 color-mix(in oklab, var(--photo-foreground) 72%, var(--photo-surface))",
-  "-0.048em 0.048em 0 color-mix(in oklab, var(--photo-foreground) 64%, var(--photo-surface))",
-  "-0.06em 0.06em 0 color-mix(in oklab, var(--photo-foreground) 56%, var(--photo-surface))",
-  "-0.072em 0.072em 0 color-mix(in oklab, var(--photo-foreground) 48%, var(--photo-surface))",
-  "-0.084em 0.084em 0 color-mix(in oklab, var(--photo-foreground) 40%, var(--photo-surface))",
-  "-0.096em 0.096em 0 color-mix(in oklab, var(--photo-foreground) 32%, var(--photo-surface))",
-  "-0.108em 0.108em 0 color-mix(in oklab, var(--photo-foreground) 24%, var(--photo-surface))",
-  "-0.118em 0.118em 0.035em color-mix(in oklab, var(--photo-surface) 70%, transparent)",
+  "-0.012em 0.012em 0 color-mix(in oklab, var(--photo-foreground) 88%, var(--photo-scrim))",
+  "-0.024em 0.024em 0 color-mix(in oklab, var(--photo-foreground) 80%, var(--photo-scrim))",
+  "-0.036em 0.036em 0 color-mix(in oklab, var(--photo-foreground) 72%, var(--photo-scrim))",
+  "-0.048em 0.048em 0 color-mix(in oklab, var(--photo-foreground) 64%, var(--photo-scrim))",
+  "-0.06em 0.06em 0 color-mix(in oklab, var(--photo-foreground) 56%, var(--photo-scrim))",
+  "-0.072em 0.072em 0 color-mix(in oklab, var(--photo-foreground) 48%, var(--photo-scrim))",
+  "-0.084em 0.084em 0 color-mix(in oklab, var(--photo-foreground) 40%, var(--photo-scrim))",
+  "-0.096em 0.096em 0 color-mix(in oklab, var(--photo-foreground) 32%, var(--photo-scrim))",
+  "-0.108em 0.108em 0 color-mix(in oklab, var(--photo-foreground) 24%, var(--photo-scrim))",
+  "-0.118em 0.118em 0.035em color-mix(in oklab, var(--photo-scrim) 70%, transparent)",
   "var(--photo-text-shadow)",
 ].join(", ");
 
@@ -76,7 +76,7 @@ function BrushAccent({ children }: { children: string }) {
         <motion.path
           d="M3 10.5C34 5.2 65 7.4 93 8.2c28 .8 53-4.4 84-2.3"
           fill="none"
-          initial={reduceMotion ? false : { pathLength: 0 }}
+          initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
           transition={{
             delay: reduceMotion ? 0 : 0.18,
@@ -90,7 +90,7 @@ function BrushAccent({ children }: { children: string }) {
         <motion.path
           d="M8 14.3c29-3.1 61-2.1 86-2.6 31-.6 54-3 75-2.2"
           fill="none"
-          initial={reduceMotion ? false : { pathLength: 0 }}
+          initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
           transition={{
             delay: reduceMotion ? 0 : 0.24,

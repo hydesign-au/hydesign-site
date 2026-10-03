@@ -3,6 +3,8 @@
 import { cn } from "@hydesign/ui/lib/utils";
 import * as React from "react";
 
+import styles from "./neon.module.css";
+
 export type NeonIntensity = "subtle" | "default" | "strong";
 export type NeonSpread = "tight" | "default" | "wide";
 export type NeonFlicker = "none" | "startup";
@@ -76,12 +78,12 @@ const Neon = React.forwardRef<HTMLSpanElement, NeonProps>(function Neon(
   );
 
   React.useEffect(() => {
-    if (trigger !== "in-view") return;
+    if (trigger !== "in-view") return undefined;
 
     const node = rootRef.current;
-    if (!node) return;
+    if (!node) return undefined;
 
-    if (!("IntersectionObserver" in window)) return;
+    if (!("IntersectionObserver" in window)) return undefined;
 
     const threshold = Math.min(1, Math.max(0, amount));
     const observer = new IntersectionObserver(
@@ -123,11 +125,13 @@ const Neon = React.forwardRef<HTMLSpanElement, NeonProps>(function Neon(
       data-spread={spread}
       data-flicker={flicker}
       data-ambient={ambient ? "true" : "false"}
-      className={cn("neon", className)}
+      className={cn(styles.neon, className)}
       style={neonStyle}
       {...props}
     >
-      <span data-slot="neon-source">{children}</span>
+      <span data-slot="neon-source" className={styles.source}>
+        {children}
+      </span>
     </span>
   );
 });

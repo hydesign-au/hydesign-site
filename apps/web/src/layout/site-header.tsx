@@ -25,8 +25,6 @@ type PathnameRouterState = {
   };
 };
 
-const standardNavClassName = styles.navItem;
-
 function SiteHeader({ shopEnabled }: { shopEnabled: boolean }) {
   const pathname = useRouterState({
     select: (state: PathnameRouterState) => state.location.pathname,
@@ -35,11 +33,15 @@ function SiteHeader({ shopEnabled }: { shopEnabled: boolean }) {
   const headerRef = useHeaderSurface();
 
   return (
-    <header id="site-header" ref={headerRef} className={cn("fixed z-40", styles.header)}>
+    <header
+      id="site-header"
+      ref={headerRef}
+      className={cn("fixed z-40 rounded-2xl", styles.header)}
+    >
       <span
         aria-hidden="true"
         className={cn(
-          "pointer-events-none absolute inset-0 rounded-[inherit] border border-glass-border bg-glass shadow-glass inset-shadow-glass backdrop-blur-xl backdrop-saturate-150 lg:bg-glass/85 lg:shadow-sm lg:backdrop-blur-lg",
+          "pointer-events-none absolute inset-0 rounded-[inherit] border border-glass-border bg-glass shadow-glass inset-shadow-glass backdrop-blur-glass",
           styles.surface,
         )}
       />
@@ -62,19 +64,11 @@ function SiteHeader({ shopEnabled }: { shopEnabled: boolean }) {
                     <>
                       <NavigationMenuTrigger
                         data-active={isActivePath(pathname, item.href) || undefined}
-                        className={cn(
-                          "h-9 bg-transparent px-3 font-semibold",
-                          standardNavClassName,
-                        )}
+                        className={cn("h-9 bg-transparent px-3 font-semibold", styles.navItem)}
                       >
                         {item.label}
                       </NavigationMenuTrigger>
-                      <NavigationMenuContent
-                        className={cn(
-                          styles.servicesMenu,
-                          "w-[min(calc(100vw-2rem),40rem)] overflow-hidden rounded-lg p-0 text-glass-foreground",
-                        )}
-                      >
+                      <NavigationMenuContent className="w-[min(calc(100vw-2rem),40rem)] p-0">
                         <ul className="grid gap-1 p-4 md:grid-cols-2">
                           <DesktopServiceNavItem
                             active={pathname === item.href}
@@ -102,10 +96,7 @@ function SiteHeader({ shopEnabled }: { shopEnabled: boolean }) {
                         )
                       }
                       active={isActivePath(pathname, item.href)}
-                      className={cn(
-                        "h-9 justify-center px-3 py-2 font-semibold",
-                        standardNavClassName,
-                      )}
+                      className={cn("h-9 justify-center px-3 py-2 font-semibold", styles.navItem)}
                     >
                       {Icon ? <Icon data-icon="inline-start" /> : null}
                       {item.label}

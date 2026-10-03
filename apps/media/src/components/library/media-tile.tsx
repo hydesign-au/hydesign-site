@@ -101,7 +101,7 @@ export function MediaTile({
             {showMark ? (
               <span
                 data-selected={selected}
-                className="absolute top-2 right-2 grid size-6 place-items-center rounded-full border border-glass-border bg-glass text-glass-foreground opacity-0 shadow-sm backdrop-blur-glass transition-opacity group-hover:opacity-100 data-[selected=true]:border-primary data-[selected=true]:bg-primary data-[selected=true]:text-primary-foreground data-[selected=true]:opacity-100 [&>svg]:size-3.5"
+                className="absolute top-2 right-2 grid size-6 place-items-center rounded-full border border-border bg-background text-foreground opacity-0 shadow-sm transition-opacity group-hover:opacity-100 data-[selected=true]:border-primary data-[selected=true]:bg-primary data-[selected=true]:text-primary-foreground data-[selected=true]:opacity-100 [&>svg]:size-3.5"
               >
                 <Check />
               </span>

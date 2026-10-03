@@ -44,7 +44,7 @@ function ProductGallery({ images, onSelect, productTitle, selectedImage }: Produ
         </div>
       ) : null}
 
-      <div className="order-1 overflow-hidden rounded-panel bg-muted lg:order-2">
+      <div className="order-1 overflow-hidden rounded-2xl bg-muted lg:order-2">
         {selectedImage ? (
           <img
             src={selectedImage.url}

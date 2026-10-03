@@ -1,0 +1,16 @@
+.facebook {
+  background-color: rgb(24 119 242);
+}
+
+.instagram {
+  background:
+    radial-gradient(
+      circle farthest-corner at 28% 100%,
+      rgb(252 223 143) 0%,
+      rgb(251 211 119) 10%,
+      rgb(250 142 55) 22%,
+      rgb(247 51 68) 35%,
+      transparent 65%
+    ),
+    linear-gradient(145deg, rgb(48 81 241) 10%, rgb(201 43 183) 70%);
+}

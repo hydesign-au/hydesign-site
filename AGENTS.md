@@ -103,8 +103,8 @@ Move an app component to `packages/ui` only when it is genuinely app-agnostic an
 - Keep route files thin. They select a bespoke page or a real data-driven template after their transport work.
 - Pages own their composition and one-page-only sections. Reusable section anatomy belongs in `src/components`; cross-page geometry belongs in `src/layout`.
 - Use existing UI primitives and CSS variable tokens. Do not hardcode hex colours.
-- `packages/ui/src/styles/globals.css` owns the neutral shadcn token contract, the radius scale and cross-app surface treatments such as frosted glass. Each app stylesheet imports it, then overrides only brand colour and font tokens plus genuinely app-wide behaviour.
-- Components own their interaction and reveal motion. Keep component-specific keyframes, transitions and state selectors beside the component, preferably in its class list or CSS module. Global styles hold only site-wide motion such as page transitions, the shared reveal system and shared arrow or media behaviour.
+- `packages/ui/src/styles/globals.css` owns the neutral shadcn token contract and the radius scale. Each app stylesheet imports it. `apps/web/src/styles.css` owns the HyDesign theme, explicit glass and photo tokens, fonts and site-wide behaviour. Primitives retain their ordinary surfaces; floating components opt into glass.
+- Components own their interaction and reveal motion. Keep component-specific keyframes, transitions and state selectors beside the component, preferably in its class list or CSS module. Use Tailwind interaction utilities for simple arrow and media motion. Bespoke effects such as neon belong beside their component, not in globals.
 - Follow documented shadcn composition for navigation and shell patterns before writing local lookalikes.
 - Use `useEffect` only for external systems such as DOM APIs, timers and media queries. Calculate render data during render.
 - Avoid `any` at data boundaries.

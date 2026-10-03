@@ -33,7 +33,7 @@ function PublicLayout({ children, shopEnabled }: PublicLayoutProps) {
   }, []);
 
   return (
-    <div className="min-h-screen min-w-0 flex-1 overflow-x-clip bg-canvas text-foreground">
+    <div className="min-h-screen min-w-0 flex-1 overflow-x-clip bg-background text-foreground">
       <a
         href="#content"
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-card focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:shadow-sm"

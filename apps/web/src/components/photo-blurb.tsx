@@ -1,4 +1,3 @@
-import { Card } from "@hydesign/ui/components/card";
 import { cn } from "@hydesign/ui/lib/utils";
 import { Link } from "@tanstack/react-router";
 import { ArrowRightIcon } from "lucide-react";
@@ -27,12 +26,12 @@ function PhotoBlurb({
 }: PhotoBlurbProps) {
   const Heading = headingLevel;
   return (
-    <Card className="rounded-(--site-panel-radius) group aspect-[4/3] gap-0 overflow-hidden bg-photo-scrim py-0 ring-white/15">
+    <article className="rounded-2xl group aspect-[4/3] overflow-hidden bg-photo-scrim shadow-md ring-1 ring-border">
       <Link to={href} className="relative block size-full">
         <div className="size-full overflow-hidden">
           <Picture
             image={image}
-            className="motion-media size-full object-cover brightness-[0.82] saturate-[0.92]"
+            className="motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-[1.035] motion-safe:group-focus-within:scale-[1.035] size-full object-cover brightness-[0.82] saturate-[0.92]"
           />
         </div>
         <div
@@ -52,7 +51,7 @@ function PhotoBlurb({
             </Heading>
             <ArrowRightIcon
               className={cn(
-                "motion-arrow size-4 shrink-0 text-primary",
+                "motion-safe:transition-transform motion-safe:group-hover:translate-x-1 motion-safe:group-focus-within:translate-x-1 size-4 shrink-0 text-primary",
                 compact && "hidden sm:block",
               )}
             />
@@ -67,7 +66,7 @@ function PhotoBlurb({
           </p>
         </div>
       </Link>
-    </Card>
+    </article>
   );
 }
 

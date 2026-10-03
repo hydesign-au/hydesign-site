@@ -3,39 +3,17 @@
 .header {
   --header-inset: 0.75rem;
   --header-padding: 0.5rem;
-  --nav-foreground: var(--foreground);
-  --nav-hover: color-mix(in oklab, var(--accent) 30%, transparent);
-  --nav-open: color-mix(in oklab, var(--accent) 45%, transparent);
 
   top: var(--header-inset);
   inset-inline: var(--header-inset);
-  border-radius: var(--site-panel-radius);
 }
 
 .navItem {
-  color: color-mix(in oklab, var(--nav-foreground) 80%, transparent);
-  border: 1px solid transparent;
-  transition: none;
-}
-
-.navItem:is(:hover, :focus-visible) {
-  background-color: var(--nav-hover);
-  color: var(--nav-foreground);
-}
-
-.navItem:is([data-open], [data-popup-open]) {
-  background-color: var(--nav-open);
-  color: var(--nav-foreground);
+  @apply text-foreground transition-none hover:bg-accent focus:bg-accent data-open:bg-accent data-popup-open:bg-accent;
 }
 
 .navItem[data-active] {
-  background-color: color-mix(in oklab, var(--primary) 20%, transparent);
-  color: var(--primary-ink);
-}
-
-.navItem:focus-visible {
-  outline: 2px solid var(--ring);
-  outline-offset: 2px;
+  @apply bg-primary/20 text-primary-ink;
 }
 
 .surface {
@@ -63,28 +41,23 @@
     transition: opacity 200ms ease-out;
   }
 
-  /* Photo contrast belongs to the unbacked controls, not the navbar theme. */
+  /* Only unbacked desktop controls need the photographic contrast treatment. */
   :global(body:has([data-photo-hero])) .header:not([data-scrolled]) {
-    --nav-foreground: var(--photo-foreground);
-    --nav-hover: color-mix(in oklab, var(--photo-foreground) 5%, transparent);
-    --nav-open: color-mix(in oklab, var(--photo-foreground) 8%, transparent);
-
     & [data-header-content],
-    & .call {
-      color: var(--photo-foreground);
+    & .navItem {
+      @apply text-photo-foreground;
+    }
+
+    & .navItem:is(:hover, :focus-visible, [data-open], [data-popup-open]) {
+      @apply bg-photo-foreground/10;
     }
 
     & .navItem[data-active] {
-      color: var(--primary);
+      @apply bg-primary/20 text-primary;
     }
 
     & .call {
-      background-color: var(--photo-panel);
-      border-color: var(--photo-border);
-    }
-
-    & .call:hover {
-      background-color: var(--photo-panel-hover);
+      @apply border-photo-foreground/20 bg-photo-scrim/50 text-photo-foreground hover:bg-photo-scrim/70;
     }
   }
 
@@ -103,20 +76,4 @@
   .header[data-motion-ready] .navItem {
     transition: none;
   }
-}
-
-/* The primitive owns the portalled popup; style its surface, not a second inner panel. */
-:global(.bg-popover):has(.servicesMenu) {
-  background: var(--glass);
-  color: var(--glass-foreground);
-  border: 1px solid var(--glass-border);
-  box-shadow:
-    var(--glass-shadow),
-    inset 0 1px 0 var(--glass-highlight);
-  @apply backdrop-blur-glass;
-}
-
-.servicesMenu {
-  box-shadow: none;
-  backdrop-filter: none;
 }

@@ -44,7 +44,7 @@ function PhotoFan({ photos, className }: PhotoFanProps) {
         <div key={photo} className="min-w-0">
           <div
             className={cn(
-              "relative aspect-[3/4] w-full overflow-hidden rounded-panel bg-muted ring-1 ring-glass-border",
+              "relative aspect-[3/4] w-full overflow-hidden rounded-2xl bg-muted shadow-md ring-1 ring-border",
               layout.cards[index],
             )}
           >

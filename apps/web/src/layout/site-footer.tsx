@@ -1,4 +1,3 @@
-import { buttonVariants } from "@hydesign/ui/components/button";
 import { Separator } from "@hydesign/ui/components/separator";
 import { cn } from "@hydesign/ui/lib/utils";
 import { Link } from "@tanstack/react-router";
@@ -8,6 +7,8 @@ import { siFacebook, siInstagram } from "simple-icons";
 import { Logo } from "@/components/logo";
 import { serviceNavItems, siteSettings } from "@/content";
 import { SiteSubfooter } from "@/layout/site-subfooter";
+
+import styles from "./site-footer.module.css";
 
 type SimpleIcon = {
   path: string;
@@ -29,7 +30,7 @@ type SiteFooterProps = {
 
 function SiteFooter({ separated = false, shopEnabled }: SiteFooterProps) {
   return (
-    <footer id="site-footer" className="bg-footer-surface text-foreground">
+    <footer id="site-footer" className="bg-muted text-foreground">
       {separated ? <Separator /> : null}
       <div className="site-container grid gap-10 py-12 md:grid-cols-[0.95fr_0.5fr_1.5fr_1.05fr] md:gap-5 md:py-14 lg:grid-cols-[1.1fr_0.55fr_1.35fr_1fr] lg:gap-10">
         <div>
@@ -41,11 +42,10 @@ function SiteFooter({ separated = false, shopEnabled }: SiteFooterProps) {
           <div className="mt-5 flex gap-2">
             <a
               aria-label="Facebook"
-              className={buttonVariants({
-                variant: "plain",
-                size: "icon",
-                className: "bg-facebook text-white hover:opacity-80",
-              })}
+              className={cn(
+                "inline-flex size-8 items-center justify-center rounded-lg text-white hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
+                styles.facebook,
+              )}
               href={siteSettings.facebookUrl}
             >
               <SimpleIconSvg icon={siFacebook} />
@@ -53,12 +53,10 @@ function SiteFooter({ separated = false, shopEnabled }: SiteFooterProps) {
             </a>
             <a
               aria-label="Instagram"
-              className={buttonVariants({
-                variant: "plain",
-                size: "icon",
-                className:
-                  "bg-[radial-gradient(circle_farthest-corner_at_28%_100%,var(--instagram-yellow)_0%,var(--instagram-yellow-to)_10%,var(--instagram-orange)_22%,var(--instagram-red)_35%,transparent_65%),linear-gradient(145deg,var(--instagram-blue)_10%,var(--instagram-purple)_70%)] text-white hover:opacity-80",
-              })}
+              className={cn(
+                "inline-flex size-8 items-center justify-center rounded-lg text-white hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
+                styles.instagram,
+              )}
               href={siteSettings.instagramUrl}
             >
               <SimpleIconSvg icon={siInstagram} />

@@ -65,7 +65,10 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
                 className={cn(buttonVariants({ variant: "outline", className: "group" }))}
               >
                 Our Services
-                <ArrowRightIcon data-icon="inline-end" className="motion-arrow" />
+                <ArrowRightIcon
+                  data-icon="inline-end"
+                  className="motion-safe:transition-transform motion-safe:group-hover/button:translate-x-1 motion-safe:group-focus-within/button:translate-x-1"
+                />
               </Link>
             }
           >
@@ -106,13 +109,16 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
                 className={cn(buttonVariants({ variant: "outline", className: "group mt-7" }))}
               >
                 About Us
-                <ArrowRightIcon data-icon="inline-end" className="motion-arrow" />
+                <ArrowRightIcon
+                  data-icon="inline-end"
+                  className="motion-safe:transition-transform motion-safe:group-hover/button:translate-x-1 motion-safe:group-focus-within/button:translate-x-1"
+                />
               </Link>
             </div>
             <Picture
               image="IMG_6780"
               alt="An old photo of a signwriter working above a row of shopfronts."
-              className="w-full rounded-panel shadow-surface ring-1 ring-glass-border inset-shadow-glass"
+              className="w-full rounded-2xl shadow-md ring-1 ring-border"
             />
           </div>
         </MotionReveal>
@@ -130,7 +136,10 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
                 className={cn(buttonVariants({ variant: "outline", className: "group" }))}
               >
                 Projects
-                <ArrowRightIcon data-icon="inline-end" className="motion-arrow" />
+                <ArrowRightIcon
+                  data-icon="inline-end"
+                  className="motion-safe:transition-transform motion-safe:group-hover/button:translate-x-1 motion-safe:group-focus-within/button:translate-x-1"
+                />
               </Link>
             }
           />
@@ -160,7 +169,10 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
               className={cn(buttonVariants({ variant: "outline", className: "group" }))}
             >
               Explore
-              <ArrowRightIcon data-icon="inline-end" className="motion-arrow" />
+              <ArrowRightIcon
+                data-icon="inline-end"
+                className="motion-safe:transition-transform motion-safe:group-hover/button:translate-x-1 motion-safe:group-focus-within/button:translate-x-1"
+              />
             </Link>
           </div>
         </MotionReveal>

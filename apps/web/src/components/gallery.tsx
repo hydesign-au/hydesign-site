@@ -81,11 +81,14 @@ function Gallery({ images: keys, orientation, pageSize = 8, className }: Gallery
               type="button"
               onClick={() => openPhoto(start + index)}
               className={cn(
-                "group block w-full cursor-pointer overflow-hidden rounded-panel bg-muted shadow-surface ring-1 ring-glass-border inset-shadow-glass focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
+                "group block w-full cursor-pointer overflow-hidden rounded-2xl bg-muted shadow-md ring-1 ring-border focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
                 orientationClasses[orientation],
               )}
             >
-              <Picture image={key} className="motion-media size-full object-cover" />
+              <Picture
+                image={key}
+                className="motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-[1.035] motion-safe:group-focus-within:scale-[1.035] size-full object-cover"
+              />
             </button>
           </li>
         ))}

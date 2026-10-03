@@ -1,5 +1,4 @@
 import { buttonVariants } from "@hydesign/ui/components/button";
-import { Neon } from "@hydesign/ui/components/neon";
 import { NoiseTexture } from "@hydesign/ui/components/noise-texture";
 import { cn } from "@hydesign/ui/lib/utils";
 import { Link } from "@tanstack/react-router";
@@ -7,6 +6,7 @@ import { ArrowRightIcon, PhoneIcon } from "lucide-react";
 import type { CSSProperties } from "react";
 
 import { MotionReveal } from "@/components/motion-reveal";
+import { Neon } from "@/components/neon";
 import { Picture } from "@/components/picture";
 import { VintagePhone } from "@/components/vintage-phone";
 import { siteSettings } from "@/content";
@@ -43,18 +43,18 @@ function SiteOutro() {
     <section
       id="site-outro"
       aria-labelledby="site-outro-title"
-      className="bg-gradient-to-b from-canvas from-50% to-footer-surface to-50%"
+      className="bg-gradient-to-b from-background from-50% to-muted to-50%"
     >
       <div className="dark relative text-photo-foreground">
         {/* Like the hero, the photo runs full width on phones and tablets and is an inset panel on
            desktop. Only the photo layers are clipped to it, so the phone can hang below. */}
-        <div className="absolute inset-0 overflow-hidden border-t border-border bg-photo-surface lg:inset-x-3 lg:rounded-panel lg:border-t-0">
+        <div className="absolute inset-0 overflow-hidden border-t border-border bg-photo-scrim lg:inset-x-3 lg:rounded-2xl lg:border-t-0">
           <Picture
             image="IMG_1779"
             alt=""
             className="absolute inset-0 size-full object-cover object-center"
           />
-          <div className="absolute inset-0 z-10 bg-gradient-to-r from-photo-surface/82 via-photo-surface/68 to-photo-surface/35" />
+          <div className="absolute inset-0 z-10 bg-gradient-to-r from-photo-scrim/82 via-photo-scrim/68 to-photo-scrim/35" />
           <NoiseTexture
             aria-hidden="true"
             frequency={0.35}
@@ -90,7 +90,10 @@ function SiteOutro() {
                 className={cn(buttonVariants({ variant: "outline", size: "lg" }), "group")}
               >
                 Get a Quote
-                <ArrowRightIcon data-icon="inline-end" className="motion-arrow" />
+                <ArrowRightIcon
+                  data-icon="inline-end"
+                  className="motion-safe:transition-transform motion-safe:group-hover/button:translate-x-1 motion-safe:group-focus-within/button:translate-x-1"
+                />
               </Link>
             </div>
           </MotionReveal>
@@ -100,7 +103,7 @@ function SiteOutro() {
             className="pointer-events-none absolute -right-4 -bottom-10 w-56 sm:-right-2 sm:w-64 md:relative md:right-auto md:bottom-auto md:w-auto md:self-end"
           >
             <Neon
-              color="var(--neon-pink)"
+              color="oklch(0.72 0.29 342)"
               intensity="strong"
               spread="wide"
               once={false}

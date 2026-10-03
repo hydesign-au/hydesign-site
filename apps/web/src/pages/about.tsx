@@ -35,7 +35,7 @@ function AboutPage() {
             <Picture
               image="IMG_6780"
               alt="An old photo of a signwriter working above a row of shopfronts."
-              className="w-full rounded-panel shadow-surface ring-1 ring-glass-border inset-shadow-glass"
+              className="w-full rounded-2xl shadow-md ring-1 ring-border"
             />
           </div>
         </MotionReveal>
@@ -44,10 +44,7 @@ function AboutPage() {
       <PageSection tone="muted" compact>
         <MotionReveal>
           <div className="grid gap-10 lg:grid-cols-[minmax(0,0.45fr)_minmax(0,0.55fr)] lg:items-center">
-            <Picture
-              image="IMG_5567"
-              className="w-full rounded-panel shadow-surface ring-1 ring-glass-border inset-shadow-glass"
-            />
+            <Picture image="IMG_5567" className="w-full rounded-2xl shadow-md ring-1 ring-border" />
             <div className="max-w-3xl">
               <h2 className="text-3xl font-black leading-tight md:text-5xl">What changed</h2>
               <p className="mt-5 text-base leading-7 text-muted-foreground md:text-lg md:leading-8">

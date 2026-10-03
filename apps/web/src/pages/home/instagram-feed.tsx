@@ -67,7 +67,7 @@ function InstagramPostLink({ post, username }: { post: InstagramPost; username: 
 
   return (
     <a
-      className="group relative aspect-[4/5] overflow-hidden rounded-panel bg-muted shadow-surface ring-1 ring-glass-border inset-shadow-glass focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+      className="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-muted shadow-md ring-1 ring-border focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
       href={post.permalink}
       rel="noreferrer"
       target="_blank"
@@ -95,7 +95,7 @@ function PostTypeIcon({ type }: { type: InstagramPost["type"] }) {
   return (
     <span
       className={cn(
-        "absolute top-1/2 left-1/2 grid size-8 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-photo-border bg-photo-panel text-photo-foreground backdrop-blur-glass",
+        "absolute top-1/2 left-1/2 grid size-8 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-glass-border bg-glass text-glass-foreground backdrop-blur-glass",
         type === "video" && "[&_svg]:fill-current",
       )}
     >

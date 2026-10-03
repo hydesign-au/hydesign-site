@@ -1,5 +1,4 @@
 import { Button } from "@hydesign/ui/components/button";
-import { Card } from "@hydesign/ui/components/card";
 import { Link } from "@tanstack/react-router";
 import { ArrowRightIcon, CheckIcon, LoaderCircleIcon, ShoppingCartIcon } from "lucide-react";
 import { useState } from "react";
@@ -28,7 +27,7 @@ function ProductCard({ product }: ProductCardProps) {
   }
 
   return (
-    <Card className="rounded-(--site-panel-radius) group relative aspect-4/3 gap-0 overflow-hidden py-0 ring-white/15">
+    <article className="rounded-2xl group relative aspect-4/3 overflow-hidden bg-muted shadow-md ring-1 ring-border">
       <Link
         to="/shop/$handle"
         params={{ handle: product.handle }}
@@ -41,7 +40,7 @@ function ProductCard({ product }: ProductCardProps) {
             alt={product.featuredImage.altText ?? product.title}
             width={product.featuredImage.width ?? undefined}
             height={product.featuredImage.height ?? undefined}
-            className="motion-media size-full object-cover"
+            className="motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-[1.035] motion-safe:group-focus-within:scale-[1.035] size-full object-cover"
             loading="lazy"
           />
         ) : (
@@ -88,7 +87,7 @@ function ProductCard({ product }: ProductCardProps) {
           ) : (
             <span className="inline-flex items-center gap-1 text-xs font-semibold text-white">
               {product.availableForSale ? "Details" : "Sold out"}
-              <ArrowRightIcon className="motion-arrow size-3.5" />
+              <ArrowRightIcon className="motion-safe:transition-transform motion-safe:group-hover:translate-x-1 motion-safe:group-focus-within:translate-x-1 size-3.5" />
             </span>
           )}
         </div>
@@ -101,7 +100,7 @@ function ProductCard({ product }: ProductCardProps) {
               : ""}
         </span>
       </div>
-    </Card>
+    </article>
   );
 }
 

@@ -74,7 +74,10 @@ function ProjectPageTemplate({ project }: ProjectPageTemplateProps) {
                   )}
                 >
                   {service.title}
-                  <ArrowRightIcon data-icon="inline-end" className="motion-arrow" />
+                  <ArrowRightIcon
+                    data-icon="inline-end"
+                    className="motion-safe:transition-transform motion-safe:group-hover/button:translate-x-1 motion-safe:group-focus-within/button:translate-x-1"
+                  />
                 </Link>
               ))}
             </nav>
@@ -100,7 +103,7 @@ function ProjectPageTemplate({ project }: ProjectPageTemplateProps) {
               {section.image ? (
                 <Picture
                   image={section.image}
-                  className="w-full rounded-panel shadow-surface ring-1 ring-glass-border inset-shadow-glass"
+                  className="w-full rounded-2xl shadow-md ring-1 ring-border"
                 />
               ) : null}
             </div>
