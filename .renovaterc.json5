@@ -4,6 +4,16 @@
   postUpdateOptions: ["pnpmDedupe"],
   packageRules: [
     {
+      matchManagers: ["npm"],
+      matchPackageNames: ["wrangler"],
+      postUpgradeTasks: {
+        workingDirTemplate: "apps/web",
+        commands: ["pnpm install --frozen-lockfile --ignore-scripts", "pnpm run cf-typegen"],
+        fileFilters: ["apps/web/worker-configuration.d.ts"],
+        installTools: { node: {}, pnpm: {} },
+      },
+    },
+    {
       description: "The Vite plugin requires the wrangler from its own release",
       matchSourceUrls: ["https://github.com/cloudflare/workers-sdk"],
       groupName: "workers-sdk monorepo",

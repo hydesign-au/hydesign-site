@@ -4,7 +4,11 @@ export default defineConfig({
   fmt: {
     printWidth: 100,
     sortImports: true,
-    ignorePatterns: ["apps/web/src/routeTree.gen.ts", "apps/web/src/content/media.gen.ts"],
+    ignorePatterns: [
+      "apps/web/src/routeTree.gen.ts",
+      "apps/web/src/content/media.gen.ts",
+      "**/worker-configuration.d.ts",
+    ],
   },
   lint: {
     ignorePatterns: [
