@@ -234,8 +234,8 @@ importers:
         specifier: ^1.6.1
         version: 1.6.1(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@shopify/storefront-api-client':
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^2.0.1
+        version: 2.0.1
       '@tanstack/react-form':
         specifier: ^1.33.5
         version: 1.33.5(@tanstack/react-start@1.168.60(@voidzero-dev/vite-plus-core@1.0.0(@types/node@26.6.4)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.51.2)(typescript@7.0.2))(esbuild@0.28.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(rolldown@1.2.13)(rollup@4.63.5)(supports-color@10.2.2))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -2159,11 +2159,11 @@ packages:
     resolution: {integrity: sha512-82/OmKAVM9pChDHFVAsDP9PcimPGSKZGdbcdwdGGGcSI69ImpN4ZnqsfZ4hkOFEMal92t3y9djYJHMjO4PcVZA==}
     engines: {node: '>=20.18.1'}
 
-  '@shopify/graphql-client@2.0.0':
-    resolution: {integrity: sha512-SfIZa6J9Px4ZSMIVdPLNupeSyqznovV6pDVxwC1rmbi0JTVj2q/CCsOf9hLQvsMdBiyJDHVnoVHGpBzlhpwO2Q==}
+  '@shopify/graphql-client@2.0.1':
+    resolution: {integrity: sha512-rMWnql45haEQdVnz62azY6yKt67W2jNgyuYLb6cJc6GuQzEp3LNgIUuQRuroGrF0rklt/ZxqPWS2g013ci3lWQ==}
 
-  '@shopify/storefront-api-client@2.0.0':
-    resolution: {integrity: sha512-rWmPqZ+ZqsxdePpH/4sPdd+jUWHiSUeEWolJNQpqb+1KLlx79khdfJO1M9z9HfG2H0aHkmS+fnx2jr46q7NCGQ==}
+  '@shopify/storefront-api-client@2.0.1':
+    resolution: {integrity: sha512-GsEb5L3y8ffqWHr7LPyrs8tFtfZJPlyC1kS3YClGQXX1eWS3HqWysvMwnEiXbYwCA0pUkthvAcqLZj/xXx3wCQ==}
 
   '@sindresorhus/is@7.2.0':
     resolution: {integrity: sha512-P1Cz1dWaFfR4IR+U13mqqiGsLFf1KbayybWwdd2vfctdV6hDpUkgCY0nKOLLTMSoRd/jJNjtbqzf13K8DCCXQw==}
@@ -6937,11 +6937,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@shopify/graphql-client@2.0.0': {}
+  '@shopify/graphql-client@2.0.1': {}
 
-  '@shopify/storefront-api-client@2.0.0':
+  '@shopify/storefront-api-client@2.0.1':
     dependencies:
-      '@shopify/graphql-client': 2.0.0
+      '@shopify/graphql-client': 2.0.1
 
   '@sindresorhus/is@7.2.0': {}
 

@@ -16,7 +16,7 @@
   "dependencies": {
     "@hydesign/ui": "workspace:*",
     "@marsidev/react-turnstile": "^1.6.1",
-    "@shopify/storefront-api-client": "^2.0.0",
+    "@shopify/storefront-api-client": "^2.0.1",
     "@tanstack/react-form": "^1.33.5",
     "@tanstack/react-router": "1.170.41",
     "@tanstack/react-start": "1.168.60",
