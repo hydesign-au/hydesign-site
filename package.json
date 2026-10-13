@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "devDependencies": {
-    "@types/node": "26.6.4",
+    "@types/node": "26.6.5",
     "vite-plus": "1.0.0"
   },
   "packageManager": "pnpm@12.11.2"
