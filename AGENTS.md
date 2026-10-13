@@ -81,7 +81,7 @@ Cloudflare Workers Builds owns preview builds and deployment from `main`. GitHub
 - Build-time variables and secrets are normally empty. Runtime variables and secrets are configured on the Worker, not in Workers Builds.
 - Previews do not inherit production settings. Top-level settings are production; the `previews` block holds preview values, including Turnstile test keys and the mock.shop storefront. Preview secrets go in the Worker's Previews Base settings.
 
-Renovate configuration lives in `.renovaterc.json5`. Renovate runs from `.github/workflows/renovate.yaml` every six hours. Non-major updates, apart from 0.x minors, automerge once `Build Success` passes. To force a run, use `gh workflow run renovate.yaml --repo hydesign-au/hydesign-site`.
+Renovate configuration lives in `.renovaterc.json5` and uses the owner’s `renovate-config`. The hosted Renovate App handles runs and dashboard requests. Non-major updates, apart from 0.x minors, automerge once the required checks pass. Package scripts generate ignored Worker types before development, builds and typechecks.
 
 ## UI ownership
 

@@ -44,6 +44,7 @@ run = "vp fmt --check"
 
 [tasks.lint]
 description = "lint the whole repo (oxlint via vp, type-aware)"
+depends = ["//apps/web:cf-typegen"]
 run = "vp lint"
 
 [tasks.test]

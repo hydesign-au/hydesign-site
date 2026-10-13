@@ -3,14 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vp dev --host 0.0.0.0 --config vite.app.config.ts",
-    "build": "vp build --config vite.app.config.ts",
+    "dev": "pnpm run cf-typegen && vp dev --host 0.0.0.0 --config vite.app.config.ts",
+    "build": "pnpm run cf-typegen && vp build --config vite.app.config.ts",
     "preview": "vp preview --config vite.app.config.ts",
     "deploy": "pnpm run build && wrangler deploy",
     "deploy:built": "wrangler deploy",
     "cf-typegen": "wrangler types worker-configuration.d.ts",
-    "typecheck": "tsc --noEmit",
-    "lint": "vp lint",
+    "typecheck": "pnpm run cf-typegen && tsc --noEmit",
+    "lint": "pnpm run cf-typegen && vp lint",
     "format": "vp fmt"
   },
   "dependencies": {
