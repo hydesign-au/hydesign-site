@@ -15,7 +15,7 @@
   "dependencies": {
     "@hydesign/ui": "workspace:*",
     "@tanstack/react-form": "^1.33.5",
-    "exiftool-vendored": "^38.3.0",
+    "exiftool-vendored": "^39.0.1",
     "lucide-react": "1.55.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
