@@ -71,9 +71,9 @@ backend = "npm:@commitlint/cli"
 specifiers = ["21.2.3"]
 
 [[tools."npm:vite-plus"]]
-version = "1.1.0"
+version = "1.2.0"
 backend = "npm:vite-plus"
-specifiers = ["1.1.0"]
+specifiers = ["1.2.0"]
 
 [[tools.oxfmt]]
 version = "0.73.0"
