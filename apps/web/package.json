@@ -19,7 +19,7 @@
     "@shopify/storefront-api-client": "^2.0.1",
     "@tanstack/react-form": "^1.33.5",
     "@tanstack/react-router": "1.170.44",
-    "@tanstack/react-start": "1.169.1",
+    "@tanstack/react-start": "1.169.2",
     "canvas-confetti": "^1.9.4",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
