@@ -76,9 +76,9 @@ backend = "npm:vite-plus"
 specifiers = ["1.3.0"]
 
 [[tools.oxfmt]]
-version = "0.73.0"
+version = "0.74.0"
 backend = "npm:oxfmt"
-specifiers = ["0.73.0"]
+specifiers = ["0.74.0"]
 
 [[tools.pnpm]]
 version = "12.14.0"
