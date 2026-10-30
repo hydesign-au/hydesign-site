@@ -6,5 +6,5 @@
     "@types/node": "26.6.5",
     "vite-plus": "1.4.0"
   },
-  "packageManager": "pnpm@12.15.0"
+  "packageManager": "pnpm@12.16.0"
 }
