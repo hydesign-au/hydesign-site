@@ -182,8 +182,8 @@ importers:
         specifier: ^1.33.5
         version: 1.33.5(@tanstack/react-start@1.169.4(@voidzero-dev/vite-plus-core@1.4.0(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(typescript@7.0.2))(esbuild@0.28.2)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(rolldown@1.2.13)(rollup@4.63.5)(supports-color@10.2.2))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       exiftool-vendored:
-        specifier: ^39.0.1
-        version: 39.0.1
+        specifier: ^39.1.0
+        version: 39.1.0
       lucide-react:
         specifier: 1.63.0
         version: 1.63.0(@types/react@19.3.0)(react@19.3.1)
@@ -3158,17 +3158,17 @@ packages:
     resolution: {integrity: sha512-9Be3ZoN4LmYR90tUoVu2te2BsbzHfhJyfEiAVfz7N5/zv+jduIfLrV2xdQXOHbaD6KgpGdO9PRPM1Y4Q9QkPkA==}
     engines: {node: ^18.19.0 || >=20.5.0}
 
-  exiftool-vendored.exe@13.59.3:
-    resolution: {integrity: sha512-F5hpk1yVGZSDHjSKsyumyniY56IM3zawKOejOqtyT2r476fvWrUxpBmWT7Ena104TGPt/2+448Q/vrVt+yOzwQ==}
+  exiftool-vendored.exe@13.60.0:
+    resolution: {integrity: sha512-DcpybFsR7Dp3FMrPDaq3iy+dcFrPTYENJeazy19TQoefpp4MQml5YXMAx2TpYRFuYoFLcXi9dupyufdrj6sS+A==}
     os: [win32]
 
-  exiftool-vendored.pl@13.59.3:
-    resolution: {integrity: sha512-QmYq2JKCXRK9Uo3E3nHb0gQ6Xce2HK7wPtrHF5r+IYWyiM5WkOhiT3BesLI9lvJvPAbzjqFxQlrjXv+/cuSX/Q==}
+  exiftool-vendored.pl@13.60.0:
+    resolution: {integrity: sha512-RPXLoynEgak2D9zclE4oCpXII4S3EZlHXJIFHvjktByDgM7+ievXBfqtEWw6dK0xbk/L+cLVTWKoUBhOH+P/1A==}
     os: ['!win32']
     hasBin: true
 
-  exiftool-vendored@39.0.1:
-    resolution: {integrity: sha512-4eliBi259idYXoVZcIsN8qZVXA3qljlAeLzVS85nvp1uQhe1lpNcXyUUT0jGvAOWwXDZm3UUrvvw21VQ0L2OeQ==}
+  exiftool-vendored@39.1.0:
+    resolution: {integrity: sha512-qjIZI+W/77TMtL/nCp4WGR2UZKd5R/Pl1nNbRCGf6qxRcWICwWTDYVEpxW/hbTjI2FRPB/FRF8E4XxHaoC1SsQ==}
     engines: {node: '>=22'}
 
   expect-type@1.4.0:
@@ -3355,8 +3355,9 @@ packages:
     resolution: {integrity: sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==}
     engines: {node: '>= 0.4'}
 
-  he@1.2.0:
-    resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
+  he@2.0.0:
+    resolution: {integrity: sha512-0jE+JPv08nhXWmI1dULybzqNt34RbkH6Ul6V4cmDONpjYx1SfyObKF38FJLaJ1K7WWD93LWL9lewzk4E1Ria4A==}
+    engines: {node: '>=22'}
     hasBin: true
 
   human-signals@2.1.0:
@@ -7446,22 +7447,22 @@ snapshots:
       strip-final-newline: 4.0.0
       yoctocolors: 2.2.0
 
-  exiftool-vendored.exe@13.59.3:
+  exiftool-vendored.exe@13.60.0:
     optional: true
 
-  exiftool-vendored.pl@13.59.3:
+  exiftool-vendored.pl@13.60.0:
     optional: true
 
-  exiftool-vendored@39.0.1:
+  exiftool-vendored@39.1.0:
     dependencies:
       '@photostructure/tz-lookup': 11.7.0
       '@types/luxon': 3.7.6
       batch-cluster: 19.5.0
-      he: 1.2.0
+      he: 2.0.0
       luxon: 3.7.2
     optionalDependencies:
-      exiftool-vendored.exe: 13.59.3
-      exiftool-vendored.pl: 13.59.3
+      exiftool-vendored.exe: 13.60.0
+      exiftool-vendored.pl: 13.60.0
 
   expect-type@1.4.0: {}
 
@@ -7646,7 +7647,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  he@1.2.0: {}
+  he@2.0.0: {}
 
   human-signals@2.1.0: {}
 
