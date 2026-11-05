@@ -8,6 +8,7 @@ export default defineConfig({
       "apps/web/src/routeTree.gen.ts",
       "apps/web/src/content/media.gen.ts",
       "**/worker-configuration.d.ts",
+      ".mise/locks/",
     ],
   },
   lint: {
