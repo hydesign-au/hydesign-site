@@ -1,21 +1,21 @@
 [tasks.dev]
-description = "dev server on :3000"
+description = "Start the web server on port 3000"
 run = "pnpm run dev"
 
 [tasks.build]
-description = "production Cloudflare Worker build"
+description = "Build the Cloudflare Worker"
 run = "pnpm run build"
 
 [tasks.preview]
-description = "run the production build in the local Workers runtime"
+description = "Preview the production build in the Workers runtime"
 run = "pnpm run preview"
 
 [tasks.deploy]
-description = "build and deploy the Worker"
+description = "Build and deploy the Worker"
 run = "pnpm run deploy"
 
 [tasks.cf-typegen]
-description = "regenerate Cloudflare runtime and binding types"
+description = "Generate Cloudflare binding types"
 run = "pnpm run cf-typegen"
 
 [tasks.lint]

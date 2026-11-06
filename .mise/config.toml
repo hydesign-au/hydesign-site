@@ -21,34 +21,30 @@ config_roots = ["apps/web", "apps/media", "packages/ui"]
 postinstall = "lefthook install"
 
 [tasks.dev]
-description = "web dev server on :3000"
+description = "Start the web server on port 3000"
 run = { task = "//apps/web:dev" }
 
 [tasks.media]
-description = "media manager on :4000"
+description = "Start the media server on port 4000"
 run = { task = "//apps/media:dev" }
 
 [tasks.deps]
-description = "install the frozen workspace dependency graph"
 run = "pnpm install --frozen-lockfile"
 
 [tasks.format]
-description = "format the whole repo (oxfmt via vp)"
 run = "vp fmt"
 
 [tasks.fmt-check]
-description = "check whole-repo formatting (oxfmt via vp)"
 run = "vp fmt --check"
 
 [tasks.lint]
-description = "lint the whole repo (oxlint via vp, type-aware)"
+description = "Generate Worker types and run type-aware lint checks"
 depends = ["//apps/web:cf-typegen"]
 run = "vp lint"
 
 [tasks.test]
-description = "run media manager tests"
+description = "Run the media manager tests"
 run = { task = "//apps/media:test" }
 
 [tasks.build]
-description = "build both apps"
 run = [{ task = "//apps/web:build" }, { task = "//apps/media:build" }]
