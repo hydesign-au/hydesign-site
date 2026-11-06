@@ -6,8 +6,6 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - "**.md"
   pull_request:
     branches:
       - main
@@ -26,30 +24,8 @@ env:
   MISE_TASK_RUN_AUTO_INSTALL: "false"
 
 jobs:
-  workflow-lint:
-    name: Workflow Lint
-    runs-on: ubuntu-26.04
-    timeout-minutes: 15
-    permissions:
-      contents: read
-    steps:
-      - name: Checkout
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
-
-      - name: Setup Mise
-        uses: jdx/mise-action@f5be966e4a917d54244728e6a5fdcd1d93a35e6c # v5.2.6
-        with:
-          install_args: --locked jactionlint
-
-      - name: Lint workflows
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: jactionlint --online --shellcheck= --format github
-
-  code:
-    name: Code
+  check:
+    name: Build Success
     runs-on: ubuntu-26.04
     timeout-minutes: 10
     steps:
@@ -61,7 +37,23 @@ jobs:
       - name: Setup Mise
         uses: jdx/mise-action@f5be966e4a917d54244728e6a5fdcd1d93a35e6c # v5.2.6
         with:
-          install_args: --locked node pnpm npm:vite-plus
+          install_args: --locked jactionlint node pnpm npm:vite-plus
+
+      - name: Resolve pnpm store
+        id: pnpm
+        run: echo "path=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"
+
+      - name: Cache pnpm store
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ${{ steps.pnpm.outputs.path }}
+          key: ${{ runner.os }}-${{ runner.arch }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: ${{ runner.os }}-${{ runner.arch }}-pnpm-
+
+      - name: Lint workflows
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: jactionlint --online --shellcheck= --format github
 
       - name: Install dependencies
         run: mise run deps
@@ -75,23 +67,5 @@ jobs:
       - name: Run tests
         run: mise run test
 
-      - name: Build
+      - name: Verify production builds
         run: mise run build
-
-  build-success:
-    if: ${{ !cancelled() }}
-    name: Build Success
-    needs:
-      - workflow-lint
-      - code
-    runs-on: ubuntu-26.04
-    timeout-minutes: 15
-    permissions: {}
-    steps:
-      - name: Any jobs failed?
-        if: ${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled') }}
-        run: exit 1
-
-      - name: All jobs passed or skipped?
-        if: ${{ !(contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled')) }}
-        run: echo "All jobs passed or skipped" && echo "${{ toJSON(needs.*.result) }}"

@@ -69,7 +69,7 @@ Toolchain pins must agree:
 
 ## Deployment
 
-Cloudflare Workers Builds owns preview builds and deployment from `main`. GitHub Actions runs formatting, lint, tests and workflow checks only; do not build the website or generate responsive images there.
+GitHub Actions verifies formatting, lint, tests and workflows, then builds both apps with `mise run build`. Cloudflare Workers Builds publishes website previews and deploys from `main`.
 
 - Workers Builds root directory: `apps/web`.
 - Build command: `pnpm run build`.
@@ -203,8 +203,8 @@ Keep unrelated work in separate commits.
 
 A change is done when all relevant items are true:
 
-- `mise run fmt-check`, `mise run lint` and `mise run test` pass.
-- Deployable website changes receive their production-build proof from Cloudflare Workers Builds.
+- `mise run fmt-check`, `mise run lint`, `mise run test` and `mise run build` pass.
+- Deployable website changes are verified on the Cloudflare Workers Builds preview.
 - The rendered pages touched by the work have been inspected on mobile and desktop in both light and dark mode.
 - Photos are real, distinct where needed and backed by library metadata.
 - SEO head data is set for new public pages.
