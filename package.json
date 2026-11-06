@@ -4,7 +4,7 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "26.6.6",
-    "vite-plus": "1.4.0"
+    "vite-plus": "1.5.0"
   },
   "packageManager": "pnpm@12.18.0"
 }
