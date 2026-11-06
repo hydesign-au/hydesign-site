@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vp dev --config vite.app.config.ts",
+    "media": "vp dev --config vite.app.config.ts",
     "build": "vp build --config vite.app.config.ts",
     "serve": "vp preview --config vite.app.config.ts",
     "generate": "node server/generate.mjs",

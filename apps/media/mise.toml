@@ -1,6 +1,6 @@
 [tasks.dev]
 description = "Start the media server on port 4000"
-run = "pnpm run dev"
+run = "pnpm run media"
 
 [tasks.build]
 run = "pnpm run build"
