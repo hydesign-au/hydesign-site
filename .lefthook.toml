@@ -20,6 +20,3 @@ stage_fixed = true
 [pre-commit.commands.media-library]
 glob = ["media/*"]
 run = "node apps/media/server/staged.mjs {staged_files}"
-
-[commit-msg.commands.commitlint]
-run = "commitlint --default-config --edit {1}"

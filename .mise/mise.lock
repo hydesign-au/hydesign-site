@@ -65,12 +65,6 @@ url = "https://nodejs.org/dist/v26.13.0/node-v26.13.0-linux-x64.tar.gz"
 checksum = "sha256:d38bd5e5a2ddce6bbb5ce45e46e208337da4d51fffe611e567fd32073d6439f6"
 url = "https://nodejs.org/dist/v26.13.0/node-v26.13.0-darwin-arm64.tar.gz"
 
-[[tools."npm:@commitlint/cli"]]
-version = "21.2.4"
-aube = { path = "locks/npm-commitlint-cli/21.2.4", digest = "sha256:1463db3478a692c86828b2f1ec455a5e3cf750409598e46bc7428cbcaa2b8c9d" }
-backend = "npm:@commitlint/cli"
-specifiers = ["21.2.4"]
-
 [[tools."npm:vite-plus"]]
 version = "1.4.0"
 aube = { path = "locks/npm-vite-plus/1.4.0", digest = "sha256:b8f1dc1e067d78f614ea0b5171e8fdbdcc438a175d2de1f7ff4074983d18d15b" }
