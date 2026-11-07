@@ -1,0 +1,28 @@
+import { Link } from "@tanstack/react-router";
+
+import { Separator } from "@/components/ui/separator";
+import { siteSettings } from "@/content";
+import { cn } from "@/lib/utils";
+
+function SiteSubfooter({ reserveCartCorner = false }: { reserveCartCorner?: boolean }) {
+  return (
+    <div id="site-subfooter">
+      <Separator />
+      <div className="site-container grid gap-3 py-5 text-center text-sm text-muted-foreground md:grid-cols-3 md:items-center md:text-left">
+        <span>© 2026 {siteSettings.legalName}</span>
+        <span className="md:text-center">ABN {siteSettings.abn}</span>
+        <Link
+          className={cn(
+            "w-fit justify-self-center hover:text-primary-ink md:justify-self-end",
+            reserveCartCorner && "md:mr-28",
+          )}
+          to="/terms-of-trade"
+        >
+          Terms of Trade
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export { SiteSubfooter };

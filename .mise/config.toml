@@ -1,5 +1,3 @@
-monorepo_root = true
-
 [tools]
 node = "26.13.0"
 pnpm = "12.18.0"
@@ -14,15 +12,12 @@ experimental = true
 pin = true
 lockfile = true
 
-[monorepo]
-config_roots = ["apps/web", "packages/ui"]
-
 [hooks]
 postinstall = "lefthook install"
 
 [tasks.dev]
 description = "Start the web server on port 3000"
-run = { task = "//apps/web:dev" }
+run = "pnpm run dev"
 
 [tasks.deps]
 run = "pnpm install --frozen-lockfile"
@@ -35,8 +30,7 @@ run = "vp fmt --check"
 
 [tasks.lint]
 description = "Generate Worker types and run type-aware lint checks"
-depends = ["//apps/web:cf-typegen"]
-run = "vp lint"
+run = "pnpm run lint"
 
 [tasks.build]
-run = { task = "//apps/web:build" }
+run = "pnpm run build"

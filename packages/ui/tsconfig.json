@@ -1,9 +1,0 @@
-{
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "paths": {
-      "@hydesign/ui/*": ["./src/*"]
-    }
-  },
-  "include": ["src"]
-}
