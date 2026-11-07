@@ -8,6 +8,8 @@ jactionlint = "v2.5.0"
 oxfmt = "0.75.0"
 shellcheck = "0.11.0"
 "npm:vite-plus" = "1.5.0"
+# jpegtran, for lossless rotation in the media commit hook.
+"conda:libjpeg-turbo" = { version = "3.2.1", os = ["macos"] }
 
 [settings]
 experimental = true

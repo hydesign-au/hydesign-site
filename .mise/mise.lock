@@ -2,6 +2,19 @@
 
 lockfile_version = 3
 
+[[tools."conda:libjpeg-turbo"]]
+version = "3.2.1"
+backend = "conda:libjpeg-turbo"
+specifiers = ["3.2.1"]
+
+[tools."conda:libjpeg-turbo".options]
+channel = "conda-forge"
+
+[tools."conda:libjpeg-turbo"."platforms.macos-arm64"]
+checksum = "sha256:957469c69b3b9c9e6ae48dc1267c5c9dfe0db9e1aefa5fa9abf9798224aa23c9"
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libjpeg-turbo-3.2.1-hb001647_0.conda"
+conda_deps = []
+
 [[tools.jactionlint]]
 version = "2.5.0"
 backend = "packslip:github.com/jdx/jactionlint"
