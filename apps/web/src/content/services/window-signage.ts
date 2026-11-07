@@ -2,8 +2,6 @@ import type { ServiceContent } from "./types";
 
 export const windowSignage: ServiceContent = {
   slug: "window-signage",
-  galleryFolder: "window-signage",
-  includeChildGalleryFolders: true,
   heroImage: "IMG_4144",
   galleryOrientation: "landscape",
   seoTitle: "Window Signage & Frosting Frankston & Melbourne",

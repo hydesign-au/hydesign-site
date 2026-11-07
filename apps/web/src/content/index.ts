@@ -1,5 +1,6 @@
-export { folders, images, imageMeta, videoMeta, videos } from "./media.gen";
-export type { FolderSlug, ImageKey, MediaMeta, SiteVideo, VideoKey } from "./media.gen";
+export { imageKeys, photoFile, videos } from "./media";
+export type { Client, ImageKey, SiteImage, SiteVideo, VideoKey } from "./media";
+export { photos } from "./photos";
 export { getNavItems, serviceNavItems } from "./nav";
 export type { NavItem } from "./nav";
 export { buildLlmsText } from "./llms";
@@ -13,99 +14,55 @@ export { getService, homepageServices, serviceHref, services } from "./services"
 export type { PhotoGroup, Service } from "./services/types";
 export { siteSettings } from "./site";
 
-import {
-  folders,
-  folderSlugs,
-  imageKeys,
-  imageMeta,
-  type FolderSlug,
-  type ImageKey,
-  type MediaMeta,
-} from "./media.gen";
-import { serviceCatalog } from "./services/catalog";
+import { imageKeys, type Client, type ImageKey } from "./media";
+import { photos } from "./photos";
+import { catalogSlug, serviceCatalog, type ServiceSlug } from "./services/catalog";
 
-const serviceTitleBySlug = new Map(serviceCatalog.map((service) => [service.slug, service.title]));
+type PhotoFacts = { client?: string; location?: string; services?: readonly ServiceSlug[] };
+
+const serviceTitleBySlug = new Map<string, string>(
+  serviceCatalog.map((service) => [service.slug, service.title]),
+);
+
+function facts(key: ImageKey): PhotoFacts {
+  return photos[key];
+}
 
 export function imageAlt(key: ImageKey): string {
-  const meta = imageMeta[key];
-  const subject = [projectLabel(meta), meta.location].filter(Boolean).join(", ");
-  const services = serviceLabels(meta);
+  const { client, location } = facts(key);
+  const subject = [client, location].filter(Boolean).join(", ");
+  const services = serviceSlugsForImages([key]).map((slug) => serviceTitleBySlug.get(slug));
   const service = services.length > 1 ? "Signage" : services[0];
   if (!service) return subject;
   return subject ? `${service} for ${subject}` : service;
 }
 
 export function imageLabel(key: ImageKey): string {
-  return projectLabel(imageMeta[key]) || imageMeta[key].location || key;
+  const { client, location } = facts(key);
+  return client || location || key;
 }
 
-export function galleryImagesByFolder(
-  slug: FolderSlug,
-  options: { includeChildren?: boolean } = {},
-): ImageKey[] {
-  const scope = folderScope(slug, options.includeChildren ?? false);
-  return imageKeys.filter((key) => imageMeta[key].folders.some((folder) => scope.has(folder)));
+export function imageLocation(key: ImageKey): string | undefined {
+  return facts(key).location;
 }
 
-export function serviceSlugsForImages(keys: ImageKey[]): string[] {
-  return [
-    ...new Set(
-      keys.flatMap((key) =>
-        imageMeta[key].folders.flatMap((slug) => folderAncestors(slug)).filter(isServiceFolder),
-      ),
-    ),
-  ];
-}
-
+// Every photo, in photos.ts order.
 export function galleryImages(): ImageKey[] {
-  return galleryImagesByFolder("gallery");
+  return imageKeys;
 }
 
-function projectLabel(meta: MediaMeta) {
-  const folder = meta.folders
-    .map((slug) => folders[slug])
-    .find((entry) => entry.parent === "projects");
-  return folder?.label ?? "";
+// Photos of a service, including its subservices.
+export function servicePhotos(slug: string): ImageKey[] {
+  return imageKeys.filter((key) =>
+    (facts(key).services ?? []).some((service) => catalogSlug(service) === slug),
+  );
 }
 
-function serviceLabels(meta: MediaMeta) {
-  return [
-    ...new Set(
-      meta.folders
-        .flatMap((slug) => folderAncestors(slug))
-        .map((slug) => serviceTitleBySlug.get(slug))
-        .filter((label): label is string => Boolean(label)),
-    ),
-  ];
+export function clientPhotos(client: Client): ImageKey[] {
+  return imageKeys.filter((key) => facts(key).client === client);
 }
 
-function isServiceFolder(slug: FolderSlug) {
-  return serviceTitleBySlug.has(slug);
-}
-
-function folderAncestors(slug: FolderSlug): FolderSlug[] {
-  const result: FolderSlug[] = [];
-  let current: FolderSlug | null = slug;
-  while (current) {
-    result.push(current);
-    current = folders[current].parent;
-  }
-  return result;
-}
-
-function folderScope(root: FolderSlug, includeChildren: boolean) {
-  const result = new Set<FolderSlug>([root]);
-  if (!includeChildren) return result;
-  let changed = true;
-  while (changed) {
-    changed = false;
-    for (const slug of folderSlugs) {
-      const folder = folders[slug];
-      if (folder.parent && result.has(folder.parent) && !result.has(slug)) {
-        result.add(slug);
-        changed = true;
-      }
-    }
-  }
-  return result;
+// The catalog services shown across these photos, in photo order.
+export function serviceSlugsForImages(keys: ImageKey[]): string[] {
+  return [...new Set(keys.flatMap((key) => (facts(key).services ?? []).map(catalogSlug)))];
 }

@@ -2,8 +2,6 @@ import type { ServiceContent } from "./types";
 
 export const shopfrontBuildingSignage: ServiceContent = {
   slug: "shopfront-building-signage",
-  galleryFolder: "shopfront-building-signage",
-  includeChildGalleryFolders: true,
   heroImage: "IMG_1990",
   heroVideo: "rebelblue",
   galleryOrientation: "landscape",

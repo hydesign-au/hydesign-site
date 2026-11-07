@@ -2,7 +2,6 @@ import type { ServiceContent } from "./types";
 
 export const stickersDecals: ServiceContent = {
   slug: "stickers-decals",
-  galleryFolder: "stickers-decals",
   heroImage: "IMG_7324",
   galleryOrientation: "landscape",
   seoTitle: "Custom Stickers & Decals Frankston & Melbourne",

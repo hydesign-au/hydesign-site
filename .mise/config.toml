@@ -15,7 +15,7 @@ pin = true
 lockfile = true
 
 [monorepo]
-config_roots = ["apps/web", "apps/media", "packages/ui"]
+config_roots = ["apps/web", "packages/ui"]
 
 [hooks]
 postinstall = "lefthook install"
@@ -23,10 +23,6 @@ postinstall = "lefthook install"
 [tasks.dev]
 description = "Start the web server on port 3000"
 run = { task = "//apps/web:dev" }
-
-[tasks.media]
-description = "Start the media server on port 4000"
-run = { task = "//apps/media:dev" }
 
 [tasks.deps]
 run = "pnpm install --frozen-lockfile"
@@ -42,9 +38,5 @@ description = "Generate Worker types and run type-aware lint checks"
 depends = ["//apps/web:cf-typegen"]
 run = "vp lint"
 
-[tasks.test]
-description = "Run the media manager tests"
-run = { task = "//apps/media:test" }
-
 [tasks.build]
-run = [{ task = "//apps/web:build" }, { task = "//apps/media:build" }]
+run = { task = "//apps/web:build" }

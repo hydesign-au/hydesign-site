@@ -2,7 +2,6 @@ import type { ServiceContent } from "./types";
 
 export const handPaintedSignage: ServiceContent = {
   slug: "hand-painted-signage",
-  galleryFolder: "hand-painted-signage",
   heroImage: "IMG_5567",
   heroVideo: "handpainted",
   galleryOrientation: "landscape",

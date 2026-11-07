@@ -2,7 +2,6 @@ import type { ServiceContent } from "./types";
 
 export const vehicleSignage: ServiceContent = {
   slug: "vehicle-signage",
-  galleryFolder: "vehicle-signage",
   heroImage: "IMG_0683",
   galleryOrientation: "landscape",
   seoTitle: "Vehicle Signage Frankston & Melbourne",

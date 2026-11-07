@@ -8,9 +8,9 @@ import { MotionReveal } from "@/components/motion-reveal";
 import { PhotoBlurb } from "@/components/photo-blurb";
 import { Picture } from "@/components/picture";
 import {
+  clientPhotos,
   getProject,
   getService,
-  galleryImagesByFolder,
   serviceHref,
   serviceSlugsForImages,
   type Project,
@@ -26,13 +26,13 @@ type ProjectPageTemplateProps = {
 
 function ProjectPageTemplate({ project }: ProjectPageTemplateProps) {
   const heroVideo = project.heroVideo ? videos[project.heroVideo] : undefined;
-  // The gallery is a standalone, clickable set of the whole album, matched by the project's
-  // client name; it's free to repeat a photo the hero or a section also uses.
-  const galleryPhotos = galleryImagesByFolder(project.galleryFolder);
+  // The gallery is every photo of the client; it's free to repeat a photo the hero or a
+  // section also uses.
+  const galleryPhotos = clientPhotos(project.client);
   const relatedProjects = project.relatedProjects
     .map((slug) => getProject(slug))
     .filter((related): related is Project => Boolean(related));
-  // Services shown in this project, from the album's human-authored metadata.
+  // Services shown in this project's photos.
   const projectServices = serviceSlugsForImages(galleryPhotos)
     .map((slug) => getService(slug))
     .filter((service): service is Service => Boolean(service));

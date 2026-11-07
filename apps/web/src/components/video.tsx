@@ -11,7 +11,7 @@ type VideoProps = {
  * loops and shows no controls — it's decorative motion, not a player. Muted and
  * playsInline so browsers allow autoplay (the clips carry no audio anyway). Fills
  * its container like the photo it replaces. The clip and poster come from
- * src/media as hashed URL assets (see content/media.ts).
+ * src/assets/videos (see content/media.ts).
  */
 function Video({ src, poster, className }: VideoProps) {
   return (

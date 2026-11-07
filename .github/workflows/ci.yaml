@@ -64,8 +64,5 @@ jobs:
       - name: Lint code
         run: mise run lint
 
-      - name: Run tests
-        run: mise run test
-
       - name: Verify production builds
         run: mise run build

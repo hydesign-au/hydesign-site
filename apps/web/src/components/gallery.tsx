@@ -19,7 +19,7 @@ import { ChevronLeftIcon, ChevronRightIcon, XIcon } from "lucide-react";
 import { useState } from "react";
 
 import { Picture } from "@/components/picture";
-import { imageAlt, imageLabel, imageMeta, images, type ImageKey } from "@/content";
+import { imageAlt, imageLabel, imageLocation, photoFile, type ImageKey } from "@/content";
 
 type GalleryOrientation = "landscape" | "portrait";
 
@@ -49,7 +49,8 @@ function Gallery({ images: keys, orientation, pageSize = 8, className }: Gallery
   const emptySlots = pageCount > 1 ? Math.max(0, pageSize - pageKeys.length) : 0;
 
   const active = activeIndex === null ? null : keys[activeIndex];
-  const activeIsPortrait = active ? images[active].height > images[active].width : false;
+  const activeFile = active ? photoFile(active) : null;
+  const activeIsPortrait = activeFile ? activeFile.height > activeFile.width : false;
 
   function selectPage(nextPage: number) {
     if (nextPage === page) return;
@@ -202,8 +203,8 @@ function Gallery({ images: keys, orientation, pageSize = 8, className }: Gallery
               </div>
               <figcaption className="flex items-center justify-between gap-4 px-4 py-3 text-sm">
                 <span className="font-medium">{imageLabel(active)}</span>
-                {imageMeta[active].location ? (
-                  <span className="text-muted-foreground">{imageMeta[active].location}</span>
+                {imageLocation(active) ? (
+                  <span className="text-muted-foreground">{imageLocation(active)}</span>
                 ) : null}
               </figcaption>
             </figure>

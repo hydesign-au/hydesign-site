@@ -2,8 +2,6 @@ import type { ServiceContent } from "./types";
 
 export const digitalPrinting: ServiceContent = {
   slug: "digital-printing",
-  galleryFolder: "digital-printing",
-  includeChildGalleryFolders: true,
   heroImage: "IMG_0144",
   heroVideo: "dennys-kitchen",
   galleryOrientation: "landscape",

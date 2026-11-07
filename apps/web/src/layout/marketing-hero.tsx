@@ -7,8 +7,7 @@ import type { ReactNode } from "react";
 
 import { Picture } from "@/components/picture";
 import { Video } from "@/components/video";
-import { siteSettings, type ImageKey } from "@/content";
-import type { SiteVideo } from "@/content/media.gen";
+import { siteSettings, type ImageKey, type SiteVideo } from "@/content";
 import { useMediaParallax } from "@/hooks/use-media-parallax";
 
 import styles from "./marketing-hero.module.css";

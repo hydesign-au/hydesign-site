@@ -1,4 +1,4 @@
-import type { FolderSlug, ImageKey, VideoKey } from "../media.gen";
+import type { ImageKey, VideoKey } from "../media";
 import type { ServiceIdentity } from "./catalog";
 
 export type GalleryOrientation = "landscape" | "portrait";
@@ -18,14 +18,11 @@ export type ServiceSection = {
   photos: PhotoGroup;
 };
 
-// The copy for one active service, keyed by slug. Identity (title, navLabel,
-// family) comes from the catalog and is merged on in index.ts — a copy module
-// never restates it. Gallery photos are filed under the service in the media
-// library; singleton placements use explicit typed keys.
+// The copy for one active service, keyed by slug. Identity (title, navLabel) comes from the
+// catalog and is merged on in index.ts. The gallery is every photo tagged with the service in
+// photos.ts; singleton placements use explicit keys.
 export type ServiceContent = {
   slug: string;
-  galleryFolder: FolderSlug;
-  includeChildGalleryFolders?: boolean;
   // Title-tag keyword phrase without the brand suffix, e.g. "Hand-Painted Signage Melbourne".
   seoTitle: string;
   metaDescription: string;

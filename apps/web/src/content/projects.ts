@@ -1,4 +1,4 @@
-import type { FolderSlug, ImageKey, VideoKey } from "./media.gen";
+import type { Client, ImageKey, VideoKey } from "./media";
 import type { GalleryOrientation } from "./services/types";
 
 export type ProjectSection = {
@@ -21,7 +21,8 @@ export type Project = {
   heroVideo?: VideoKey;
   galleryOrientation: GalleryOrientation;
   relatedProjects: string[];
-  galleryFolder: FolderSlug;
+  // The gallery is every photo of this client in photos.ts.
+  client: Client;
 };
 
 // Edge Geelong and Platform One carry owner-led copy. Rosella Mural and RocoMamas
@@ -31,7 +32,7 @@ export const projects: Project[] = [
     slug: "rosella-mural",
     title: "Rosella Mural",
     location: "Cremorne",
-    galleryFolder: "project-rosella",
+    client: "Rosella",
     metaDescription:
       "A hand-painted mural for Rosella in Cremorne, Melbourne, with the Rosella bird and the brand's imagery painted by hand across a brick wall.",
     summary: "Brick, paint and the Rosella bird in Cremorne.",
@@ -46,7 +47,7 @@ export const projects: Project[] = [
     slug: "edge-geelong",
     title: "Edge Geelong",
     location: "Geelong",
-    galleryFolder: "project-edge",
+    client: "Edge",
     metaDescription:
       "Full venue signage for Edge Geelong, with hand-painted wall art, illuminated LED signage and a 17-metre glass mosaic feature wall of 240,000 hand-cut tiles.",
     summary: "Paint, print, light and 240,000 hand-cut glass tiles on the Geelong waterfront.",
@@ -75,7 +76,7 @@ export const projects: Project[] = [
     slug: "platform-one",
     title: "Platform One",
     location: "Melbourne",
-    galleryFolder: "project-platform-one",
+    client: "Platform One",
     metaDescription:
       "Custom neon throughout Platform One in Melbourne, with a set of neon pieces designed and fabricated by HyDesign for the venue's fit-out.",
     summary: "A nightclub full of custom neon, all designed as one set.",
@@ -97,7 +98,7 @@ export const projects: Project[] = [
     slug: "rocomamas",
     title: "RocoMamas",
     location: "Windsor",
-    galleryFolder: "project-rocomamas",
+    client: "RocoMamas",
     metaDescription:
       "Hand-painted signage, custom neon and an illuminated fascia for RocoMamas in Windsor, made and installed by HyDesign.",
     summary: "Hand-painted feature walls, custom neon and an illuminated fascia in Windsor.",

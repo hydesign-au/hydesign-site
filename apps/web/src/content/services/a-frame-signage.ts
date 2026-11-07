@@ -2,7 +2,6 @@ import type { ServiceContent } from "./types";
 
 export const aFrameSignage: ServiceContent = {
   slug: "a-frame-signage",
-  galleryFolder: "a-frame-signage",
   heroImage: "IMG_0241",
   galleryOrientation: "portrait",
   seoTitle: "A-Frame Signs Frankston & Melbourne",

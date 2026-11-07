@@ -2,7 +2,6 @@ import type { ServiceContent } from "./types";
 
 export const threeDSignage: ServiceContent = {
   slug: "3d-signage",
-  galleryFolder: "3d-signage",
   heroImage: "IMG_2610",
   galleryOrientation: "landscape",
   seoTitle: "3D Signs & Raised Letters Frankston & Melbourne",

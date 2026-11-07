@@ -2,8 +2,6 @@ import type { ServiceContent } from "./types";
 
 export const illuminatedSignage: ServiceContent = {
   slug: "illuminated-signage",
-  galleryFolder: "illuminated-signage",
-  includeChildGalleryFolders: true,
   heroImage: "IMG_2689",
   galleryOrientation: "landscape",
   seoTitle: "Illuminated Signs, Neon & Lightboxes Melbourne",

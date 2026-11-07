@@ -9,8 +9,9 @@ import { MotionReveal } from "@/components/motion-reveal";
 import { PhotoFan } from "@/components/photo-fan";
 import { PhotoMosaic } from "@/components/photo-mosaic";
 import {
-  galleryImagesByFolder,
+  clientPhotos,
   projects,
+  servicePhotos,
   serviceSlugsForImages,
   type Service,
   videos,
@@ -29,13 +30,11 @@ function ServicePageTemplate({ service }: { service: Service }) {
     service.heroImage,
     ...sections.flatMap((section) => section.photos),
   ]);
-  const galleryPhotos = galleryImagesByFolder(service.galleryFolder, {
-    includeChildren: service.includeChildGalleryFolders,
-  }).filter((key) => !shownPhotos.has(key));
+  const galleryPhotos = servicePhotos(service.slug).filter((key) => !shownPhotos.has(key));
   const heroVideo = service.heroVideo ? videos[service.heroVideo] : undefined;
-  // Projects whose albums include this service, from the library's metadata.
+  // Projects whose photos include this service.
   const relatedProjects = projects.filter((project) =>
-    serviceSlugsForImages(galleryImagesByFolder(project.galleryFolder)).includes(service.slug),
+    serviceSlugsForImages(clientPhotos(project.client)).includes(service.slug),
   );
 
   return (

@@ -2,7 +2,6 @@ import type { ServiceContent } from "./types";
 
 export const wallGraphics: ServiceContent = {
   slug: "wall-graphics",
-  galleryFolder: "wall-graphics",
   heroImage: "IMG_3989",
   galleryOrientation: "landscape",
   seoTitle: "Wall Graphics Frankston & Melbourne",

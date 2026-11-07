@@ -2,7 +2,6 @@ import type { ServiceContent } from "./types";
 
 export const banners: ServiceContent = {
   slug: "banners",
-  galleryFolder: "banners",
   heroImage: "IMG_2472",
   heroVideo: "mazda-banner",
   galleryOrientation: "landscape",

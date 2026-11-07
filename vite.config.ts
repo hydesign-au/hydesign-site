@@ -6,7 +6,6 @@ export default defineConfig({
     sortImports: true,
     ignorePatterns: [
       "apps/web/src/routeTree.gen.ts",
-      "apps/web/src/content/media.gen.ts",
       "**/worker-configuration.d.ts",
       ".mise/locks/",
     ],
@@ -18,9 +17,7 @@ export default defineConfig({
       ".output/**",
       ".tanstack/**",
       "apps/web/src/routeTree.gen.ts",
-      "apps/web/src/content/media.gen.ts",
       "apps/web/vite.app.config.ts",
-      "apps/media/vite.app.config.ts",
     ],
     env: {
       builtin: true,
@@ -101,12 +98,9 @@ export default defineConfig({
         },
       },
       {
-        files: ["apps/media/server/**"],
+        files: ["apps/web/scripts/**"],
         rules: {
           "no-console": "off",
-          // The Vite middleware short-circuits by returning the response helper's
-          // result, then falls through to a bare next() — a mixed return by design.
-          "typescript/consistent-return": "off",
         },
       },
     ],

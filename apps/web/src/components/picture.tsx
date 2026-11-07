@@ -1,6 +1,6 @@
 import { cn } from "@hydesign/ui/lib/utils";
 
-import { imageAlt, images, type ImageKey } from "@/content";
+import { imageAlt, photoFile, type ImageKey } from "@/content";
 
 const responsiveWidths = [480, 960, 1440, 1920] as const;
 const defaultWidth = 960;
@@ -22,7 +22,7 @@ function Picture({
   loading = "lazy",
   fetchPriority,
 }: PictureProps) {
-  const source = images[image];
+  const source = photoFile(image);
   const sourceSizes = loading === "lazy" ? `auto, ${sizes}` : sizes;
   const widths = imageWidths(source.width);
   const useCloudflareImages = import.meta.env.CLOUDFLARE_IMAGES;

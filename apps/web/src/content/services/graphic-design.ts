@@ -2,7 +2,6 @@ import type { ServiceContent } from "./types";
 
 export const graphicDesign: ServiceContent = {
   slug: "graphic-design",
-  galleryFolder: "graphic-design",
   heroImage: "IMG_0939",
   galleryOrientation: "landscape",
   seoTitle: "Signage Graphic Design Frankston & Melbourne",
