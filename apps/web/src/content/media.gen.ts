@@ -450,8 +450,6 @@ export const images = {
   "lambys-male-wall-template": { src: p164, width: 2368, height: 1776 },
 };
 
-export type SiteImage = { src: string; width: number; height: number };
-
 export type ImageKey = keyof typeof images;
 
 export const imageKeys = ["IMG_2952","IMG_2982","IMG_2367","IMG_2804","IMG_8144","IMG_8267","IMG_8565","IMG_8629","IMG_0077","IMG_0081","IMG_0160","IMG_0309","IMG_0850","IMG_0893","IMG_1226","IMG_1779","IMG_1811","IMG_1990","IMG_5314","IMG_2354","IMG_2790","IMG_5567","IMG_3989","IMG_4144","IMG_4220","IMG_5432","IMG_6094","IMG_6831","IMG_6847","IMG_6954","IMG_6983","IMG_7019","IMG_7253","IMG_7579","IMG_7834","IMG_8058","IMG_8498","IMG_8902","IMG_0228","IMG_0231","IMG_0735","IMG_0938","IMG_2277","IMG_4051","IMG_5322","IMG_5767","IMG_5960","IMG_5963","IMG_6152","IMG_6169","IMG_6182","IMG_6593","IMG_6658","IMG_6947","IMG_7219","IMG_7450","IMG_7519","IMG_7769","IMG_7771","IMG_7857","IMG_7864","IMG_8060","IMG_8254","IMG_8362","IMG_8956","IMG_9033","IMG_9052","IMG_9071","IMG_9075","IMG_9167","IMG_9296","IMG_9613","IMG_9619","IMG_9666","IMG_9903","IMG_9958","IMG_0144","IMG_0331","IMG_0429","IMG_0533","IMG_0535","IMG_0694","IMG_0756","IMG_0810","IMG_0947","IMG_0949","IMG_1195","IMG_1277","IMG_1564","IMG_1868","IMG_1986","IMG_2161","IMG_2358","IMG_2395","IMG_2434","IMG_2513","IMG_2610","IMG_2710","IMG_3399","IMG_0554","IMG_0939","IMG_1116","IMG_1193","IMG_1194","IMG_1853","IMG_2160","IMG_2274","IMG_2285","IMG_2672","IMG_2675","IMG_2689","IMG_2701","IMG_5334","IMG_5535","IMG_6780","IMG_6903","IMG_7088","IMG_7324","IMG_7565","IMG_7687","IMG_8164","IMG_8583","IMG_0234","IMG_0239","IMG_0241","IMG_0245","IMG_1174","IMG_2472","IMG_4444","IMG_3540","IMG_4039","IMG_0152","IMG_2594","IMG_4109","IMG_4125","IMG_4316","IMG_0322","IMG_9917","IMG_0683","IMG_0923","IMG_1044","IMG_1427","IMG_1737","IMG_1856","IMG_1867","IMG_2027","IMG_2194","IMG_2203","IMG_2207","IMG_2291","IMG_7034","IMG_7109","IMG_7719","IMG_8986","IMG_9370","IMG_9371","IMG_9372","IMG_9374","IMG_9375","IMG_9376","IMG_9377","IMG_9378","IMG_9381","IMG_9458","lambys-male-wall-template"] as const;
@@ -641,14 +639,3 @@ export const videos = {
 };
 
 export type VideoKey = keyof typeof videos;
-
-export const videoKeys = ["dennys-kitchen","edge","handpainted","mazda-banner","rebelblue","rocomamas"] as const;
-
-export const videoMeta = {
-  "dennys-kitchen": {"location":"Geelong","folders":["digital-printing","graphic-design","project-dennys-kitchen"]},
-  "edge": {"location":"Geelong","folders":["project-edge"]},
-  "handpainted": {"location":"Windsor","folders":["hand-painted-signage","project-rocomamas"]},
-  "mazda-banner": {"location":"","folders":["banners"]},
-  "rebelblue": {"location":"Windsor","folders":["3d-signage","project-rebel-blue","shopfront-building-signage"]},
-  "rocomamas": {"location":"Windsor","folders":["project-rocomamas"]},
-} satisfies Record<VideoKey, MediaMeta>;

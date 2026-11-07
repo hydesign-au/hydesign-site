@@ -18,5 +18,3 @@ async function createCommerceClient(config: CommerceConfig & { shopEnabled: true
   const { createShopifyCommerceClient } = await import("./shopify/client");
   return createShopifyCommerceClient(config);
 }
-
-export type { CommerceClient } from "./types";

@@ -29,7 +29,6 @@ export function generateMedia() {
   const imageEntries = [];
   const imageMetaEntries = [];
   const videoEntries = [];
-  const videoMetaEntries = [];
 
   photos.forEach(([id, item], index) => {
     checkItem(errors, id, item, folders);
@@ -47,7 +46,6 @@ export function generateMedia() {
     imports.push(`import v${index} from "@media/${item.file}?url";`);
     if (item.poster) imports.push(`import vp${index} from "@media/${item.poster}?url";`);
     videoEntries.push(`  ${JSON.stringify(id)}: { src: v${index}, poster: vp${index} },`);
-    videoMetaEntries.push(`  ${JSON.stringify(id)}: ${JSON.stringify(metaOf(item))},`);
   });
 
   if (errors.length) throw new Error(`library.json problems:\n  ${errors.join("\n  ")}`);
@@ -73,8 +71,6 @@ export const images = {
 ${imageEntries.join("\n")}
 };
 
-export type SiteImage = { src: string; width: number; height: number };
-
 export type ImageKey = keyof typeof images;
 
 export const imageKeys = ${JSON.stringify(photos.map(([id]) => id))} as const;
@@ -95,12 +91,6 @@ ${videoEntries.join("\n")}
 };
 
 export type VideoKey = keyof typeof videos;
-
-export const videoKeys = ${JSON.stringify(videos.map(([id]) => id))} as const;
-
-export const videoMeta = {
-${videoMetaEntries.join("\n")}
-} satisfies Record<VideoKey, MediaMeta>;
 `;
 
   writeFileSync(mediaTsPath, out);

@@ -30,7 +30,6 @@ const MIME = {
 };
 
 export const contentTypes = MIME;
-export const stemOf = (file) => path.posix.basename(file).replace(/\.[^.]+$/, "");
 
 export function readLibrary() {
   if (!existsSync(libraryPath)) {
