@@ -147,7 +147,6 @@ export default defineConfig({
           "src/hooks/use-as-ref.ts",
           "src/hooks/use-isomorphic-layout-effect.ts",
           "src/hooks/use-lazy-ref.ts",
-          "src/hooks/use-mobile.ts",
           "src/lib/compose-refs.ts",
           "src/lib/utils.ts",
         ],
@@ -166,7 +165,7 @@ export default defineConfig({
         },
       },
       {
-        files: ["src/lib/compose-refs.ts", "src/components/ui/scroll-spy.tsx"],
+        files: ["src/lib/compose-refs.ts"],
         rules: {
           "react/exhaustive-deps": "off",
           "typescript/consistent-return": "off",
