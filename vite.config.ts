@@ -86,7 +86,7 @@ export default defineConfig({
         },
       },
       {
-        files: ["packages/ui/src/lib/compose-refs.ts", "packages/ui/src/components/scroll-spy.tsx"],
+        files: ["packages/ui/src/lib/compose-refs.ts"],
         rules: {
           "react/exhaustive-deps": "off",
           "typescript/consistent-return": "off",

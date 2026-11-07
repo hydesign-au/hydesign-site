@@ -10,11 +10,4 @@ export type ServiceIdentity = {
   navLabel: string;
 };
 
-// A service slug is any slug in the catalog. Kept as a string alias rather than a
-// generated union: the media generator validates every photo's services against
-// the live catalog, so an unknown slug fails the build, not typechecking.
-export type ServiceSlug = string;
-
 export const serviceCatalog = catalog as ServiceIdentity[];
-
-export const serviceSlugs = serviceCatalog.map((service) => service.slug);

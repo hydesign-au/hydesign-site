@@ -1,14 +1,13 @@
-export { folders, images, imageMeta, videoMeta, videos } from "./media.gen";
-export type { FolderSlug, ImageKey, MediaMeta, SiteVideo, VideoKey } from "./media.gen";
+export { images, imageMeta, videos } from "./media.gen";
+export type { FolderSlug, ImageKey } from "./media.gen";
 export { getNavItems, serviceNavItems } from "./nav";
 export type { NavItem } from "./nav";
 export { buildLlmsText } from "./llms";
 export { getProject, projects } from "./projects";
 export type { Project } from "./projects";
 export { absoluteSiteUrl, publicRoutes } from "./public-routes";
-export type { PublicRoute } from "./public-routes";
 export { customerReviews } from "./reviews";
-export type { CustomerReview, CustomerReviewsData } from "./reviews";
+export type { CustomerReview } from "./reviews";
 export { getService, homepageServices, serviceHref, services } from "./services";
 export type { PhotoGroup, Service } from "./services/types";
 export { siteSettings } from "./site";
