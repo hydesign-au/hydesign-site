@@ -9,12 +9,7 @@ skip = ["merge", "rebase"]
 
 [pre-commit.commands.format-code]
 glob = ["*.ts", "*.tsx", "*.js", "*.jsx", "*.mjs", "*.cjs", "*.css"]
-exclude = [
-  "apps/web/src/routeTree.gen.ts",
-  "apps/web/src/content/media.gen.ts",
-  "**/worker-configuration.d.ts",
-]
-run = "oxfmt --no-error-on-unmatched-pattern {staged_files}"
+run = "vp fmt --no-error-on-unmatched-pattern {staged_files}"
 stage_fixed = true
 
 [pre-commit.commands.media-library]
