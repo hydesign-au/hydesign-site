@@ -182,8 +182,8 @@ importers:
         specifier: ^1.33.5
         version: 1.33.5(@tanstack/react-start@1.169.4(@voidzero-dev/vite-plus-core@1.5.0(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(typescript@7.0.2))(esbuild@0.28.2)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(rolldown@1.2.13)(rollup@4.63.5)(supports-color@10.2.2))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       exiftool-vendored:
-        specifier: ^39.1.0
-        version: 39.1.0
+        specifier: ^39.1.1
+        version: 39.1.1
       lucide-react:
         specifier: 1.69.0
         version: 1.69.0(@types/react@19.3.0)(react@19.3.1)
@@ -2812,8 +2812,8 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
-  batch-cluster@19.5.0:
-    resolution: {integrity: sha512-iI7wS1ljoQGV2+y9LUx8VBFsfMX9VLT/aeN4P07NZYWcD3dC6SZMMJLJlmoibJ4zsnpLODXVCfndTJJNTes5PA==}
+  batch-cluster@19.6.0:
+    resolution: {integrity: sha512-tibOaQDbkVOLYXDTfEodesAdalJfeE84+R79RcjMm0YcP+NWIKolfIOO6xvu65CVtQWnl3BOGuUDT1HVynExVQ==}
     engines: {node: '>=22'}
 
   blake3-wasm@2.1.5:
@@ -3166,8 +3166,8 @@ packages:
     os: ['!win32']
     hasBin: true
 
-  exiftool-vendored@39.1.0:
-    resolution: {integrity: sha512-qjIZI+W/77TMtL/nCp4WGR2UZKd5R/Pl1nNbRCGf6qxRcWICwWTDYVEpxW/hbTjI2FRPB/FRF8E4XxHaoC1SsQ==}
+  exiftool-vendored@39.1.1:
+    resolution: {integrity: sha512-95zmYkFs2SgbDXbpKGm/VSSydvTDrLTvGqw9sQBt929G+WYs7Zz4tOhk1jkSdCEwR+h+a9Ui7SoN8FzPTXxfRw==}
     engines: {node: '>=22'}
 
   expect-type@1.4.0:
@@ -3357,9 +3357,8 @@ packages:
     resolution: {integrity: sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==}
     engines: {node: '>= 0.4'}
 
-  he@2.0.0:
-    resolution: {integrity: sha512-0jE+JPv08nhXWmI1dULybzqNt34RbkH6Ul6V4cmDONpjYx1SfyObKF38FJLaJ1K7WWD93LWL9lewzk4E1Ria4A==}
-    engines: {node: '>=22'}
+  he@1.2.0:
+    resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
 
   human-signals@2.1.0:
@@ -6977,7 +6976,7 @@ snapshots:
 
   baseline-browser-mapping@2.11.26: {}
 
-  batch-cluster@19.5.0: {}
+  batch-cluster@19.6.0: {}
 
   blake3-wasm@2.1.5: {}
 
@@ -7380,12 +7379,12 @@ snapshots:
   exiftool-vendored.pl@13.60.0:
     optional: true
 
-  exiftool-vendored@39.1.0:
+  exiftool-vendored@39.1.1:
     dependencies:
       '@photostructure/tz-lookup': 11.7.0
       '@types/luxon': 3.7.6
-      batch-cluster: 19.5.0
-      he: 2.0.0
+      batch-cluster: 19.6.0
+      he: 1.2.0
       luxon: 3.7.2
     optionalDependencies:
       exiftool-vendored.exe: 13.60.0
@@ -7574,7 +7573,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  he@2.0.0: {}
+  he@1.2.0: {}
 
   human-signals@2.1.0: {}
 
