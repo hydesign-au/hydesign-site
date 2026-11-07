@@ -1,7 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { Gallery } from "@/components/gallery";
+import { MarketingHero } from "@/components/marketing-hero";
+import { MotionReveal } from "@/components/motion-reveal";
+import { PageSection } from "@/components/page-section";
+import { galleryImages } from "@/content";
 import { breadcrumbSchema, seo } from "@/lib/seo";
-import { GalleryPage } from "@/pages/gallery";
 
 export const Route = createFileRoute("/gallery")({
   head: () =>
@@ -19,3 +23,27 @@ export const Route = createFileRoute("/gallery")({
     }),
   component: GalleryPage,
 });
+
+// Hero and subtitle only. No service filter here; the page stays decoupled from
+// the service vocabulary.
+function GalleryPage() {
+  return (
+    <>
+      <MarketingHero image="IMG_9381" title="Gallery">
+        <p>A mix of signs we have made around Melbourne.</p>
+      </MarketingHero>
+      <PageSection>
+        <MotionReveal>
+          <p className="mb-10 max-w-4xl text-lg leading-8 text-muted-foreground md:text-xl md:leading-9">
+            Shopfronts, vehicles, windows, walls, neon, lightboxes and the smaller details that pull
+            a job together. If something here gives you a direction, send it through with your
+            enquiry.
+          </p>
+        </MotionReveal>
+        <MotionReveal>
+          <Gallery images={galleryImages()} orientation="landscape" />
+        </MotionReveal>
+      </PageSection>
+    </>
+  );
+}

@@ -1,11 +1,11 @@
 import { ArrowRightIcon } from "lucide-react";
 
 import { MotionReveal } from "@/components/motion-reveal";
+import { PageHeader, PageSection } from "@/components/page-section";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Rating, RatingItem } from "@/components/ui/rating";
 import { customerReviews, type CustomerReview } from "@/content";
-import { PageHeader, PageSection } from "@/layout/page-section";
 import { cn } from "@/lib/utils";
 
 function ReviewsSection() {

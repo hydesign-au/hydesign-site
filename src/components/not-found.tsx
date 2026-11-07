@@ -1,4 +1,4 @@
-import { MarketingHero } from "@/layout/marketing-hero";
+import { MarketingHero } from "@/components/marketing-hero";
 
 function NotFoundPage() {
   return (

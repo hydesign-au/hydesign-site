@@ -3,9 +3,9 @@ import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import { siFacebook, siInstagram } from "simple-icons";
 
 import { Logo } from "@/components/logo";
+import { SiteSubfooter } from "@/components/site-subfooter";
 import { Separator } from "@/components/ui/separator";
 import { serviceNavItems, siteSettings } from "@/content";
-import { SiteSubfooter } from "@/layout/site-subfooter";
 import { cn } from "@/lib/utils";
 
 import styles from "./site-footer.module.css";

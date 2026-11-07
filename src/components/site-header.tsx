@@ -3,6 +3,7 @@ import { PhoneIcon } from "lucide-react";
 import { useLayoutEffect, useRef } from "react";
 
 import { Logo } from "@/components/logo";
+import { MobileNav } from "@/components/mobile-nav";
 import { buttonVariants } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -13,7 +14,6 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { getNavItems, serviceNavItems, siteSettings } from "@/content";
-import { MobileNav } from "@/layout/mobile-nav";
 import { isActivePath } from "@/lib/active-path";
 import { cn } from "@/lib/utils";
 

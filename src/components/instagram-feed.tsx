@@ -1,8 +1,8 @@
 import { ImagesIcon, PlayIcon } from "lucide-react";
 
 import { MotionReveal } from "@/components/motion-reveal";
+import { PageHeader, PageSection } from "@/components/page-section";
 import { siteSettings } from "@/content";
-import { PageHeader, PageSection } from "@/layout/page-section";
 import type { InstagramFeedResponse, InstagramPost, InstagramProfile } from "@/lib/instagram";
 import { cn } from "@/lib/utils";
 

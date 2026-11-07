@@ -3,11 +3,11 @@
 import { HeadContent, Outlet, Scripts, createRootRoute, redirect } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 
-import { PublicLayout } from "@/layout/public-layout";
-import { ThemeProvider } from "@/layout/theme-provider";
+import { NotFoundPage } from "@/components/not-found";
+import { PublicLayout } from "@/components/public-layout";
+import { ThemeProvider } from "@/components/theme-provider";
 import { getCommerceConfig } from "@/lib/commerce/commerce.functions";
 import { publicCacheHeaders } from "@/lib/http-cache";
-import { NotFoundPage } from "@/pages/not-found";
 
 import appCss from "../styles.css?url";
 

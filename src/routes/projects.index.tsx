@@ -1,7 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { MarketingHero } from "@/components/marketing-hero";
+import { PageSection } from "@/components/page-section";
+import { ProjectsGrid } from "@/components/projects-grid";
+import { projects } from "@/content";
 import { breadcrumbSchema, seo } from "@/lib/seo";
-import { ProjectsPage } from "@/pages/projects/index";
 
 export const Route = createFileRoute("/projects/")({
   head: () =>
@@ -19,3 +22,23 @@ export const Route = createFileRoute("/projects/")({
     }),
   component: ProjectsPage,
 });
+
+function ProjectsPage() {
+  return (
+    <>
+      <MarketingHero
+        image="IMG_5960"
+        title="Projects"
+        actions={[
+          { href: "/contact", label: "Get a Quote" },
+          { href: "/services", label: "Services", kind: "secondary" },
+        ]}
+      >
+        <p>Restaurants, nightclubs, shop fit-outs and painted walls.</p>
+      </MarketingHero>
+      <PageSection>
+        <ProjectsGrid projects={projects} headingLevel="h2" />
+      </PageSection>
+    </>
+  );
+}

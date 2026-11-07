@@ -2,9 +2,9 @@ import { isNotFound, useRouterState } from "@tanstack/react-router";
 import { type ReactNode, useEffect } from "react";
 
 import { FloatingCart } from "@/components/shop/cart-drawer";
-import { SiteFooter } from "@/layout/site-footer";
-import { SiteHeader } from "@/layout/site-header";
-import { shouldShowSiteOutro, SiteOutro } from "@/layout/site-outro";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
+import { shouldShowSiteOutro, SiteOutro } from "@/components/site-outro";
 
 type PublicLayoutProps = {
   children: ReactNode;
