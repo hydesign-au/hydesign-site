@@ -61,7 +61,7 @@ function AboutPage() {
         </MotionReveal>
       </PageSection>
 
-      <PageSection tone="muted" compact>
+      <PageSection tone="muted">
         <MotionReveal>
           <div className="grid gap-10 lg:grid-cols-[minmax(0,0.45fr)_minmax(0,0.55fr)] lg:items-center">
             <Picture image="IMG_5567" className="w-full rounded-2xl shadow-md ring-1 ring-border" />

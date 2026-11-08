@@ -35,7 +35,7 @@ function ReviewsSection() {
   );
 
   return (
-    <PageSection id="reviews" className="scroll-mt-24">
+    <PageSection id="reviews" className="scroll-mt-24 pb-0 md:pb-0">
       <MotionReveal>
         <PageHeader
           title="Reviews"
@@ -55,7 +55,7 @@ function ReviewsSection() {
       </MotionReveal>
       <MotionReveal>
         <Carousel
-          className="mt-8 [&>[data-slot=carousel-content]]:[mask-image:linear-gradient(to_right,transparent,black_0.75rem,black_calc(100%_-_0.75rem),transparent)]"
+          className="mt-4 [&>[data-slot=carousel-content]]:[mask-image:linear-gradient(to_right,transparent,black_0.75rem,black_calc(100%_-_0.75rem),transparent)]"
           opts={{ align: "start", loop: true }}
           plugins={[autoplay]}
           onFocusCapture={() => autoplay.stop()}

@@ -32,7 +32,7 @@ function SiteFooter({ separated = false, shopEnabled }: SiteFooterProps) {
   return (
     <footer id="site-footer" className="bg-muted text-foreground">
       {separated ? <Separator /> : null}
-      <div className="site-container grid gap-10 py-12 md:grid-cols-[0.95fr_0.5fr_1.5fr_1.05fr] md:gap-5 md:py-14 lg:grid-cols-[1.1fr_0.55fr_1.35fr_1fr] lg:gap-10">
+      <div className="site-container grid gap-10 py-8 md:grid-cols-[0.95fr_0.5fr_1.5fr_1.05fr] md:gap-5 md:py-10 lg:grid-cols-[1.1fr_0.55fr_1.35fr_1fr] lg:gap-10">
         <div>
           <Logo className="h-7 w-auto" />
           <p className="mt-4 max-w-sm text-sm leading-6 text-muted-foreground">

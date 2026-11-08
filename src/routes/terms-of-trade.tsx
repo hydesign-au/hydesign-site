@@ -27,7 +27,7 @@ export const Route = createFileRoute("/terms-of-trade")({
 
 function TermsOfTradePage() {
   return (
-    <PageSection compact className="pt-24 md:pt-28">
+    <PageSection className="pt-24 md:pt-28">
       <div className="mx-auto max-w-5xl">
         <PageHeader level={1} title="Terms of Trade">
           {termsOfTrade.title}

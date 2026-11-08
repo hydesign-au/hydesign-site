@@ -8,20 +8,12 @@ type PageSectionProps = {
   children: ReactNode;
   className?: string;
   tone?: PageSectionTone;
-  compact?: boolean;
   id?: string;
 };
 
-function PageSection({ children, className, compact, id, tone = "plain" }: PageSectionProps) {
+function PageSection({ children, className, id, tone = "plain" }: PageSectionProps) {
   return (
-    <section
-      id={id}
-      className={cn(
-        compact ? "py-10 md:py-12" : "py-12 md:py-16",
-        tone === "muted" && "bg-muted",
-        className,
-      )}
-    >
+    <section id={id} className={cn("py-8 md:py-10", tone === "muted" && "bg-muted", className)}>
       <div className="site-container">{children}</div>
     </section>
   );

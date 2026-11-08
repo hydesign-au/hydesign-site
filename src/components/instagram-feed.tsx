@@ -17,7 +17,7 @@ function InstagramFeedSection({ feed }: { feed: InstagramFeedResponse }) {
       : siteSettings.instagramUrl;
 
   return (
-    <PageSection compact>
+    <PageSection>
       <MotionReveal>
         <PageHeader title="On Instagram" />
         <InstagramProfileLink href={instagramHref} profile={feed.profile} />

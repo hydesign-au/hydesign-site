@@ -115,7 +115,7 @@ function ShopDetailPage({ product, storefront }: ShopDetailPageProps) {
   }
 
   return (
-    <PageSection className="pt-24 md:pt-32">
+    <PageSection className="pt-24 md:pt-28">
       <article className="grid gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(22rem,0.9fr)] lg:items-start lg:gap-12">
         <ProductGallery
           images={images}

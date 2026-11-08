@@ -90,7 +90,7 @@ function ProjectPageTemplate({ project }: ProjectPageTemplateProps) {
         </p>
       </MarketingHero>
 
-      <PageSection compact>
+      <PageSection>
         <MotionReveal>
           <div className="grid max-w-4xl gap-5 text-lg leading-8 text-muted-foreground md:text-xl md:leading-9">
             {project.intro.map((paragraph, index) => (
@@ -124,7 +124,7 @@ function ProjectPageTemplate({ project }: ProjectPageTemplateProps) {
       </PageSection>
 
       {project.sections.map((section, index) => (
-        <PageSection key={`${project.slug}-section-${index}`} compact>
+        <PageSection key={`${project.slug}-section-${index}`}>
           <MotionReveal>
             <div
               className={cn(
@@ -165,7 +165,7 @@ function ProjectPageTemplate({ project }: ProjectPageTemplateProps) {
       ) : null}
 
       {relatedProjects.length ? (
-        <PageSection compact>
+        <PageSection>
           <MotionReveal>
             <PageHeader title="More projects" />
             <div className="mt-8 grid gap-5 md:grid-cols-2">
