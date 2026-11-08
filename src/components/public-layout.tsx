@@ -1,10 +1,8 @@
-import { isNotFound, useRouterState } from "@tanstack/react-router";
 import { type ReactNode, useEffect } from "react";
 
 import { FloatingCart } from "@/components/shop/cart-drawer";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { shouldShowSiteOutro, SiteOutro } from "@/components/site-outro";
 
 type PublicLayoutProps = {
   children: ReactNode;
@@ -12,16 +10,6 @@ type PublicLayoutProps = {
 };
 
 function PublicLayout({ children, shopEnabled }: PublicLayoutProps) {
-  const showSiteOutro = useRouterState({
-    select: (state) => {
-      const hasNotFoundMatch = state.matches.some(
-        (match) => match.status === "notFound" || isNotFound(match.error),
-      );
-
-      return !hasNotFoundMatch && shouldShowSiteOutro(state.location.pathname);
-    },
-  });
-
   useEffect(() => {
     document.addEventListener("click", preventCurrentRouteNavigation, true);
     return () => document.removeEventListener("click", preventCurrentRouteNavigation, true);
@@ -37,8 +25,7 @@ function PublicLayout({ children, shopEnabled }: PublicLayoutProps) {
       </a>
       <SiteHeader shopEnabled={shopEnabled} />
       <main id="content">{children}</main>
-      {showSiteOutro ? <SiteOutro /> : null}
-      <SiteFooter separated={!showSiteOutro} shopEnabled={shopEnabled} />
+      <SiteFooter shopEnabled={shopEnabled} />
       {shopEnabled ? <FloatingCart /> : null}
     </div>
   );
