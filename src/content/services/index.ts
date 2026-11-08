@@ -54,20 +54,13 @@ export function serviceHref(service: Pick<Service, "slug">) {
   return `/services/${service.slug}`;
 }
 
-// The homepage preview cards, most enquiry-worthy first.
 const homepageSlugs = [
   "hand-painted-signage",
-  "stickers-decals",
   "shopfront-building-signage",
-  "window-signage",
-  "wall-graphics",
   "vehicle-signage",
-  "banners",
   "illuminated-signage",
-  "3d-signage",
   "digital-printing",
-  "a-frame-signage",
-  "graphic-design",
+  "window-signage",
 ];
 
 export const homepageServices: Service[] = homepageSlugs.map((slug) => {

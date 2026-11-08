@@ -75,7 +75,7 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
         </p>
       </PhotoHeroFrame>
 
-      <PageSection id="services" className="scroll-mt-24">
+      <PageSection id="services" tone="muted" className="scroll-mt-24">
         <MotionReveal>
           <PageHeader
             title="Services"
@@ -107,6 +107,31 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
                 compact
               />
             ))}
+          </div>
+        </MotionReveal>
+      </PageSection>
+
+      <PageSection id="projects">
+        <MotionReveal>
+          <PageHeader
+            title="Projects"
+            action={
+              <Link
+                to="/projects"
+                className={cn(buttonVariants({ variant: "outline", className: "group" }))}
+              >
+                Projects
+                <ArrowRightIcon
+                  data-icon="inline-end"
+                  className="motion-safe:transition-transform motion-safe:group-hover/button:translate-x-1 motion-safe:group-focus-within/button:translate-x-1"
+                />
+              </Link>
+            }
+          />
+        </MotionReveal>
+        <MotionReveal>
+          <div className="mt-8">
+            <ProjectsGrid projects={projects} />
           </div>
         </MotionReveal>
       </PageSection>
@@ -146,32 +171,7 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
 
       <ReviewsSection />
 
-      <PageSection tone="muted">
-        <MotionReveal>
-          <PageHeader
-            title="Projects"
-            action={
-              <Link
-                to="/projects"
-                className={cn(buttonVariants({ variant: "outline", className: "group" }))}
-              >
-                Projects
-                <ArrowRightIcon
-                  data-icon="inline-end"
-                  className="motion-safe:transition-transform motion-safe:group-hover/button:translate-x-1 motion-safe:group-focus-within/button:translate-x-1"
-                />
-              </Link>
-            }
-          />
-        </MotionReveal>
-        <MotionReveal>
-          <div className="mt-8">
-            <ProjectsGrid projects={projects} />
-          </div>
-        </MotionReveal>
-      </PageSection>
-
-      <PageSection>
+      <PageSection id="gallery" tone="muted" className="scroll-mt-24">
         <MotionReveal>
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-black leading-tight md:text-5xl">Our Gallery</h2>

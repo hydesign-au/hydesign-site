@@ -35,7 +35,7 @@ function ReviewsSection() {
   );
 
   return (
-    <PageSection id="reviews" className="scroll-mt-24 pb-0 md:pb-0">
+    <PageSection id="reviews" className="scroll-mt-24">
       <MotionReveal>
         <PageHeader
           title="Reviews"
