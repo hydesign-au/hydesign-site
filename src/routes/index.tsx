@@ -66,7 +66,7 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
           </>
         }
         actions={[{ href: "/contact", label: "Get a Quote" }, callHeroAction]}
-        scrollLabel="See our services"
+        scrollLabel="See Our Services"
         scrollTargetId="services"
       >
         <p>

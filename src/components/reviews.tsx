@@ -70,14 +70,8 @@ function ReviewsSection() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious
-            variant="ghost"
-            className="left-0 border-glass-border bg-glass text-glass-foreground shadow-glass inset-shadow-glass backdrop-blur-glass hover:bg-glass"
-          />
-          <CarouselNext
-            variant="ghost"
-            className="right-0 border-glass-border bg-glass text-glass-foreground shadow-glass inset-shadow-glass backdrop-blur-glass hover:bg-glass"
-          />
+          <CarouselPrevious variant="glass" className="left-0" />
+          <CarouselNext variant="glass" className="right-0" />
         </Carousel>
       </MotionReveal>
     </PageSection>

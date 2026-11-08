@@ -38,9 +38,7 @@ function MobileNav({ items, pathname }: { items: NavItem[]; pathname: string }) 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger
-        render={
-          <Button variant="outline" size="icon" className="size-11" aria-label="Open navigation" />
-        }
+        render={<Button variant="glass" size="icon-2xl" aria-label="Open navigation" />}
       >
         <MenuIcon />
       </SheetTrigger>
@@ -51,14 +49,7 @@ function MobileNav({ items, pathname }: { items: NavItem[]; pathname: string }) 
         <SheetHeader className="flex-row items-center justify-between border-b p-4">
           <SheetTitle className="text-xl font-bold">Menu</SheetTitle>
           <SheetClose
-            render={
-              <Button
-                variant="ghost"
-                size="icon"
-                className="size-11"
-                aria-label="Close navigation"
-              />
-            }
+            render={<Button variant="ghost" size="icon-2xl" aria-label="Close navigation" />}
           >
             <XIcon />
           </SheetClose>

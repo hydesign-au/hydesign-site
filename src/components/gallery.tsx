@@ -2,6 +2,7 @@ import { ChevronLeftIcon, ChevronRightIcon, XIcon } from "lucide-react";
 import { useState } from "react";
 
 import { Picture } from "@/components/picture";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogClose,
@@ -109,7 +110,6 @@ function Gallery({ images: keys, orientation, pageSize = 8, className }: Gallery
               <PaginationPrevious
                 href="#"
                 aria-disabled={page === 0}
-                className={cn(page === 0 && "pointer-events-none opacity-50")}
                 onClick={(event) => {
                   event.preventDefault();
                   selectPage(Math.max(0, page - 1));
@@ -140,7 +140,6 @@ function Gallery({ images: keys, orientation, pageSize = 8, className }: Gallery
               <PaginationNext
                 href="#"
                 aria-disabled={page === pageCount - 1}
-                className={cn(page === pageCount - 1 && "pointer-events-none opacity-50")}
                 onClick={(event) => {
                   event.preventDefault();
                   selectPage(Math.min(pageCount - 1, page + 1));
@@ -185,14 +184,15 @@ function Gallery({ images: keys, orientation, pageSize = 8, className }: Gallery
                 </div>
                 <DialogClose
                   render={
-                    <button
-                      type="button"
+                    <Button
+                      variant="glass"
+                      size="icon-lg"
                       aria-label="Close photo"
-                      className="absolute top-3 right-3 grid size-9 place-items-center rounded-full border border-glass-border bg-glass text-glass-foreground shadow-glass inset-shadow-glass backdrop-blur-glass transition-colors hover:bg-popover focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
+                      className="absolute top-3 right-3 rounded-full"
                     />
                   }
                 >
-                  <XIcon className="size-4" />
+                  <XIcon />
                 </DialogClose>
                 {keys.length > 1 ? (
                   <>
@@ -218,17 +218,18 @@ function Gallery({ images: keys, orientation, pageSize = 8, className }: Gallery
 function NavButton({ side, onClick }: { side: "left" | "right"; onClick: () => void }) {
   const Icon = side === "left" ? ChevronLeftIcon : ChevronRightIcon;
   return (
-    <button
-      type="button"
+    <Button
+      variant="glass"
+      size="icon-xl"
       onClick={onClick}
       aria-label={side === "left" ? "Previous photo" : "Next photo"}
       className={cn(
-        "absolute top-1/2 -translate-y-1/2 grid size-10 place-items-center rounded-full border border-glass-border bg-glass text-glass-foreground shadow-glass inset-shadow-glass backdrop-blur-glass transition-colors hover:bg-popover focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
+        "absolute top-1/2 -translate-y-1/2 rounded-full",
         side === "left" ? "left-3" : "right-3",
       )}
     >
-      <Icon className="size-5" />
-    </button>
+      <Icon />
+    </Button>
   );
 }
 

@@ -116,9 +116,8 @@ function SiteHeader({ shopEnabled }: { shopEnabled: boolean }) {
             href={siteSettings.phoneHref}
             aria-label={`Call ${siteSettings.phone}`}
             className={cn(
-              buttonVariants({ variant: "outline", size: "lg" }),
-              styles.call,
-              "size-11 px-0 lg:h-9 lg:w-auto lg:px-3",
+              buttonVariants({ variant: "glass", size: "icon-2xl" }),
+              "lg:h-9 lg:w-auto lg:gap-1.5 lg:px-3",
             )}
           >
             <PhoneIcon />

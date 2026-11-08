@@ -22,7 +22,7 @@ function ProductGallery({ images, onSelect, productTitle, selectedImage }: Produ
                 key={image.url}
                 type="button"
                 className={cn(
-                  "size-16 shrink-0 overflow-hidden rounded-lg bg-muted outline-none ring-1 ring-foreground/10 transition focus-visible:ring-3 focus-visible:ring-ring/50 lg:size-[4.5rem]",
+                  "size-16 shrink-0 overflow-hidden rounded-lg bg-muted outline-none ring-1 ring-border transition-shadow duration-200 motion-reduce:transition-none focus-visible:ring-3 focus-visible:ring-ring/50 lg:size-[4.5rem]",
                   selected && "ring-2 ring-primary",
                 )}
                 onClick={() => onSelect(image)}

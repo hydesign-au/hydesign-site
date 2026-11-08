@@ -188,14 +188,14 @@ function ShopDetailPage({ product, storefront }: ShopDetailPageProps) {
                 <CheckIcon data-icon="inline-start" />
               ) : null}
               {product.requiresSellingPlan
-                ? "Purchase options unavailable"
+                ? "Purchase Options Unavailable"
                 : !selectedVariant?.availableForSale
-                  ? "Sold out"
+                  ? "Sold Out"
                   : addStatus === "adding"
                     ? "Adding"
                     : addStatus === "added"
                       ? "Added"
-                      : "Add to cart"}
+                      : "Add to Cart"}
             </Button>
           </Pending>
 

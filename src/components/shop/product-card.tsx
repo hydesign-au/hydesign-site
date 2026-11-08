@@ -50,7 +50,7 @@ function ProductCard({ product }: ProductCardProps) {
         )}
       </Link>
 
-      <div className="text-shadow-photo pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-photo-scrim/90 via-photo-scrim/65 to-transparent p-4 pt-20 text-white">
+      <div className="dark text-shadow-photo pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-photo-scrim/90 via-photo-scrim/65 to-transparent p-4 pt-20 text-white">
         <div className="flex items-start justify-between gap-3">
           <h2 className="min-w-0 text-lg font-black leading-tight">{product.title}</h2>
           <span className="shrink-0 text-sm font-semibold">{formatProductPrice(product)}</span>
@@ -66,7 +66,7 @@ function ProductCard({ product }: ProductCardProps) {
               <Button
                 type="button"
                 size="icon-sm"
-                variant="secondary"
+                variant="glass"
                 className="pointer-events-auto relative z-10 rounded-full"
                 onClick={() => void quickAdd()}
                 aria-label={

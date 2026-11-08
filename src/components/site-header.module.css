@@ -55,10 +55,6 @@
     & .navItem[data-active] {
       @apply bg-primary/20 text-primary;
     }
-
-    & .call {
-      @apply border-photo-foreground/20 bg-photo-scrim/50 text-photo-foreground hover:bg-photo-scrim/70;
-    }
   }
 
   .header[data-motion-ready] .navItem {

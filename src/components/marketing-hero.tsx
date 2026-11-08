@@ -178,17 +178,16 @@ function PhotoHeroFrame({
       </div>
 
       {scrollTargetId ? (
-        <button
+        <Button
           type="button"
+          variant="glass"
+          size="icon-2xl"
           aria-label={scrollLabel}
           onClick={() => scrollToTarget(scrollTargetId)}
-          className={cn(
-            "border-glass-border bg-glass text-glass-foreground hover:bg-popover",
-            "absolute bottom-5 left-1/2 z-10 flex size-11 lg:bottom-8 -translate-x-1/2 items-center justify-center rounded-full border shadow-glass inset-shadow-glass backdrop-blur-glass transition-colors",
-          )}
+          className="absolute bottom-5 left-1/2 z-10 -translate-x-1/2 rounded-full lg:bottom-8"
         >
-          <ArrowDownIcon className="size-5" />
-        </button>
+          <ArrowDownIcon />
+        </Button>
       ) : null}
     </section>
   );
@@ -228,7 +227,7 @@ function HeroActions({ actions, size }: { actions?: HeroAction[]; size: "default
   return (
     <div className={cn("mt-8 flex flex-wrap gap-3", styles.actions)}>
       {actions.map((action) => {
-        const variant = action.kind === "secondary" ? "outline" : "default";
+        const variant = action.kind === "secondary" ? "glass" : "default";
         const content = (
           <>
             {action.label}
