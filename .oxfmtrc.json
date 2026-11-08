@@ -1,4 +1,10 @@
 {
   "printWidth": 100,
-  "ignorePatterns": ["**/worker-configuration.d.ts"]
+  "sortImports": true,
+  "ignorePatterns": [
+    "src/routeTree.gen.ts",
+    "**/worker-configuration.d.ts",
+    ".mise/locks/",
+    "pnpm-lock.yaml"
+  ]
 }
