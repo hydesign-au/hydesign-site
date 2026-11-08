@@ -21,16 +21,11 @@ function InstagramFeedSection({ feed }: { feed: InstagramFeedResponse }) {
     return null;
   }
 
-  const instagramHref =
-    feed.profile.username.length > 0
-      ? `https://www.instagram.com/${feed.profile.username}/`
-      : siteSettings.instagramUrl;
-
   return (
     <PageSection>
       <MotionReveal>
         <PageHeader title="On Instagram" icon={InstagramIcon} />
-        <InstagramProfileLink href={instagramHref} profile={feed.profile} />
+        <InstagramProfileLink href={siteSettings.instagramUrl} profile={feed.profile} />
       </MotionReveal>
       <InstagramPostGrid posts={feed.posts} username={feed.profile.username} />
     </PageSection>
