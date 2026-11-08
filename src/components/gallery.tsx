@@ -153,35 +153,29 @@ function Gallery({ images: keys, orientation, pageSize = 8, className }: Gallery
       <Dialog open={active !== null} onOpenChange={(open) => !open && setActiveIndex(null)}>
         <DialogContent
           showCloseButton={false}
-          className="w-[calc(100vw-1rem)] max-w-[calc(100vw-1rem)] gap-0 overflow-hidden p-0 sm:w-[min(92vw,72rem)] sm:max-w-[min(92vw,72rem)]"
+          className={cn(
+            "w-[min(calc(100vw-1rem),calc((100svh-4rem)*var(--photo-ratio)))] max-w-none gap-0 overflow-hidden p-0 sm:w-[min(92vw,72rem,calc((100svh-6rem)*var(--photo-ratio)))] sm:max-w-none",
+            activeIsPortrait ? "[--photo-ratio:0.75]" : "[--photo-ratio:1.333333]",
+          )}
           onKeyDown={(event) => {
             if (event.key === "ArrowRight") step(1);
             if (event.key === "ArrowLeft") step(-1);
           }}
         >
           {active ? (
-            <figure className="grid max-h-[calc(100svh-1rem)] w-full grid-rows-[minmax(0,1fr)_auto] overflow-hidden sm:max-h-[calc(100svh-3rem)]">
+            <figure className="grid w-full">
               <DialogTitle className="sr-only">{imageAlt(active)}</DialogTitle>
               <DialogDescription className="sr-only">
                 Photo {(activeIndex ?? 0) + 1} of {keys.length}
               </DialogDescription>
-              <div className="relative grid min-h-0 place-items-center bg-muted">
-                <div
-                  className={cn(
-                    "grid place-items-center",
-                    activeIsPortrait
-                      ? "aspect-[3/4] w-[min(100%,calc(75svh-4.5rem))] sm:w-[min(100%,calc(75svh-6rem))]"
-                      : "aspect-[4/3] w-[min(100%,calc(133.333svh-8rem))] sm:w-[min(100%,calc(133.333svh-10.667rem))]",
-                  )}
-                >
-                  <Picture
-                    key={active}
-                    image={active}
-                    sizes="90vw"
-                    loading="eager"
-                    className="size-full object-contain"
-                  />
-                </div>
+              <div className="relative aspect-(--photo-ratio) w-full bg-muted [&>picture]:absolute [&>picture]:inset-0">
+                <Picture
+                  key={active}
+                  image={active}
+                  sizes="90vw"
+                  loading="eager"
+                  className="size-full object-cover"
+                />
                 <DialogClose
                   render={
                     <Button
@@ -201,10 +195,10 @@ function Gallery({ images: keys, orientation, pageSize = 8, className }: Gallery
                   </>
                 ) : null}
               </div>
-              <figcaption className="flex items-center justify-between gap-4 px-4 py-3 text-sm">
-                <span className="font-medium">{imageLabel(active)}</span>
+              <figcaption className="flex h-12 min-w-0 items-center justify-between gap-4 px-4 text-sm">
+                <span className="truncate font-medium">{imageLabel(active)}</span>
                 {imageLocation(active) ? (
-                  <span className="text-muted-foreground">{imageLocation(active)}</span>
+                  <span className="shrink-0 text-muted-foreground">{imageLocation(active)}</span>
                 ) : null}
               </figcaption>
             </figure>
