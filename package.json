@@ -45,7 +45,7 @@
     "@types/react-dom": "19.3.0",
     "@vitejs/plugin-react": "6.2.1",
     "exiftool-vendored": "^39.1.1",
-    "image-size": "^2.0.4",
+    "image-size": "^2.1.0",
     "oxlint": "^1.92.0",
     "oxlint-tsgolint": "^7.0.2006",
     "shadcn": "^4.23.0",
