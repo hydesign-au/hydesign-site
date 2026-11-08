@@ -11,7 +11,7 @@ The website for HyDesign, a family signwriting, signage and printing business in
 - `src/content/media.ts`: turns the photo and video files into URLs and sizes.
 - `src/assets/photos`: the site's photos, named after the camera file. `src/assets/videos`: short silent clips, each with a JPEG poster of the same name.
 - `src/lib`: `*.functions.ts` are server functions, `*.server.ts` hold credentials and external calls (contact email, Instagram, Shopify), the rest are shared helpers. `src/server/env.ts` reads Worker bindings.
-- `wrangler.toml`: Worker bindings, the staging and preview domains, and preview-only values.
+- `wrangler.toml`: every Worker setting, for production at the top level and for previews in the `previews` block. The dashboard holds only secrets and the Workers Builds settings.
 
 ## Contracts
 
@@ -35,7 +35,7 @@ The website for HyDesign, a family signwriting, signage and printing business in
 - `format` (oxfmt) and `lint:fix` (oxlint, type-aware) are the loop, with `typecheck` (tsc). CI runs `fmt-check`, `lint`, `typecheck` and `build` read-only.
 - Lefthook formats staged files, relocks mise and lints workflows on commit.
 - `mise run photo <files>` adds photos. JPEGs are copied as they are, other formats go through macOS `sips`, and GPS and HDR gain maps are stripped. Each new photo then needs a `photos.ts` entry.
-- Cloudflare Workers Builds deploys `main` to staging.hydesign.com.au and other branches to `<branch>.previews.hydesign.com.au`.
+- Cloudflare Workers Builds deploys `main` to staging.hydesign.com.au and other branches to `<branch>.previews.hydesign.com.au`. Commits that touch only tooling, CI or docs don't build.
 
 ## Commits
 
