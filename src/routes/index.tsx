@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import createAutoplay from "embla-carousel-autoplay";
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon, CameraIcon, FolderOpenIcon, WrenchIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { InstagramFeedSection } from "@/components/instagram-feed";
@@ -79,6 +79,7 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
         <MotionReveal>
           <PageHeader
             title="Services"
+            icon={WrenchIcon}
             action={
               <Link
                 to="/services"
@@ -115,6 +116,7 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
         <MotionReveal>
           <PageHeader
             title="Projects"
+            icon={FolderOpenIcon}
             action={
               <Link
                 to="/projects"
@@ -174,7 +176,7 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
       <PageSection id="gallery" tone="muted" className="scroll-mt-24">
         <MotionReveal>
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-black leading-tight md:text-5xl">Our Gallery</h2>
+            <PageHeader title="Our Gallery" icon={CameraIcon} align="center" />
             <p className="mt-4 text-base leading-7 text-muted-foreground md:text-lg md:leading-8">
               Signs we have made for shops, venues, offices and vehicles around Melbourne. If
               something gets you thinking, send it through with your enquiry.

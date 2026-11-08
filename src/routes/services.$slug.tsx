@@ -1,5 +1,5 @@
 import { createFileRoute, notFound, Link } from "@tanstack/react-router";
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon, CameraIcon } from "lucide-react";
 
 import { ExpressiveHeading } from "@/components/expressive-heading";
 import { Gallery } from "@/components/gallery";
@@ -150,7 +150,7 @@ function ServicePageTemplate({ service }: { service: Service }) {
       {galleryPhotos.length ? (
         <PageSection>
           <MotionReveal>
-            <PageHeader title={sections.length ? "More photos" : "Photos"} />
+            <PageHeader title="Gallery" icon={CameraIcon} />
           </MotionReveal>
           <MotionReveal>
             <Gallery

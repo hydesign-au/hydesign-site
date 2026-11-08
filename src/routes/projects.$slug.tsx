@@ -1,5 +1,5 @@
 import { createFileRoute, notFound, Link } from "@tanstack/react-router";
-import { ArrowRightIcon, MapPinIcon } from "lucide-react";
+import { ArrowRightIcon, CameraIcon, MapPinIcon } from "lucide-react";
 
 import { Gallery } from "@/components/gallery";
 import { MarketingHero } from "@/components/marketing-hero";
@@ -152,7 +152,7 @@ function ProjectPageTemplate({ project }: ProjectPageTemplateProps) {
       {galleryPhotos.length ? (
         <PageSection>
           <MotionReveal>
-            <PageHeader title="Photos" />
+            <PageHeader title="Gallery" icon={CameraIcon} />
           </MotionReveal>
           <MotionReveal>
             <Gallery

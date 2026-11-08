@@ -1,5 +1,5 @@
 import autoplayPlugin from "embla-carousel-autoplay";
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon, MessageSquareQuoteIcon } from "lucide-react";
 import { useMemo } from "react";
 import { siGoogle } from "simple-icons";
 
@@ -39,6 +39,7 @@ function ReviewsSection() {
       <MotionReveal>
         <PageHeader
           title="Reviews"
+          icon={MessageSquareQuoteIcon}
           action={
             <a
               href={customerReviews.googleMapsUrl}

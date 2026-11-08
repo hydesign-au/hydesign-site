@@ -1,10 +1,20 @@
 import { ImagesIcon, PlayIcon } from "lucide-react";
+import type { SVGProps } from "react";
+import { siInstagram } from "simple-icons";
 
 import { MotionReveal } from "@/components/motion-reveal";
 import { PageHeader, PageSection } from "@/components/page-section";
 import { siteSettings } from "@/content";
 import type { InstagramFeedResponse, InstagramPost, InstagramProfile } from "@/lib/instagram";
 import { cn } from "@/lib/utils";
+
+function InstagramIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d={siInstagram.path} />
+    </svg>
+  );
+}
 
 function InstagramFeedSection({ feed }: { feed: InstagramFeedResponse }) {
   if (!feed.enabled || feed.posts.length === 0) {
@@ -19,7 +29,7 @@ function InstagramFeedSection({ feed }: { feed: InstagramFeedResponse }) {
   return (
     <PageSection>
       <MotionReveal>
-        <PageHeader title="On Instagram" />
+        <PageHeader title="On Instagram" icon={InstagramIcon} />
         <InstagramProfileLink href={instagramHref} profile={feed.profile} />
       </MotionReveal>
       <InstagramPostGrid posts={feed.posts} username={feed.profile.username} />

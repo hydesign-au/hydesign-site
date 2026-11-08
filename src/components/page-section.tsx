@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { ComponentType, ReactNode, SVGProps } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -21,6 +21,8 @@ function PageSection({ children, className, id, tone = "plain" }: PageSectionPro
 
 type PageHeaderProps = {
   title: string;
+  icon?: ComponentType<SVGProps<SVGSVGElement>>;
+  align?: "start" | "center";
   children?: ReactNode;
   action?: ReactNode;
   className?: string;
@@ -28,15 +30,41 @@ type PageHeaderProps = {
   level?: 1 | 2;
 };
 
-function PageHeader({ action, children, className, label, level = 2, title }: PageHeaderProps) {
+function PageHeader({
+  action,
+  align = "start",
+  children,
+  className,
+  icon: Icon,
+  label,
+  level = 2,
+  title,
+}: PageHeaderProps) {
   const Heading = level === 1 ? "h1" : "h2";
 
   return (
     <div className={className}>
-      <div className="flex items-center justify-between gap-4">
+      <div
+        className={cn(
+          "flex items-center gap-4",
+          align === "center" ? "justify-center text-center" : "justify-between",
+        )}
+      >
         <div className="max-w-3xl">
           {label ? <p className="text-sm font-bold uppercase text-primary-ink">{label}</p> : null}
-          <Heading className={cn("text-3xl font-black leading-tight md:text-5xl", label && "mt-3")}>
+          <Heading
+            className={cn(
+              "text-3xl font-black leading-tight md:text-5xl",
+              Icon && "flex items-center gap-3",
+              label && "mt-3",
+            )}
+          >
+            {Icon ? (
+              <Icon
+                aria-hidden
+                className="size-6 -translate-y-[0.08em] shrink-0 text-primary-ink md:size-8"
+              />
+            ) : null}
             {title}
           </Heading>
         </div>
