@@ -178,8 +178,8 @@ function HomePage({ instagramFeed }: { instagramFeed: InstagramFeedResponse }) {
           <div className="mx-auto max-w-3xl text-center">
             <PageHeader title="Our Gallery" icon={CameraIcon} align="center" />
             <p className="mt-4 text-base leading-7 text-muted-foreground md:text-lg md:leading-8">
-              Signs we have made for shops, venues, offices and vehicles around Melbourne. If
-              something gets you thinking, send it through with your enquiry.
+              Our work for shops, venues, offices and vehicles around Melbourne. If something gets
+              you thinking, send it through with your enquiry.
             </p>
           </div>
         </MotionReveal>

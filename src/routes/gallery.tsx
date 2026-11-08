@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useHydrated } from "@tanstack/react-router";
+import { useState } from "react";
 
 import { Gallery } from "@/components/gallery";
 import { MarketingHero } from "@/components/marketing-hero";
@@ -10,7 +11,7 @@ import { breadcrumbSchema, seo } from "@/lib/seo";
 export const Route = createFileRoute("/gallery")({
   head: () =>
     seo({
-      title: "Signage Gallery",
+      title: "Gallery",
       description:
         "Photos of signs we have painted, printed, fabricated and installed around Melbourne.",
       pathname: "/gallery",
@@ -24,24 +25,35 @@ export const Route = createFileRoute("/gallery")({
   component: GalleryPage,
 });
 
-// Hero and subtitle only. No service filter here; the page stays decoupled from
-// the service vocabulary.
 function GalleryPage() {
+  const hydrated = useHydrated();
+  const [images] = useState(() => {
+    const shuffled = [...galleryImages()];
+    for (let index = shuffled.length - 1; index > 0; index--) {
+      const other = Math.floor(Math.random() * (index + 1));
+      [shuffled[index], shuffled[other]] = [shuffled[other], shuffled[index]];
+    }
+    return shuffled;
+  });
+
   return (
     <>
-      <MarketingHero image="IMG_9381" title="Gallery">
-        <p>A mix of signs we have made around Melbourne.</p>
-      </MarketingHero>
+      <MarketingHero
+        image="IMG_9381"
+        title="Gallery"
+        subtitle="Our work for shops, venues, offices and vehicles around Melbourne. If something gets you thinking, send it through with your enquiry."
+        actions={[
+          { href: "/contact", label: "Get a Quote" },
+          { href: "/projects", label: "Projects", kind: "secondary" },
+        ]}
+      />
       <PageSection>
         <MotionReveal>
-          <p className="mb-10 max-w-4xl text-lg leading-8 text-muted-foreground md:text-xl md:leading-9">
-            Shopfronts, vehicles, windows, walls, neon, lightboxes and the smaller details that pull
-            a job together. If something here gives you a direction, send it through with your
-            enquiry.
-          </p>
-        </MotionReveal>
-        <MotionReveal>
-          <Gallery images={galleryImages()} orientation="landscape" />
+          <Gallery
+            images={hydrated ? images : galleryImages()}
+            orientation="landscape"
+            pageSize={images.length}
+          />
         </MotionReveal>
       </PageSection>
     </>
