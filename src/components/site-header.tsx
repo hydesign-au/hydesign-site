@@ -1,4 +1,4 @@
-import { Link, useRouter, useRouterState } from "@tanstack/react-router";
+import { createLink, Link, useRouter, useRouterState } from "@tanstack/react-router";
 import { PhoneIcon } from "lucide-react";
 import { useLayoutEffect, useRef } from "react";
 
@@ -18,6 +18,8 @@ import { isActivePath } from "@/lib/active-path";
 import { cn } from "@/lib/utils";
 
 import styles from "./site-header.module.css";
+
+const ServiceNavigationLink = createLink(NavigationMenuLink);
 
 type PathnameRouterState = {
   location: {
@@ -178,13 +180,14 @@ function DesktopServiceNavItem({
 }) {
   return (
     <li>
-      <NavigationMenuLink
-        render={<Link to={href} />}
+      <ServiceNavigationLink
+        to={href}
         active={active}
+        closeOnClick
         className="w-fit px-2 py-1 text-sm font-medium leading-6 text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground data-active:bg-primary/20 data-active:text-primary-ink"
       >
         {title}
-      </NavigationMenuLink>
+      </ServiceNavigationLink>
     </li>
   );
 }
