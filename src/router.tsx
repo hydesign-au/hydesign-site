@@ -5,7 +5,12 @@ import { routeTree } from "./routeTree.gen";
 export function getRouter() {
   return createRouter({
     routeTree,
-    defaultViewTransition: false,
+    defaultViewTransition: {
+      types: ({ pathChanged }) =>
+        pathChanged && !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? ["page"]
+          : false,
+    },
     scrollRestoration: true,
     trailingSlash: "preserve",
   });

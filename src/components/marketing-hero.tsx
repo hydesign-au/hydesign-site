@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowDownIcon, ArrowRightIcon, MailIcon, PhoneIcon } from "lucide-react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import type { ReactNode } from "react";
 
 import { Picture } from "@/components/picture";
@@ -39,7 +38,6 @@ type PhotoHeroFrameBaseProps = {
   eyebrow?: ReactNode;
   fullScreen?: boolean;
   media?: ReactNode;
-  mediaKey?: string;
   subtitle?: ReactNode;
   variant?: "page" | "home";
 };
@@ -82,7 +80,6 @@ function PhotoHeroFrame({
   eyebrow,
   fullScreen,
   media,
-  mediaKey,
   scrollLabel,
   scrollTargetId,
   subtitle,
@@ -90,7 +87,6 @@ function PhotoHeroFrame({
   variant = "page",
 }: PhotoHeroFrameProps) {
   const parallaxRef = useMediaParallax();
-  const reduceMotion = useReducedMotion();
   const isHomeHero = variant === "home";
   const actionSize = isHomeHero || fullScreen ? "lg" : "default";
 
@@ -109,25 +105,14 @@ function PhotoHeroFrame({
           page edge, so it ends in a rounded edge rather than a hard line. Only the panel is inset:
           the copy keeps the page's content column. */}
       <div className="absolute inset-0 overflow-hidden bg-photo-scrim lg:inset-3 lg:rounded-2xl">
-        <AnimatePresence initial={false} mode="popLayout">
-          {media ? (
-            <motion.div
-              key={mediaKey ?? "hero-media"}
-              initial={reduceMotion ? false : { opacity: 0, scale: 1.005, x: 12 }}
-              animate={{ opacity: 1, scale: 1, x: 0 }}
-              exit={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 1.005, x: -12 }}
-              transition={{ duration: reduceMotion ? 0 : 0.36, ease: "easeOut" }}
-              className="absolute inset-0 overflow-hidden"
-            >
-              <div
-                ref={parallaxRef}
-                className="absolute inset-x-0 -top-[15%] h-[140%] opacity-80 will-change-transform"
-              >
-                {media}
-              </div>
-            </motion.div>
-          ) : null}
-        </AnimatePresence>
+        {media ? (
+          <div
+            ref={parallaxRef}
+            className="absolute inset-x-0 -top-[15%] h-[140%] opacity-80 will-change-transform"
+          >
+            {media}
+          </div>
+        ) : null}
         {/* The copy sits left and low, so the scrim darkens that corner and leaves the rest of the
             photo clear. On phones the copy spans the full width, so the right side keeps some
             scrim. The top band keeps the header readable before it picks up its glass. */}
@@ -204,7 +189,6 @@ function MarketingHero({
   video,
 }: MarketingHeroProps) {
   const media = getHeroMedia({ image, video });
-  const mediaKey = video?.src ?? image;
 
   return (
     <PhotoHeroFrame
@@ -212,7 +196,6 @@ function MarketingHero({
       eyebrow={eyebrow}
       fullScreen={fullScreen}
       media={media}
-      mediaKey={mediaKey}
       subtitle={subtitle}
       title={title}
     >

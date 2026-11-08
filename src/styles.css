@@ -114,6 +114,33 @@
   --color-photo-scrim: var(--photo-scrim);
   --color-photo-foreground: var(--photo-foreground);
   --text-shadow-photo: var(--photo-text-shadow);
+
+  --animate-content-in: content-in 200ms ease-out;
+}
+
+@keyframes content-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+::view-transition-group(root) {
+  animation: none;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 200ms;
+  animation-timing-function: ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    view-transition-name: none;
+  }
 }
 
 /*

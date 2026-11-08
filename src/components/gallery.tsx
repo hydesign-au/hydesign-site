@@ -76,7 +76,10 @@ function Gallery({ images: keys, orientation, pageSize = 8, className }: Gallery
 
   return (
     <div className={className}>
-      <ul className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+      <ul
+        key={page}
+        className="grid grid-cols-2 gap-3 motion-safe:animate-content-in sm:gap-4 lg:grid-cols-4"
+      >
         {pageKeys.map((key, index) => (
           <li key={key}>
             <button
@@ -174,7 +177,7 @@ function Gallery({ images: keys, orientation, pageSize = 8, className }: Gallery
                   image={active}
                   sizes="90vw"
                   loading="eager"
-                  className="size-full object-cover"
+                  className="size-full object-cover motion-safe:animate-content-in"
                 />
                 <DialogClose
                   render={

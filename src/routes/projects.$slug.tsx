@@ -156,6 +156,7 @@ function ProjectPageTemplate({ project }: ProjectPageTemplateProps) {
           </MotionReveal>
           <MotionReveal>
             <Gallery
+              key={project.slug}
               images={galleryPhotos}
               orientation={project.galleryOrientation}
               className="mt-8"

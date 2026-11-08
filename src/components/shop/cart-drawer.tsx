@@ -35,7 +35,7 @@ function FloatingCart() {
           <Button
             type="button"
             size="xl"
-            className="fixed right-4 bottom-[max(1rem,env(safe-area-inset-bottom))] z-40 rounded-full animate-in fade-in zoom-in-95 duration-200"
+            className="fixed right-4 bottom-[max(1rem,env(safe-area-inset-bottom))] z-40 rounded-full motion-safe:animate-content-in"
             aria-label={`Open cart, ${itemLabel}`}
           />
         }

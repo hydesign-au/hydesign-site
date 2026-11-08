@@ -154,6 +154,7 @@ function ServicePageTemplate({ service }: { service: Service }) {
           </MotionReveal>
           <MotionReveal>
             <Gallery
+              key={service.slug}
               images={galleryPhotos}
               orientation={service.galleryOrientation}
               className="mt-8"
