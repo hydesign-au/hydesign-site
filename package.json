@@ -43,7 +43,7 @@
     "@types/node": "26.6.6",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
-    "@vitejs/plugin-react": "6.2.1",
+    "@vitejs/plugin-react": "6.3.0",
     "exiftool-vendored": "^39.2.0",
     "image-size": "^2.1.0",
     "oxlint": "^1.92.0",
