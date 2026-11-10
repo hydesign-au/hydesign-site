@@ -46,7 +46,7 @@
     "@vitejs/plugin-react": "6.3.0",
     "exiftool-vendored": "^39.2.0",
     "image-size": "^2.1.0",
-    "oxlint": "^1.92.0",
+    "oxlint": "^1.93.0",
     "oxlint-tsgolint": "^7.0.2006",
     "shadcn": "^4.23.0",
     "tailwindcss": "4.3.5",
