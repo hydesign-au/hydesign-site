@@ -214,9 +214,6 @@ importers:
       simple-icons:
         specifier: ^16.37.0
         version: 16.37.0
-      tw-animate-css:
-        specifier: 1.4.0
-        version: 1.4.0
       zod:
         specifier: ^4.6.7
         version: 4.6.7
@@ -260,6 +257,9 @@ importers:
       tailwindcss:
         specifier: 4.3.5
         version: 4.3.5
+      tw-animate-css:
+        specifier: 1.4.0
+        version: 1.4.0
       typescript:
         specifier: 7.0.2
         version: 7.0.2
