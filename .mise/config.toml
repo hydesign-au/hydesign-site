@@ -17,7 +17,7 @@ postinstall = "lefthook install"
 run = "pnpm install --frozen-lockfile"
 
 [tasks.dev]
-description = "Start the dev server on port 3000"
+description = "Port 3000"
 depends = ["deps"]
 run = "pnpm dev"
 
@@ -26,7 +26,6 @@ depends = ["deps"]
 run = "pnpm build"
 
 [tasks.preview]
-description = "Serve the production build in the Workers runtime"
 run = "pnpm preview"
 
 [tasks.format]
@@ -45,5 +44,4 @@ run = "pnpm lint:fix"
 run = "pnpm typecheck"
 
 [tasks.photo]
-description = "Add photos to src/assets/photos"
 run = "pnpm photo"
