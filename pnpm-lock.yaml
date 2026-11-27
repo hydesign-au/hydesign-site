@@ -262,8 +262,8 @@ importers:
         specifier: ^39.4.0
         version: 39.4.0
       image-size:
-        specifier: ^2.1.0
-        version: 2.1.0
+        specifier: ^2.2.0
+        version: 2.2.0
       oxlint:
         specifier: ^1.95.0
         version: 1.95.0(oxlint-tsgolint@7.0.2009)(vite-plus@1.5.0(@types/node@26.6.11)(@vitest/ui@5.1.0)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(typescript@7.0.2))
@@ -3498,9 +3498,9 @@ packages:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
-  image-size@2.1.0:
-    resolution: {integrity: sha512-6Dbisa46RsgeAh3TMSFL2i8+uIFG+/LRmz6Q2oscSJJvXo1sOw3EgNO4M8jPl1P+gR1atJLDPrpclX4IHz63sA==}
-    engines: {node: '>=18'}
+  image-size@2.2.0:
+    resolution: {integrity: sha512-93QTtmEv0UD26RTJfmxQvWzhlauWO1TizNPjCumqzlACXYmI7TlwRWWT2+M4at7kZwnj+WkMOW9XKI76eX0dWw==}
+    engines: {node: '>=22'}
     hasBin: true
 
   internal-slot@1.1.0:
@@ -7912,7 +7912,7 @@ snapshots:
 
   ignore@5.3.2: {}
 
-  image-size@2.1.0: {}
+  image-size@2.2.0: {}
 
   internal-slot@1.1.0:
     dependencies:
